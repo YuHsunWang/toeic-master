@@ -120,8 +120,14 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
       const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
       const newWords = JSON.parse(text);
 
-      await vocabDb.addMany(newWords);
-      flashMessage(`新增 ${newWords.length} 個單字！`);
+      const { added, skipped } = await vocabDb.addMany(newWords);
+      if (added === 0) {
+        flashMessage(`AI 生成的 ${skipped} 個單字都已存在，請再試一次`);
+      } else if (skipped > 0) {
+        flashMessage(`新增 ${added} 個單字（${skipped} 個重複已跳過）`);
+      } else {
+        flashMessage(`新增 ${added} 個單字！`);
+      }
     } catch (err) {
       console.error(err);
       flashMessage('生成失敗，請檢查 API Key 或網路');
@@ -162,8 +168,14 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
 
   // 手動匯入範例單字（沒 API key 時的替代方案）
   const handleImportSeed = async () => {
-    const count = await vocabDb.importSeed();
-    flashMessage(`已匯入 ${count} 個範例單字`);
+    const { added, skipped } = await vocabDb.importSeed();
+    if (added === 0 && skipped > 0) {
+      flashMessage(`範例單字都已在單字本中（${skipped} 個跳過）`);
+    } else if (skipped > 0) {
+      flashMessage(`新增 ${added} 個，跳過 ${skipped} 個重複`);
+    } else {
+      flashMessage(`已匯入 ${added} 個範例單字`);
+    }
   };
 
   const filteredItems = useMemo(() => {

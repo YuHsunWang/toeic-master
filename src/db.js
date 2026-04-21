@@ -22,14 +22,44 @@ export const vocabDb = {
   },
 
   async addMany(items) {
+    if (!items || items.length === 0) return { added: 0, skipped: 0, skippedWords: [] };
+
+    // 取得資料庫中現有的所有單字（轉小寫去頭尾空白，做不敏感比對）
+    const existingWords = await db.vocab.toArray();
+    const existingSet = new Set(
+      existingWords.map(v => (v.word || '').trim().toLowerCase())
+    );
+
+    // 同一批內部也可能有重複（例如 AI 不小心生兩個一樣），用 Map 以單字為 key 去重
+    const seenInBatch = new Set();
+    const toInsert = [];
+    const skippedWords = [];
+
+    for (const item of items) {
+      const key = (item.word || '').trim().toLowerCase();
+      if (!key) continue; // 跳過沒有 word 欄位的
+      if (existingSet.has(key) || seenInBatch.has(key)) {
+        skippedWords.push(item.word);
+        continue;
+      }
+      seenInBatch.add(key);
+      toInsert.push(item);
+    }
+
+    if (toInsert.length === 0) {
+      return { added: 0, skipped: skippedWords.length, skippedWords };
+    }
+
     const now = Date.now();
-    const records = items.map((item, i) => ({
+    const records = toInsert.map((item, i) => ({
       ...item,
       status: false,
       // 用 now + i 確保同一批加入的單字有細微時間差，排序穩定
       timestamp: now + i
     }));
     await db.vocab.bulkAdd(records);
+
+    return { added: records.length, skipped: skippedWords.length, skippedWords };
   },
 
   async toggleStatus(id, newStatus) {
@@ -64,9 +94,9 @@ export const vocabDb = {
   },
 
   // 手動匯入範例單字（按鈕用）
+  // 回傳 { added, skipped, skippedWords }
   async importSeed() {
-    await this.addMany(SEED_VOCABULARY);
-    return SEED_VOCABULARY.length;
+    return await this.addMany(SEED_VOCABULARY);
   }
 };
 
