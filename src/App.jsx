@@ -124,9 +124,18 @@ export default function App() {
     try {
       const existingWords = (await vocabDb.getWordList()).join(', ');
       const systemPrompt = `你是一位專業的多益老師。請生成 10 個高品質的多益核心單字。
-JSON 陣列格式，欄位：word, ipa, pos, zh, en, sent, category, type(Reading/Listening/Both)。
-不要包含：${existingWords}。
-type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Listening)還是兩者皆有(Both)。`;
+JSON 陣列格式，每個物件包含以下欄位：
+- word: 英文單字
+- ipa: 音標
+- pos: 詞性縮寫（n./v./adj./adv.等）
+- zh: 中文翻譯
+- en: 英文釋義
+- sent: 多益風格例句
+- category: 類別（Business/Finance/Travel/General等）
+- type: Reading/Listening/Both（在多益中的考試偏向）
+- synonyms: 2至3個同義字，字串陣列，例如 ["obtain","gain"]
+- root: 字根資訊字串，格式為「字根（來源語言）：字根意義」，例如「-quer-（拉丁語）：尋求、獲得」，若無明確字根則填 null
+不要包含：${existingWords}。`;
 
       const MODELS = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
       let data = null;
@@ -569,13 +578,39 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
                   </span>
                 </button>
               ) : (
-                <div className="space-y-6">
+                <div className="space-y-4">
                   <div className="border-l-2 border-indigo-500/20 pl-6">
                     <p className="text-2xl font-black text-white mb-2 tracking-tight">{item.zh}</p>
                     <p className="text-sm text-slate-400 font-medium leading-relaxed italic">
                       {item.en}
                     </p>
                   </div>
+
+                  {/* 字根 */}
+                  {item.root && (
+                    <div className="flex items-start gap-3 bg-amber-500/5 border border-amber-500/15 px-4 py-3 rounded-2xl">
+                      <span className="text-[10px] font-black text-amber-400 uppercase tracking-widest mt-0.5 shrink-0">字根</span>
+                      <p className="text-xs text-amber-200/70 font-medium leading-relaxed">{item.root}</p>
+                    </div>
+                  )}
+
+                  {/* 同義字 */}
+                  {item.synonyms?.length > 0 && (
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest">同義字</span>
+                      {item.synonyms.map(syn => (
+                        <button
+                          key={syn}
+                          onClick={() => handleSpeak(syn, `${item.id}-syn-${syn}`)}
+                          className="flex items-center gap-1 px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs font-bold text-slate-300 hover:bg-indigo-500/20 hover:border-indigo-500/30 hover:text-indigo-300 transition-all"
+                        >
+                          {syn}
+                          <Volume2 className="w-3 h-3 opacity-50" />
+                        </button>
+                      ))}
+                    </div>
+                  )}
+
                   <div className="bg-black/30 p-6 rounded-3xl border border-white/5 relative group/sentence">
                     <p className="text-lg text-indigo-50 font-bold leading-relaxed pr-10">
                       "{item.sent}"

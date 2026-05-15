@@ -9,7 +9,9 @@ export const SEED_VOCABULARY = [
     en: 'To obtain or come to possess something.',
     sent: 'The company acquired three smaller startups last quarter.',
     category: 'Business',
-    type: 'Both'
+    type: 'Both',
+    synonyms: ['obtain', 'gain', 'secure'],
+    root: '-quer-（拉丁語 quaerere）：尋求、獲得'
   },
   {
     word: 'itinerary',
@@ -19,7 +21,9 @@ export const SEED_VOCABULARY = [
     en: 'A planned route or journey schedule.',
     sent: 'Please review the itinerary before our trip to Osaka.',
     category: 'Travel',
-    type: 'Listening'
+    type: 'Listening',
+    synonyms: ['schedule', 'agenda', 'plan'],
+    root: 'itin-（拉丁語 iter）：旅途、道路'
   },
   {
     word: 'negotiate',
@@ -29,7 +33,9 @@ export const SEED_VOCABULARY = [
     en: 'To discuss something in order to reach an agreement.',
     sent: 'We need to negotiate better terms with the supplier.',
     category: 'Business',
-    type: 'Both'
+    type: 'Both',
+    synonyms: ['bargain', 'discuss', 'mediate'],
+    root: '-neg-（拉丁語 negotium）：事務、生意（neg- 否定 + otium 閒暇）'
   },
   {
     word: 'invoice',
@@ -39,7 +45,9 @@ export const SEED_VOCABULARY = [
     en: 'A document requesting payment for goods or services.',
     sent: 'The invoice was sent to the accounting department yesterday.',
     category: 'Finance',
-    type: 'Reading'
+    type: 'Reading',
+    synonyms: ['bill', 'receipt', 'statement'],
+    root: null
   },
   {
     word: 'reschedule',
@@ -49,7 +57,9 @@ export const SEED_VOCABULARY = [
     en: 'To change the time of a planned event.',
     sent: "Can we reschedule tomorrow's meeting to next Monday?",
     category: 'Business',
-    type: 'Listening'
+    type: 'Listening',
+    synonyms: ['postpone', 'rearrange', 'defer'],
+    root: 're-（拉丁語）：再次 + schedule（古法語 cedule）：時程表'
   },
   {
     word: 'warranty',
@@ -59,7 +69,9 @@ export const SEED_VOCABULARY = [
     en: "A written guarantee of a product's condition.",
     sent: 'This laptop comes with a two-year warranty.',
     category: 'Commerce',
-    type: 'Reading'
+    type: 'Reading',
+    synonyms: ['guarantee', 'assurance', 'pledge'],
+    root: '-war-（古北法語 warantir）：保護、擔保'
   },
   {
     word: 'prompt',
@@ -69,7 +81,9 @@ export const SEED_VOCABULARY = [
     en: 'Done without delay; punctual.',
     sent: 'Thank you for your prompt response to our inquiry.',
     category: 'General',
-    type: 'Both'
+    type: 'Both',
+    synonyms: ['immediate', 'timely', 'swift'],
+    root: 'pro-（拉丁語）：向前 + emere：帶走（promptus 意為準備好的）'
   },
   {
     word: 'renovation',
@@ -79,6 +93,8 @@ export const SEED_VOCABULARY = [
     en: 'The process of repairing and improving something.',
     sent: 'The office renovation will be completed by next month.',
     category: 'Property',
-    type: 'Both'
+    type: 'Both',
+    synonyms: ['refurbishment', 'restoration', 'upgrade'],
+    root: 're-（拉丁語）：再次 + nov-（novus）：新的 → 使之重新變新'
   }
 ];
