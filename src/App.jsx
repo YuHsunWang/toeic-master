@@ -129,7 +129,7 @@ JSON 陣列格式，欄位：word, ipa, pos, zh, en, sent, category, type(Readin
 type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Listening)還是兩者皆有(Both)。`;
 
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${GEMINI_API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -140,8 +140,14 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
           })
         }
       );
+      if (!response.ok) {
+        const errData = await response.json().catch(() => ({}));
+        const errMsg = errData?.error?.message || `HTTP ${response.status}`;
+        throw new Error(errMsg);
+      }
       const data = await response.json();
       const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
+      if (!text) throw new Error('API 回傳空內容');
       const newWords = JSON.parse(text);
 
       const { added, skipped } = await vocabDb.addMany(newWords);
@@ -153,8 +159,8 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
         flashMessage(`新增 ${added} 個單字！`);
       }
     } catch (err) {
-      console.error(err);
-      flashMessage('生成失敗，請檢查 API Key 或網路');
+      console.error('[AI Generate]', err);
+      flashMessage(`生成失敗：${err.message || '請檢查 API Key 或網路'}`);
     } finally {
       setIsGenerating(false);
     }
