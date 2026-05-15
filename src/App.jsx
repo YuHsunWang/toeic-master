@@ -128,7 +128,7 @@ JSON 陣列格式，欄位：word, ipa, pos, zh, en, sent, category, type(Readin
 不要包含：${existingWords}。
 type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Listening)還是兩者皆有(Both)。`;
 
-      const MODELS = ['gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-flash-latest'];
+      const MODELS = ['gemini-2.5-flash', 'gemini-2.0-flash', 'gemini-1.5-flash'];
       let data = null;
       let lastError = null;
 
