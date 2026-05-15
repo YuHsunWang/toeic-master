@@ -16,7 +16,11 @@ import {
   Wifi,
   WifiOff,
   Download,
-  BookPlus
+  BookPlus,
+  Trash2,
+  GraduationCap,
+  Tag,
+  ChevronDown
 } from 'lucide-react';
 
 import { vocabDb, ttsCacheDb } from './db.js';
@@ -38,14 +42,14 @@ export default function App() {
   const [filterStatus, setFilterStatus] = useState('All');
   const [isOnline, setIsOnline] = useState(navigator.onLine);
   const [preloadProgress, setPreloadProgress] = useState(null);
+  const [quizMode, setQuizMode] = useState(false);
+  const [revealedIds, setRevealedIds] = useState(new Set());
+  const [deletingId, setDeletingId] = useState(null);
 
-  // useLiveQuery: 資料變動時自動重新渲染，類似 Firestore 的 onSnapshot
-  // undefined = 載入中，[] = 空陣列
   const vocabulary = useLiveQuery(() => vocabDb.getAll(), []);
   const cacheSize = useLiveQuery(() => ttsCacheDb.size(), [], 0);
   const loading = vocabulary === undefined;
 
-  // 監聽連線狀態
   useEffect(() => {
     const onOnline = () => setIsOnline(true);
     const onOffline = () => setIsOnline(false);
@@ -57,26 +61,27 @@ export default function App() {
     };
   }, []);
 
-  // 首次開啟 App 自動塞入種子單字（讓沒 API key 的使用者也有東西可用）
   useEffect(() => {
     vocabDb.seedIfEmpty().then(seeded => {
       if (seeded) flashMessage('已匯入 8 個範例單字，開始學習吧！', 3500);
     });
   }, []);
 
-  // 顯示短暫提示訊息
+  // 切換測驗模式時重置已揭露的卡片
+  useEffect(() => {
+    setRevealedIds(new Set());
+  }, [quizMode]);
+
   const flashMessage = (text, duration = 3000) => {
     setMessage(text);
     setTimeout(() => setMessage(null), duration);
   };
 
-  // 播放發音
   const handleSpeak = async (text, id) => {
     if (currentlySpeaking) return;
     setCurrentlySpeaking(id);
     try {
       const { source } = await speak(text, GEMINI_API_KEY);
-      // 如果是用瀏覽器內建語音，給個小提示（只在離線時顯示，免得太煩）
       if (source === 'browser' && !isOnline) {
         flashMessage('離線模式：使用內建語音', 1500);
       }
@@ -88,7 +93,26 @@ export default function App() {
     }
   };
 
-  // AI 生成一批新單字
+  const handleDelete = async (id, word) => {
+    if (deletingId === id) {
+      await vocabDb.remove(id);
+      setDeletingId(null);
+      flashMessage(`已刪除「${word}」`);
+    } else {
+      setDeletingId(id);
+      // 3 秒後重置確認狀態
+      setTimeout(() => setDeletingId(prev => (prev === id ? null : prev)), 3000);
+    }
+  };
+
+  const handleReveal = (id) => {
+    setRevealedIds(prev => {
+      const next = new Set(prev);
+      next.add(id);
+      return next;
+    });
+  };
+
   const generateNewBatchWithAI = async () => {
     if (isGenerating) return;
     if (!isOnline) return flashMessage('離線狀態無法生成新單字');
@@ -105,7 +129,7 @@ JSON 陣列格式，欄位：word, ipa, pos, zh, en, sent, category, type(Readin
 type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Listening)還是兩者皆有(Both)。`;
 
       const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key=${GEMINI_API_KEY}`,
+        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-05-20:generateContent?key=${GEMINI_API_KEY}`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -136,13 +160,11 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
     }
   };
 
-  // 預載所有單字發音到快取（讓使用者可以完全離線使用）
   const handlePreloadTTS = async () => {
     if (!isOnline) return flashMessage('需要網路才能預載發音');
     if (!GEMINI_API_KEY) return flashMessage('請先設定 Gemini API Key');
     if (!vocabulary || vocabulary.length === 0) return;
 
-    // 收集所有要生成的文字（單字 + 例句）
     const texts = [];
     for (const v of vocabulary) {
       texts.push(v.word);
@@ -166,7 +188,6 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
     await vocabDb.toggleStatus(item.id, !item.status);
   };
 
-  // 手動匯入範例單字（沒 API key 時的替代方案）
   const handleImportSeed = async () => {
     const { added, skipped } = await vocabDb.importSeed();
     if (added === 0 && skipped > 0) {
@@ -190,6 +211,15 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
       return matchesSearch && matchesType && matchesStatus;
     });
   }, [vocabulary, searchTerm, filterType, filterStatus]);
+
+  // 各類別的單字數量（用於篩選標籤）
+  const typeCounts = useMemo(() => {
+    if (!vocabulary) return {};
+    return vocabulary.reduce((acc, v) => {
+      acc[v.type] = (acc[v.type] || 0) + 1;
+      return acc;
+    }, {});
+  }, [vocabulary]);
 
   const stats = {
     total: vocabulary?.length ?? 0,
@@ -255,7 +285,6 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
                 <p className="text-[10px] font-black text-slate-600 uppercase tracking-widest">
                   Active Learning Engine
                 </p>
-                {/* 線上/離線指示器 */}
                 {isOnline ? (
                   <span className="flex items-center gap-1 text-[9px] font-black text-emerald-400 uppercase">
                     <Wifi className="w-3 h-3" /> On
@@ -269,10 +298,30 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
             </div>
           </div>
           <div className="bg-white/5 border border-white/5 px-4 py-2 rounded-xl text-right">
-            <p className="text-xs font-black text-slate-500 uppercase mb-0.5">Mastery Rate</p>
+            <p className="text-xs font-black text-slate-500 uppercase mb-0.5">Mastery</p>
             <p className="text-xl font-black text-indigo-400 leading-none">{stats.percent}%</p>
+            {/* 掌握率進度條 */}
+            <div className="mt-1.5 w-20 h-1.5 bg-white/10 rounded-full overflow-hidden">
+              <div
+                className="h-full bg-indigo-500 rounded-full transition-all duration-700"
+                style={{ width: `${stats.percent}%` }}
+              />
+            </div>
           </div>
         </header>
+
+        {/* 測驗模式切換 */}
+        <button
+          onClick={() => setQuizMode(v => !v)}
+          className={`w-full mb-4 py-3 rounded-2xl border text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-2 ${
+            quizMode
+              ? 'bg-amber-500/20 border-amber-500/40 text-amber-400'
+              : 'bg-white/5 border-white/10 text-slate-400 hover:bg-white/10'
+          }`}
+        >
+          <GraduationCap className="w-4 h-4" />
+          {quizMode ? '測驗模式：開啟中（點擊關閉）' : '開啟測驗模式（隱藏翻譯，主動回憶）'}
+        </button>
 
         <button
           onClick={generateNewBatchWithAI}
@@ -290,7 +339,6 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
           </div>
         </button>
 
-        {/* 匯入範例單字（沒 API key 時的替代方案） */}
         <button
           onClick={handleImportSeed}
           className="w-full mb-4 py-3 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-[10px] font-black uppercase tracking-widest text-emerald-400 hover:bg-emerald-500/20 transition-all flex items-center justify-center gap-2"
@@ -299,7 +347,6 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
           匯入 8 個範例單字（免 API Key）
         </button>
 
-        {/* 預載發音按鈕 */}
         <button
           onClick={handlePreloadTTS}
           disabled={!isOnline || !!preloadProgress || stats.total === 0}
@@ -318,19 +365,40 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
           )}
         </button>
 
-        <div className="grid grid-cols-2 gap-4 mb-8">
-          <div className="bg-slate-900/40 border border-white/5 p-4 rounded-3xl flex flex-col items-center">
-            <span className="text-[10px] font-black text-slate-600 uppercase mb-1">
-              已掌握 (Mastered)
-            </span>
-            <span className="text-2xl font-black text-indigo-400">{stats.mastered}</span>
+        {/* 統計卡片 + 整體進度條 */}
+        <div className="mb-8 bg-slate-900/40 border border-white/5 p-5 rounded-3xl">
+          <div className="flex gap-4 mb-4">
+            <div className="flex-1 flex flex-col items-center">
+              <span className="text-[10px] font-black text-slate-600 uppercase mb-1">
+                已掌握
+              </span>
+              <span className="text-2xl font-black text-indigo-400">{stats.mastered}</span>
+            </div>
+            <div className="w-px bg-white/5" />
+            <div className="flex-1 flex flex-col items-center">
+              <span className="text-[10px] font-black text-slate-600 uppercase mb-1">
+                學習中
+              </span>
+              <span className="text-2xl font-black text-emerald-400">{stats.learning}</span>
+            </div>
+            <div className="w-px bg-white/5" />
+            <div className="flex-1 flex flex-col items-center">
+              <span className="text-[10px] font-black text-slate-600 uppercase mb-1">
+                總計
+              </span>
+              <span className="text-2xl font-black text-slate-300">{stats.total}</span>
+            </div>
           </div>
-          <div className="bg-slate-900/40 border border-white/5 p-4 rounded-3xl flex flex-col items-center">
-            <span className="text-[10px] font-black text-slate-600 uppercase mb-1">
-              學習中 (Learning)
-            </span>
-            <span className="text-2xl font-black text-emerald-400">{stats.learning}</span>
+          {/* 整體進度條 */}
+          <div className="w-full h-2 bg-white/5 rounded-full overflow-hidden">
+            <div
+              className="h-full bg-gradient-to-r from-indigo-500 to-sky-500 rounded-full transition-all duration-700"
+              style={{ width: `${stats.percent}%` }}
+            />
           </div>
+          <p className="text-[9px] font-black text-slate-700 uppercase tracking-widest mt-2 text-center">
+            {stats.percent}% Mastered
+          </p>
         </div>
 
         <div className="space-y-4 mb-8">
@@ -345,20 +413,29 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
             />
           </div>
 
+          {/* 類別篩選（顯示各類別數量） */}
           <div className="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
-            {['All', 'Reading', 'Listening', 'Both'].map(t => (
-              <button
-                key={t}
-                onClick={() => setFilterType(t)}
-                className={`px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest whitespace-nowrap border transition-all ${
-                  filterType === t
-                    ? 'bg-indigo-600 border-indigo-500 text-white shadow-lg shadow-indigo-600/20'
-                    : 'bg-slate-900/50 border-white/5 text-slate-500'
-                }`}
-              >
-                {t === 'All' ? '全部類別' : t}
-              </button>
-            ))}
+            {['All', 'Reading', 'Listening', 'Both'].map(t => {
+              const count = t === 'All' ? stats.total : (typeCounts[t] || 0);
+              return (
+                <button
+                  key={t}
+                  onClick={() => setFilterType(t)}
+                  className={`px-4 py-2 rounded-xl text-[10px] font-black uppercase tracking-widest whitespace-nowrap border transition-all flex items-center gap-1.5 ${
+                    filterType === t
+                      ? 'bg-indigo-600 border-indigo-500 text-white shadow-lg shadow-indigo-600/20'
+                      : 'bg-slate-900/50 border-white/5 text-slate-500'
+                  }`}
+                >
+                  {t === 'All' ? '全部類別' : t}
+                  <span className={`text-[9px] px-1.5 py-0.5 rounded-md ${
+                    filterType === t ? 'bg-white/20' : 'bg-white/5'
+                  }`}>
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
           </div>
 
           <div className="flex gap-2">
@@ -380,97 +457,133 @@ type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Li
       </div>
 
       <div className="max-w-xl mx-auto space-y-6">
-        {filteredItems.map(item => (
-          <div
-            key={item.id}
-            className={`group p-8 rounded-[2.5rem] border transition-all relative overflow-hidden ${
-              item.status
-                ? 'bg-slate-900/30 border-transparent grayscale-[0.6] opacity-60'
-                : 'bg-slate-900/80 border-white/5 hover:border-indigo-500/30 shadow-xl'
-            }`}
-          >
+        {filteredItems.map(item => {
+          const isRevealed = !quizMode || revealedIds.has(item.id);
+          return (
             <div
-              className={`absolute top-0 right-0 px-6 py-1.5 rounded-bl-3xl text-[9px] font-black uppercase tracking-[0.2em] ${
+              key={item.id}
+              className={`group p-8 rounded-[2.5rem] border transition-all relative overflow-hidden ${
                 item.status
-                  ? 'bg-indigo-500 text-white'
-                  : 'bg-emerald-500 text-white animate-pulse'
+                  ? 'bg-slate-900/30 border-transparent grayscale-[0.6] opacity-60'
+                  : 'bg-slate-900/80 border-white/5 hover:border-indigo-500/30 shadow-xl'
               }`}
             >
-              {item.status ? 'Mastered' : 'Learning'}
-            </div>
-
-            <div className="flex justify-between items-start mb-6">
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <h3 className="text-3xl font-black text-white group-hover:text-indigo-400 transition-colors tracking-tight">
-                    {item.word}
-                  </h3>
-                  <button
-                    onClick={() => handleSpeak(item.word, `${item.id}-word`)}
-                    className={`p-2 rounded-xl transition-all ${
-                      currentlySpeaking === `${item.id}-word`
-                        ? 'bg-indigo-500 text-white animate-pulse shadow-lg shadow-indigo-500/50'
-                        : 'bg-indigo-500/10 text-indigo-400 hover:bg-indigo-600 hover:text-white'
-                    }`}
-                  >
-                    {currentlySpeaking === `${item.id}-word` ? (
-                      <Loader2 className="w-5 h-5 animate-spin" />
-                    ) : (
-                      <Volume2 className="w-5 h-5" />
-                    )}
-                  </button>
-                </div>
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-[10px] font-black bg-indigo-500/20 text-indigo-300 px-2.5 py-0.5 rounded-lg uppercase tracking-wider">
-                    {item.pos}
-                  </span>
-                  <span className="text-xs font-mono text-slate-600 font-bold tracking-widest">
-                    {item.ipa}
-                  </span>
-                  <TypeBadge type={item.type} />
-                </div>
-              </div>
-              <button
-                onClick={() => toggleMastery(item)}
-                className={`mt-4 p-4 rounded-2xl transition-all ${
+              <div
+                className={`absolute top-0 right-0 px-6 py-1.5 rounded-bl-3xl text-[9px] font-black uppercase tracking-[0.2em] ${
                   item.status
-                    ? 'bg-indigo-500 text-white shadow-indigo-500/50 scale-110'
-                    : 'bg-white/5 text-slate-700 hover:text-emerald-400 hover:bg-emerald-400/10'
+                    ? 'bg-indigo-500 text-white'
+                    : 'bg-emerald-500 text-white animate-pulse'
                 }`}
               >
-                <CheckCircle2 className="w-7 h-7" />
-              </button>
-            </div>
+                {item.status ? 'Mastered' : 'Learning'}
+              </div>
 
-            <div className="space-y-6">
-              <div className="border-l-2 border-indigo-500/20 pl-6">
-                <p className="text-2xl font-black text-white mb-2 tracking-tight">{item.zh}</p>
-                <p className="text-sm text-slate-400 font-medium leading-relaxed italic">
-                  {item.en}
-                </p>
+              <div className="flex justify-between items-start mb-6">
+                <div className="space-y-3 flex-1 min-w-0">
+                  <div className="flex items-center gap-3">
+                    <h3 className="text-3xl font-black text-white group-hover:text-indigo-400 transition-colors tracking-tight">
+                      {item.word}
+                    </h3>
+                    <button
+                      onClick={() => handleSpeak(item.word, `${item.id}-word`)}
+                      className={`p-2 rounded-xl transition-all flex-shrink-0 ${
+                        currentlySpeaking === `${item.id}-word`
+                          ? 'bg-indigo-500 text-white animate-pulse shadow-lg shadow-indigo-500/50'
+                          : 'bg-indigo-500/10 text-indigo-400 hover:bg-indigo-600 hover:text-white'
+                      }`}
+                    >
+                      {currentlySpeaking === `${item.id}-word` ? (
+                        <Loader2 className="w-5 h-5 animate-spin" />
+                      ) : (
+                        <Volume2 className="w-5 h-5" />
+                      )}
+                    </button>
+                  </div>
+                  <div className="flex items-center gap-2 flex-wrap">
+                    <span className="text-[10px] font-black bg-indigo-500/20 text-indigo-300 px-2.5 py-0.5 rounded-lg uppercase tracking-wider">
+                      {item.pos}
+                    </span>
+                    <span className="text-xs font-mono text-slate-600 font-bold tracking-widest">
+                      {item.ipa}
+                    </span>
+                    <TypeBadge type={item.type} />
+                    {item.category && (
+                      <span className="flex items-center gap-1 text-[10px] font-black bg-white/5 text-slate-500 px-2.5 py-0.5 rounded-lg uppercase tracking-wider">
+                        <Tag className="w-2.5 h-2.5" />
+                        {item.category}
+                      </span>
+                    )}
+                  </div>
+                </div>
+                <div className="flex flex-col gap-2 ml-4 flex-shrink-0">
+                  <button
+                    onClick={() => toggleMastery(item)}
+                    className={`mt-4 p-4 rounded-2xl transition-all ${
+                      item.status
+                        ? 'bg-indigo-500 text-white shadow-indigo-500/50 scale-110'
+                        : 'bg-white/5 text-slate-700 hover:text-emerald-400 hover:bg-emerald-400/10'
+                    }`}
+                  >
+                    <CheckCircle2 className="w-7 h-7" />
+                  </button>
+                  {/* 刪除按鈕（需點兩次確認） */}
+                  <button
+                    onClick={() => handleDelete(item.id, item.word)}
+                    className={`p-2 rounded-xl transition-all ${
+                      deletingId === item.id
+                        ? 'bg-red-500 text-white animate-pulse'
+                        : 'bg-white/5 text-slate-700 hover:text-red-400 hover:bg-red-400/10 opacity-0 group-hover:opacity-100'
+                    }`}
+                    title={deletingId === item.id ? '再按一次確認刪除' : '刪除單字'}
+                  >
+                    <Trash2 className="w-4 h-4" />
+                  </button>
+                </div>
               </div>
-              <div className="bg-black/30 p-6 rounded-3xl border border-white/5 relative group/sentence">
-                <p className="text-lg text-indigo-50 font-bold leading-relaxed pr-10">
-                  "{item.sent}"
-                </p>
+
+              {/* 測驗模式：未揭露時顯示遮罩 */}
+              {!isRevealed ? (
                 <button
-                  onClick={() => handleSpeak(item.sent, `${item.id}-sent`)}
-                  className={`absolute right-4 bottom-4 p-2.5 rounded-xl transition-all ${
-                    currentlySpeaking === `${item.id}-sent`
-                      ? 'bg-indigo-600 text-white animate-pulse shadow-lg shadow-indigo-500/50'
-                      : 'bg-white/10 text-slate-500 hover:bg-indigo-600 hover:text-white opacity-0 group-hover/sentence:opacity-100'
-                  }`}
+                  onClick={() => handleReveal(item.id)}
+                  className="w-full py-8 rounded-3xl border border-dashed border-white/10 bg-black/20 flex flex-col items-center gap-3 hover:border-indigo-500/40 hover:bg-indigo-500/5 transition-all group/reveal"
                 >
-                  {currentlySpeaking === `${item.id}-sent` ? (
-                    <Loader2 className="w-5 h-5 animate-spin" />
-                  ) : (
-                    <PlayCircle className="w-5 h-5" />
-                  )}
+                  <ChevronDown className="w-6 h-6 text-slate-600 group-hover/reveal:text-indigo-400 transition-colors" />
+                  <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest group-hover/reveal:text-indigo-400 transition-colors">
+                    點擊揭露翻譯
+                  </span>
                 </button>
-              </div>
+              ) : (
+                <div className="space-y-6">
+                  <div className="border-l-2 border-indigo-500/20 pl-6">
+                    <p className="text-2xl font-black text-white mb-2 tracking-tight">{item.zh}</p>
+                    <p className="text-sm text-slate-400 font-medium leading-relaxed italic">
+                      {item.en}
+                    </p>
+                  </div>
+                  <div className="bg-black/30 p-6 rounded-3xl border border-white/5 relative group/sentence">
+                    <p className="text-lg text-indigo-50 font-bold leading-relaxed pr-10">
+                      "{item.sent}"
+                    </p>
+                    <button
+                      onClick={() => handleSpeak(item.sent, `${item.id}-sent`)}
+                      className={`absolute right-4 bottom-4 p-2.5 rounded-xl transition-all ${
+                        currentlySpeaking === `${item.id}-sent`
+                          ? 'bg-indigo-600 text-white animate-pulse shadow-lg shadow-indigo-500/50'
+                          : 'bg-white/10 text-slate-500 hover:bg-indigo-600 hover:text-white opacity-0 group-hover/sentence:opacity-100'
+                      }`}
+                    >
+                      {currentlySpeaking === `${item.id}-sent` ? (
+                        <Loader2 className="w-5 h-5 animate-spin" />
+                      ) : (
+                        <PlayCircle className="w-5 h-5" />
+                      )}
+                    </button>
+                  </div>
+                </div>
+              )}
             </div>
-          </div>
-        ))}
+          );
+        })}
 
         {filteredItems.length === 0 && !loading && (
           <div className="text-center py-20 bg-slate-900/20 rounded-[2.5rem] border border-dashed border-white/5">
