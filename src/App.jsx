@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect, useMemo, useCallback } from 'react';
 import { useLiveQuery } from 'dexie-react-hooks';
 import {
   CheckCircle2,
@@ -20,7 +20,12 @@ import {
   Trash2,
   GraduationCap,
   Tag,
-  ChevronDown
+  ChevronDown,
+  Brain,
+  ThumbsUp,
+  ThumbsDown,
+  Trophy,
+  CalendarClock
 } from 'lucide-react';
 
 import { vocabDb, ttsCacheDb } from './db.js';
@@ -45,8 +50,14 @@ export default function App() {
   const [quizMode, setQuizMode] = useState(false);
   const [revealedIds, setRevealedIds] = useState(new Set());
   const [deletingId, setDeletingId] = useState(null);
+  const [reviewMode, setReviewMode] = useState(false);
+  const [reviewQueue, setReviewQueue] = useState([]);
+  const [reviewIndex, setReviewIndex] = useState(0);
+  const [reviewRevealed, setReviewRevealed] = useState(false);
+  const [reviewResult, setReviewResult] = useState(null); // { correct, total }
 
   const vocabulary = useLiveQuery(() => vocabDb.getAll(), []);
+  const dueWords = useLiveQuery(() => vocabDb.getDueToday(), []);
   const cacheSize = useLiveQuery(() => ttsCacheDb.size(), [], 0);
   const loading = vocabulary === undefined;
 
@@ -75,6 +86,29 @@ export default function App() {
   const flashMessage = (text, duration = 3000) => {
     setMessage(text);
     setTimeout(() => setMessage(null), duration);
+  };
+
+  const startReview = useCallback(() => {
+    if (!dueWords || dueWords.length === 0) return;
+    const shuffled = [...dueWords].sort(() => Math.random() - 0.5);
+    setReviewQueue(shuffled);
+    setReviewIndex(0);
+    setReviewRevealed(false);
+    setReviewResult(null);
+    setReviewMode(true);
+  }, [dueWords]);
+
+  const handleReviewAnswer = async (correct) => {
+    const item = reviewQueue[reviewIndex];
+    await vocabDb.recordReview(item.id, correct);
+    const next = reviewIndex + 1;
+    if (next >= reviewQueue.length) {
+      const correctCount = reviewQueue.slice(0, next).filter((_, i) => i < next).length;
+      setReviewResult({ total: reviewQueue.length });
+    } else {
+      setReviewIndex(next);
+      setReviewRevealed(false);
+    }
   };
 
   const handleSpeak = async (text, id) => {
@@ -294,6 +328,136 @@ JSON 陣列格式，每個物件包含以下欄位：
       </div>
     );
 
+  // ── 間隔重複複習畫面 ──
+  if (reviewMode) {
+    const currentItem = reviewQueue[reviewIndex];
+
+    if (reviewResult) {
+      return (
+        <div className="min-h-screen bg-[#07090F] text-slate-200 flex flex-col items-center justify-center p-6 gap-8">
+          <Trophy className="w-16 h-16 text-amber-400" />
+          <div className="text-center">
+            <p className="text-3xl font-black text-white mb-2">複習完成！</p>
+            <p className="text-slate-400 font-bold">共複習 {reviewResult.total} 個單字</p>
+          </div>
+          <button
+            onClick={() => setReviewMode(false)}
+            className="px-8 py-4 rounded-2xl bg-indigo-600 text-white font-black text-sm uppercase tracking-widest"
+          >
+            回到單字本
+          </button>
+        </div>
+      );
+    }
+
+    return (
+      <div className="min-h-screen bg-[#07090F] text-slate-200 p-5 flex flex-col">
+        <div className="max-w-xl mx-auto w-full pt-4 flex flex-col flex-1">
+          {/* 頂部進度 */}
+          <div className="flex items-center justify-between mb-6">
+            <button
+              onClick={() => setReviewMode(false)}
+              className="text-[10px] font-black text-slate-600 uppercase tracking-widest hover:text-slate-400 transition-colors"
+            >
+              ← 離開複習
+            </button>
+            <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest">
+              {reviewIndex + 1} / {reviewQueue.length}
+            </span>
+          </div>
+          <div className="w-full h-1.5 bg-white/5 rounded-full mb-8">
+            <div
+              className="h-full bg-indigo-500 rounded-full transition-all duration-500"
+              style={{ width: `${((reviewIndex) / reviewQueue.length) * 100}%` }}
+            />
+          </div>
+
+          {/* 單字卡 */}
+          <div className="flex-1 flex flex-col gap-6">
+            <div className="bg-slate-900/80 border border-white/5 p-8 rounded-[2.5rem] shadow-xl">
+              <div className="flex items-center gap-3 mb-4">
+                <h2 className="text-4xl font-black text-white tracking-tight">{currentItem.word}</h2>
+                <button
+                  onClick={() => handleSpeak(currentItem.word, `review-${currentItem.id}`)}
+                  className="p-2 rounded-xl bg-indigo-500/10 text-indigo-400 hover:bg-indigo-600 hover:text-white transition-all"
+                >
+                  <Volume2 className="w-5 h-5" />
+                </button>
+              </div>
+              <div className="flex items-center gap-2 mb-6">
+                <span className="text-[10px] font-black bg-indigo-500/20 text-indigo-300 px-2.5 py-0.5 rounded-lg uppercase tracking-wider">
+                  {currentItem.pos}
+                </span>
+                <span className="text-xs font-mono text-slate-600 font-bold">{currentItem.ipa}</span>
+                <span className="text-[10px] font-black bg-white/5 text-slate-500 px-2 py-0.5 rounded-lg">
+                  Lv.{currentItem.srLevel || 0}
+                </span>
+              </div>
+
+              {!reviewRevealed ? (
+                <button
+                  onClick={() => setReviewRevealed(true)}
+                  className="w-full py-8 rounded-3xl border border-dashed border-white/10 bg-black/20 flex flex-col items-center gap-3 hover:border-indigo-500/40 hover:bg-indigo-500/5 transition-all"
+                >
+                  <ChevronDown className="w-6 h-6 text-slate-600" />
+                  <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest">
+                    點擊揭露答案
+                  </span>
+                </button>
+              ) : (
+                <div className="space-y-4">
+                  <div className="border-l-2 border-indigo-500/20 pl-6">
+                    <p className="text-2xl font-black text-white mb-1">{currentItem.zh}</p>
+                    <p className="text-sm text-slate-400 italic">{currentItem.en}</p>
+                  </div>
+                  {currentItem.root && (
+                    <div className="flex items-start gap-3 bg-amber-500/5 border border-amber-500/15 px-4 py-3 rounded-2xl">
+                      <span className="text-[10px] font-black text-amber-400 uppercase tracking-widest mt-0.5 shrink-0">字根</span>
+                      <p className="text-xs text-amber-200/70 font-medium">{currentItem.root}</p>
+                    </div>
+                  )}
+                  {currentItem.synonyms?.length > 0 && (
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="text-[10px] font-black text-slate-600 uppercase tracking-widest">同義字</span>
+                      {currentItem.synonyms.map(syn => (
+                        <span key={syn} className="px-3 py-1 rounded-lg bg-white/5 border border-white/10 text-xs font-bold text-slate-300">
+                          {syn}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+                  <p className="text-base text-indigo-50 font-bold leading-relaxed bg-black/30 px-5 py-4 rounded-2xl border border-white/5">
+                    "{currentItem.sent}"
+                  </p>
+                </div>
+              )}
+            </div>
+
+            {/* 記得 / 不記得 按鈕 */}
+            {reviewRevealed && (
+              <div className="grid grid-cols-2 gap-4">
+                <button
+                  onClick={() => handleReviewAnswer(false)}
+                  className="py-5 rounded-2xl bg-red-500/10 border border-red-500/30 text-red-400 font-black text-sm uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-red-500/20 transition-all"
+                >
+                  <ThumbsDown className="w-5 h-5" />
+                  不記得
+                </button>
+                <button
+                  onClick={() => handleReviewAnswer(true)}
+                  className="py-5 rounded-2xl bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 font-black text-sm uppercase tracking-widest flex items-center justify-center gap-2 hover:bg-emerald-500/20 transition-all"
+                >
+                  <ThumbsUp className="w-5 h-5" />
+                  記得！
+                </button>
+              </div>
+            )}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-[#07090F] text-slate-200 p-5 pb-20 selection:bg-indigo-500 selection:text-white">
       <div className="max-w-xl mx-auto pt-4 mb-8">
@@ -335,18 +499,33 @@ JSON 陣列格式，每個物件包含以下欄位：
           </div>
         </header>
 
-        {/* 測驗模式切換 */}
-        <button
-          onClick={() => setQuizMode(v => !v)}
-          className={`w-full mb-4 py-3 rounded-2xl border text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-2 ${
-            quizMode
-              ? 'bg-amber-500/20 border-amber-500/40 text-amber-400'
-              : 'bg-white/5 border-white/10 text-slate-400 hover:bg-white/10'
-          }`}
-        >
-          <GraduationCap className="w-4 h-4" />
-          {quizMode ? '測驗模式：開啟中（點擊關閉）' : '開啟測驗模式（隱藏翻譯，主動回憶）'}
-        </button>
+        {/* 今日複習 + 測驗模式 */}
+        <div className="grid grid-cols-2 gap-3 mb-4">
+          <button
+            onClick={startReview}
+            disabled={!dueWords || dueWords.length === 0}
+            className="py-3 rounded-2xl border border-indigo-500/30 bg-indigo-500/10 text-[10px] font-black uppercase tracking-widest text-indigo-400 hover:bg-indigo-500/20 disabled:opacity-40 disabled:cursor-not-allowed transition-all flex items-center justify-center gap-2"
+          >
+            <Brain className="w-4 h-4" />
+            <span>今日複習</span>
+            {dueWords && dueWords.length > 0 && (
+              <span className="bg-indigo-500 text-white text-[9px] px-1.5 py-0.5 rounded-md">
+                {dueWords.length}
+              </span>
+            )}
+          </button>
+          <button
+            onClick={() => setQuizMode(v => !v)}
+            className={`py-3 rounded-2xl border text-[10px] font-black uppercase tracking-widest transition-all flex items-center justify-center gap-2 ${
+              quizMode
+                ? 'bg-amber-500/20 border-amber-500/40 text-amber-400'
+                : 'bg-white/5 border-white/10 text-slate-400 hover:bg-white/10'
+            }`}
+          >
+            <GraduationCap className="w-4 h-4" />
+            {quizMode ? '關閉測驗' : '翻牌測驗'}
+          </button>
+        </div>
 
         <button
           onClick={generateNewBatchWithAI}
@@ -408,10 +587,10 @@ JSON 陣列格式，每個物件包含以下欄位：
             </div>
             <div className="w-px bg-white/5" />
             <div className="flex-1 flex flex-col items-center">
-              <span className="text-[10px] font-black text-slate-600 uppercase mb-1">
-                總計
+              <span className="text-[10px] font-black text-slate-600 uppercase mb-1 flex items-center gap-1">
+                <CalendarClock className="w-2.5 h-2.5" />待複習
               </span>
-              <span className="text-2xl font-black text-slate-300">{stats.total}</span>
+              <span className="text-2xl font-black text-amber-400">{dueWords?.length ?? 0}</span>
             </div>
           </div>
           {/* 整體進度條 */}
