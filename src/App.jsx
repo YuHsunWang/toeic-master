@@ -128,24 +128,34 @@ JSON 陣列格式，欄位：word, ipa, pos, zh, en, sent, category, type(Readin
 不要包含：${existingWords}。
 type 欄位請標註該單字在多益中更傾向於閱讀(Reading)、聽力(Listening)還是兩者皆有(Both)。`;
 
-      const response = await fetch(
-        `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${GEMINI_API_KEY}`,
-        {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            contents: [{ parts: [{ text: '生成 10 個核心單字' }] }],
-            systemInstruction: { parts: [{ text: systemPrompt }] },
-            generationConfig: { responseMimeType: 'application/json' }
-          })
+      const MODELS = ['gemini-2.0-flash', 'gemini-1.5-flash', 'gemini-1.5-flash-latest'];
+      let data = null;
+      let lastError = null;
+
+      for (const model of MODELS) {
+        const response = await fetch(
+          `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              contents: [{ parts: [{ text: '生成 10 個核心單字' }] }],
+              systemInstruction: { parts: [{ text: systemPrompt }] },
+              generationConfig: { responseMimeType: 'application/json' }
+            })
+          }
+        );
+        if (response.ok) {
+          data = await response.json();
+          break;
         }
-      );
-      if (!response.ok) {
         const errData = await response.json().catch(() => ({}));
-        const errMsg = errData?.error?.message || `HTTP ${response.status}`;
-        throw new Error(errMsg);
+        lastError = errData?.error?.message || `HTTP ${response.status}`;
+        // 額度不足時不繼續嘗試其他模型（同帳號都會失敗）
+        if (response.status === 429) break;
       }
-      const data = await response.json();
+
+      if (!data) throw new Error(lastError || '所有模型皆無法使用');
       const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
       if (!text) throw new Error('API 回傳空內容');
       const newWords = JSON.parse(text);
