@@ -1,19 +1,30 @@
 import Dexie from 'dexie';
 import { SEED_VOCABULARY } from './seedData.js';
 
-// IndexedDB 資料庫定義
-// 兩個 table:
-//   vocab: 單字資料（取代 Firestore）
-//   ttsCache: TTS 音檔快取（key = text + voice，value = base64 PCM）
 export const db = new Dexie('ToeicMasterDB');
 
 db.version(1).stores({
-  // ++id 表示自動遞增的主鍵
-  // word, type, status, timestamp 是索引欄位（可以快速查詢/排序）
   vocab: '++id, word, type, status, timestamp',
-  // key 是主鍵（格式: "hello__Kore"）
   ttsCache: 'key, timestamp'
 });
+
+// 新增 nextReview, srLevel 兩個索引欄位
+db.version(2).stores({
+  vocab: '++id, word, type, status, timestamp, nextReview, srLevel',
+  ttsCache: 'key, timestamp'
+});
+
+// 間隔重複的複習間隔天數（依等級 0~5）
+// 0=新字, 1=1天, 2=3天, 3=7天, 4=14天, 5=30天
+const SR_INTERVALS = [0, 1, 3, 7, 14, 30];
+
+function nextReviewDate(level) {
+  const days = SR_INTERVALS[Math.min(level, SR_INTERVALS.length - 1)];
+  const d = new Date();
+  d.setHours(0, 0, 0, 0);
+  d.setDate(d.getDate() + days);
+  return d.getTime();
+}
 
 // --- Vocab 操作 ---
 export const vocabDb = {
@@ -21,23 +32,30 @@ export const vocabDb = {
     return await db.vocab.orderBy('timestamp').reverse().toArray();
   },
 
+  async getDueToday() {
+    const todayEnd = new Date();
+    todayEnd.setHours(23, 59, 59, 999);
+    return await db.vocab
+      .where('nextReview')
+      .belowOrEqual(todayEnd.getTime())
+      .toArray();
+  },
+
   async addMany(items) {
     if (!items || items.length === 0) return { added: 0, skipped: 0, skippedWords: [] };
 
-    // 取得資料庫中現有的所有單字（轉小寫去頭尾空白，做不敏感比對）
     const existingWords = await db.vocab.toArray();
     const existingSet = new Set(
       existingWords.map(v => (v.word || '').trim().toLowerCase())
     );
 
-    // 同一批內部也可能有重複（例如 AI 不小心生兩個一樣），用 Map 以單字為 key 去重
     const seenInBatch = new Set();
     const toInsert = [];
     const skippedWords = [];
 
     for (const item of items) {
       const key = (item.word || '').trim().toLowerCase();
-      if (!key) continue; // 跳過沒有 word 欄位的
+      if (!key) continue;
       if (existingSet.has(key) || seenInBatch.has(key)) {
         skippedWords.push(item.word);
         continue;
@@ -54,8 +72,9 @@ export const vocabDb = {
     const records = toInsert.map((item, i) => ({
       ...item,
       status: false,
-      // 用 now + i 確保同一批加入的單字有細微時間差，排序穩定
-      timestamp: now + i
+      timestamp: now + i,
+      srLevel: 0,
+      nextReview: now + i
     }));
     await db.vocab.bulkAdd(records);
 
@@ -64,6 +83,20 @@ export const vocabDb = {
 
   async toggleStatus(id, newStatus) {
     await db.vocab.update(id, { status: newStatus });
+  },
+
+  // 間隔重複回答：correct=true 升級, false 重置到等級1
+  async recordReview(id, correct) {
+    const item = await db.vocab.get(id);
+    if (!item) return;
+    const newLevel = correct ? Math.min((item.srLevel || 0) + 1, SR_INTERVALS.length - 1) : 1;
+    const updates = {
+      srLevel: newLevel,
+      nextReview: nextReviewDate(newLevel),
+      lastReviewed: Date.now()
+    };
+    if (newLevel >= SR_INTERVALS.length - 1) updates.status = true;
+    await db.vocab.update(id, updates);
   },
 
   async remove(id) {
@@ -75,13 +108,10 @@ export const vocabDb = {
   },
 
   async getWordList() {
-    // 給 AI prompt 用，避免生成重複單字
     const all = await db.vocab.toArray();
     return all.map(v => v.word);
   },
 
-  // 首次開啟 App 時若資料庫空的，自動塞入種子資料
-  // 只執行一次，之後即使使用者刪光也不會再自動加回
   async seedIfEmpty() {
     const count = await db.vocab.count();
     const hasSeeded = localStorage.getItem('toeic_master_seeded');
@@ -93,8 +123,6 @@ export const vocabDb = {
     return false;
   },
 
-  // 手動匯入範例單字（按鈕用）
-  // 回傳 { added, skipped, skippedWords }
   async importSeed() {
     return await this.addMany(SEED_VOCABULARY);
   }
