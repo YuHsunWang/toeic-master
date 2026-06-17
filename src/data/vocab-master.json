@@ -1,0 +1,86 @@
+[
+  {
+    "word": "acquire",
+    "ipa": "/əˈkwaɪər/",
+    "pos": "v.",
+    "senses": [
+      { "en": "To obtain or come to possess something.", "zh": "取得；獲得", "example": "She acquired fluent Japanese after living in Tokyo." },
+      { "en": "To buy another company or its assets.", "zh": "收購（公司）", "example": "The company acquired three smaller startups last quarter." }
+    ],
+    "category": "Business",
+    "type": "Both"
+  },
+  {
+    "word": "itinerary",
+    "ipa": "/aɪˈtɪnəreri/",
+    "pos": "n.",
+    "senses": [
+      { "en": "A planned route or schedule for a journey.", "zh": "行程表；旅程", "example": "Please review the itinerary before our trip to Osaka." }
+    ],
+    "category": "Travel",
+    "type": "Listening"
+  },
+  {
+    "word": "negotiate",
+    "ipa": "/nɪˈɡoʊʃieɪt/",
+    "pos": "v.",
+    "senses": [
+      { "en": "To discuss something in order to reach an agreement.", "zh": "協商；談判", "example": "We need to negotiate better terms with the supplier." },
+      { "en": "To successfully get over or past a difficult obstacle.", "zh": "順利通過（障礙）", "example": "The driver carefully negotiated the narrow mountain road." }
+    ],
+    "category": "Business",
+    "type": "Both"
+  },
+  {
+    "word": "invoice",
+    "ipa": "/ˈɪnvɔɪs/",
+    "pos": "n.",
+    "senses": [
+      { "en": "A document requesting payment for goods or services.", "zh": "發票；請款單", "example": "The invoice was sent to the accounting department yesterday." }
+    ],
+    "category": "Finance",
+    "type": "Reading"
+  },
+  {
+    "word": "reschedule",
+    "ipa": "/riːˈskedʒuːl/",
+    "pos": "v.",
+    "senses": [
+      { "en": "To change the time of a planned event.", "zh": "重新安排時間", "example": "Can we reschedule tomorrow's meeting to next Monday?" }
+    ],
+    "category": "Business",
+    "type": "Listening"
+  },
+  {
+    "word": "warranty",
+    "ipa": "/ˈwɔːrənti/",
+    "pos": "n.",
+    "senses": [
+      { "en": "A written guarantee promising to repair or replace a product if needed.", "zh": "保固；保證書", "example": "This laptop comes with a two-year warranty." }
+    ],
+    "category": "Commerce",
+    "type": "Reading"
+  },
+  {
+    "word": "prompt",
+    "ipa": "/prɑːmpt/",
+    "pos": "adj. / v. / n.",
+    "senses": [
+      { "en": "Done quickly, without delay; punctual.", "zh": "迅速的；準時的", "example": "Thank you for your prompt response to our inquiry." },
+      { "en": "To cause someone to do something.", "zh": "促使；引發", "example": "The poor sales prompted the board to change strategy." },
+      { "en": "An instruction or cue that tells you what to do.", "zh": "提示；指令", "example": "Follow the on-screen prompt to complete the setup." }
+    ],
+    "category": "General",
+    "type": "Both"
+  },
+  {
+    "word": "renovation",
+    "ipa": "/ˌrenəˈveɪʃn/",
+    "pos": "n.",
+    "senses": [
+      { "en": "The process of repairing and improving a building or space.", "zh": "翻新；整修", "example": "The office renovation will be completed by next month." }
+    ],
+    "category": "Property",
+    "type": "Both"
+  }
+]

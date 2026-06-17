@@ -38,6 +38,10 @@ npm run build
 npm run preview
 ```
 
+### API Key 安全提醒
+
+本專案是純前端 Vite app，所有 `VITE_` 前綴的環境變數都會被打進前端 bundle。`VITE_GEMINI_API_KEY` 只能視為開發或受限制用途的公開 key，正式環境必須改走後端 proxy，或至少在 Google AI Studio / Google Cloud 端限制配額、HTTP referrer / 來源與可用 API，避免 key 被濫用。
+
 ## 使用流程
 
 1. 第一次打開 App → 按「獲取 AI 新單字」累積單字

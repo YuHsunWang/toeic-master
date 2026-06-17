@@ -1,4 +1,5 @@
 import { ttsCacheDb } from './db.js';
+import { MISSING_GEMINI_API_KEY_MESSAGE } from './apiKey.js';
 
 // ============================================================
 // 語音服務：三層 fallback
@@ -41,6 +42,8 @@ function pcmToWav(base64Pcm, sampleRate = 24000) {
 
 // 指數退避呼叫 Gemini TTS API
 async function fetchGeminiTTS(text, apiKey, retries = 3) {
+  if (!apiKey) throw new Error(MISSING_GEMINI_API_KEY_MESSAGE);
+
   let delay = 1000;
   for (let i = 0; i < retries; i++) {
     try {

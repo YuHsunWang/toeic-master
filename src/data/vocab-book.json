@@ -1,0 +1,4159 @@
+[
+  {
+    "word": "acquire",
+    "ipa": "/əˈkwaɪər/",
+    "pos": "v.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To obtain or come to possess something.",
+        "zh": "取得；收購",
+        "example": "The company plans to acquire a small software firm this year."
+      }
+    ]
+  },
+  {
+    "word": "negotiate",
+    "ipa": "/nɪˈɡoʊʃieɪt/",
+    "pos": "v.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To discuss terms in order to reach an agreement.",
+        "zh": "談判；協商",
+        "example": "We need to negotiate better prices with the supplier."
+      }
+    ]
+  },
+  {
+    "word": "strategy",
+    "ipa": "/ˈstrætədʒi/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A plan designed to achieve a long-term goal.",
+        "zh": "策略",
+        "example": "The new strategy helped the company enter overseas markets."
+      }
+    ]
+  },
+  {
+    "word": "expansion",
+    "ipa": "/ɪkˈspænʃən/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The act of growing or increasing in size or scope.",
+        "zh": "擴張；拓展",
+        "example": "The expansion will create fifty new jobs in the region."
+      }
+    ]
+  },
+  {
+    "word": "merger",
+    "ipa": "/ˈmɜːrdʒər/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The joining of two companies into one organization.",
+        "zh": "合併",
+        "example": "The merger was approved by both boards of directors."
+      }
+    ]
+  },
+  {
+    "word": "subsidiary",
+    "ipa": "/səbˈsɪdieri/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A company controlled by a larger parent company.",
+        "zh": "子公司",
+        "example": "The subsidiary handles all sales in Southeast Asia."
+      }
+    ]
+  },
+  {
+    "word": "revenue",
+    "ipa": "/ˈrevənuː/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Money that a business receives from its activities.",
+        "zh": "營收",
+        "example": "Revenue increased after the online store opened."
+      }
+    ]
+  },
+  {
+    "word": "client",
+    "ipa": "/ˈklaɪənt/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A person or organization that uses professional services.",
+        "zh": "客戶",
+        "example": "The client asked for a revised proposal by Friday."
+      }
+    ]
+  },
+  {
+    "word": "partnership",
+    "ipa": "/ˈpɑːrtnərʃɪp/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Reading",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A relationship in which people or organizations work together.",
+        "zh": "合作關係；合夥",
+        "example": "The partnership gives both companies access to new customers."
+      }
+    ]
+  },
+  {
+    "word": "objective",
+    "ipa": "/əbˈdʒektɪv/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A specific goal that someone tries to achieve.",
+        "zh": "目標",
+        "example": "Our main objective is to improve customer satisfaction."
+      }
+    ]
+  },
+  {
+    "word": "proposal",
+    "ipa": "/prəˈpoʊzəl/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A formal plan or suggestion offered for consideration.",
+        "zh": "提案；企劃書",
+        "example": "The proposal includes a detailed budget and timeline."
+      }
+    ]
+  },
+  {
+    "word": "headquarters",
+    "ipa": "/ˈhedkwɔːrtərz/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The main office of an organization.",
+        "zh": "總部",
+        "example": "The company moved its headquarters to Taipei last year."
+      }
+    ]
+  },
+  {
+    "word": "branch",
+    "ipa": "/bræntʃ/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A local office or part of a larger organization.",
+        "zh": "分公司；分行",
+        "example": "The branch will open earlier during the holiday season."
+      }
+    ]
+  },
+  {
+    "word": "competitor",
+    "ipa": "/kəmˈpetɪtər/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A company or person competing in the same market.",
+        "zh": "競爭者",
+        "example": "A major competitor lowered its prices this month."
+      }
+    ]
+  },
+  {
+    "word": "stakeholder",
+    "ipa": "/ˈsteɪkhoʊldər/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A person or group affected by a decision or project.",
+        "zh": "利害關係人",
+        "example": "Each stakeholder received a copy of the project report."
+      }
+    ]
+  },
+  {
+    "word": "presentation",
+    "ipa": "/ˌprezənˈteɪʃən/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A talk or display that gives information to an audience.",
+        "zh": "簡報；發表",
+        "example": "Her presentation explained the quarterly sales results."
+      }
+    ]
+  },
+  {
+    "word": "executive",
+    "ipa": "/ɪɡˈzekjətɪv/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A person with senior management responsibility.",
+        "zh": "主管；高階主管",
+        "example": "The executive approved the investment plan."
+      }
+    ]
+  },
+  {
+    "word": "operate",
+    "ipa": "/ˈɑːpəreɪt/",
+    "pos": "v.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To function or manage a business or system.",
+        "zh": "經營；運作",
+        "example": "The company will operate three new stores downtown."
+      }
+    ]
+  },
+  {
+    "word": "invoice",
+    "ipa": "/ˈɪnvɔɪs/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A document requesting payment for goods or services.",
+        "zh": "發票；請款單",
+        "example": "The invoice was sent to the accounting department yesterday."
+      }
+    ]
+  },
+  {
+    "word": "budget",
+    "ipa": "/ˈbʌdʒɪt/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A plan for how money will be earned and spent.",
+        "zh": "預算",
+        "example": "The department must reduce its budget by ten percent."
+      }
+    ]
+  },
+  {
+    "word": "expense",
+    "ipa": "/ɪkˈspens/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Money spent to buy or do something.",
+        "zh": "費用；開支",
+        "example": "Please submit each travel expense with a receipt."
+      }
+    ]
+  },
+  {
+    "word": "forecast",
+    "ipa": "/ˈfɔːrkæst/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A prediction about future conditions or results.",
+        "zh": "預測",
+        "example": "The sales forecast looks stronger than last quarter."
+      }
+    ]
+  },
+  {
+    "word": "profit",
+    "ipa": "/ˈprɑːfɪt/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Money gained after costs are subtracted from income.",
+        "zh": "利潤",
+        "example": "The store made a profit for the third month in a row."
+      }
+    ]
+  },
+  {
+    "word": "loss",
+    "ipa": "/lɔːs/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "An amount of money lost in business.",
+        "zh": "虧損；損失",
+        "example": "The loss was caused by rising shipping costs."
+      }
+    ]
+  },
+  {
+    "word": "asset",
+    "ipa": "/ˈæset/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Something valuable owned by a person or company.",
+        "zh": "資產",
+        "example": "The building is the company's most valuable asset."
+      }
+    ]
+  },
+  {
+    "word": "liability",
+    "ipa": "/ˌlaɪəˈbɪləti/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A debt or legal financial responsibility.",
+        "zh": "負債；責任",
+        "example": "The accountant listed the loan as a long-term liability."
+      }
+    ]
+  },
+  {
+    "word": "equity",
+    "ipa": "/ˈekwəti/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The value of ownership in a company or property.",
+        "zh": "股權；權益",
+        "example": "Investors received equity in exchange for funding."
+      }
+    ]
+  },
+  {
+    "word": "audit",
+    "ipa": "/ˈɔːdɪt/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An official examination of financial records.",
+        "zh": "審計；查帳",
+        "example": "The annual audit found no major accounting errors."
+      }
+    ]
+  },
+  {
+    "word": "reimbursement",
+    "ipa": "/ˌriːɪmˈbɜːrsmənt/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Money paid back for costs already spent.",
+        "zh": "報銷；補償",
+        "example": "Employees can request reimbursement for approved meals."
+      }
+    ]
+  },
+  {
+    "word": "estimate",
+    "ipa": "/ˈestɪmət/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "An approximate calculation of cost, size, or value.",
+        "zh": "估價；估計",
+        "example": "The contractor gave us an estimate for the repair."
+      }
+    ]
+  },
+  {
+    "word": "balance",
+    "ipa": "/ˈbæləns/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The amount of money remaining in an account.",
+        "zh": "餘額；差額",
+        "example": "Your account balance appears at the top of the statement."
+      },
+      {
+        "en": "A state in which things are equal or proportionate.",
+        "zh": "均衡；平衡",
+        "example": "The company needs to strike a balance between cost and quality."
+      }
+    ]
+  },
+  {
+    "word": "quarter",
+    "ipa": "/ˈkwɔːrtər/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A three-month period in a business year.",
+        "zh": "季度；四分之一",
+        "example": "Revenue rose sharply in the second quarter."
+      }
+    ]
+  },
+  {
+    "word": "dividend",
+    "ipa": "/ˈdɪvɪdend/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A share of profits paid to shareholders.",
+        "zh": "股利；紅利",
+        "example": "The board announced a small dividend for investors."
+      }
+    ]
+  },
+  {
+    "word": "payroll",
+    "ipa": "/ˈpeɪroʊl/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The system or list used to pay employees.",
+        "zh": "薪資名冊；薪資作業",
+        "example": "Payroll will be processed early because of the holiday."
+      }
+    ]
+  },
+  {
+    "word": "transaction",
+    "ipa": "/trænˈzækʃən/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An instance of buying, selling, or transferring money.",
+        "zh": "交易",
+        "example": "The transaction was recorded in the accounting system."
+      }
+    ]
+  },
+  {
+    "word": "currency",
+    "ipa": "/ˈkɜːrənsi/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The money used in a particular country.",
+        "zh": "貨幣",
+        "example": "The currency exchange rate changed overnight."
+      }
+    ]
+  },
+  {
+    "word": "warranty",
+    "ipa": "/ˈwɔːrənti/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A written promise to repair or replace a product.",
+        "zh": "保固；保證書",
+        "example": "This laptop comes with a two-year warranty."
+      }
+    ]
+  },
+  {
+    "word": "refund",
+    "ipa": "/ˈriːfʌnd/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Money returned to a customer after a purchase.",
+        "zh": "退款",
+        "example": "The customer received a refund for the damaged item."
+      }
+    ]
+  },
+  {
+    "word": "receipt",
+    "ipa": "/rɪˈsiːt/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A written record that payment was made.",
+        "zh": "收據",
+        "example": "Please keep your receipt in case you need an exchange."
+      }
+    ]
+  },
+  {
+    "word": "discount",
+    "ipa": "/ˈdɪskaʊnt/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A reduction in the usual price.",
+        "zh": "折扣",
+        "example": "The store offers a discount to returning customers."
+      }
+    ]
+  },
+  {
+    "word": "merchandise",
+    "ipa": "/ˈmɜːrtʃəndaɪz/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Goods that are bought and sold.",
+        "zh": "商品",
+        "example": "All holiday merchandise is displayed near the entrance."
+      }
+    ]
+  },
+  {
+    "word": "customer",
+    "ipa": "/ˈkʌstəmər/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A person who buys goods or services.",
+        "zh": "顧客",
+        "example": "A customer called to ask about the delivery date."
+      }
+    ]
+  },
+  {
+    "word": "retailer",
+    "ipa": "/ˈriːteɪlər/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A business that sells goods directly to consumers.",
+        "zh": "零售商",
+        "example": "The retailer expanded its online product line."
+      }
+    ]
+  },
+  {
+    "word": "wholesale",
+    "ipa": "/ˈhoʊlseɪl/",
+    "pos": "adj.",
+    "category": "Commerce",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Relating to selling goods in large quantities.",
+        "zh": "批發的",
+        "example": "The wholesale price is lower for bulk orders."
+      }
+    ]
+  },
+  {
+    "word": "purchase",
+    "ipa": "/ˈpɜːrtʃəs/",
+    "pos": "v.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To buy something.",
+        "zh": "購買",
+        "example": "You can purchase tickets at the front desk."
+      }
+    ]
+  },
+  {
+    "word": "checkout",
+    "ipa": "/ˈtʃekaʊt/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "The place or process where customers pay.",
+        "zh": "結帳；收銀台",
+        "example": "The checkout line moved quickly after another cashier arrived."
+      }
+    ]
+  },
+  {
+    "word": "stock",
+    "ipa": "/stɑːk/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Goods available for sale or use.",
+        "zh": "庫存；存貨",
+        "example": "The popular model is currently out of stock."
+      },
+      {
+        "en": "Shares representing ownership in a company.",
+        "zh": "股票；股份",
+        "example": "She owns stock in several technology companies."
+      }
+    ]
+  },
+  {
+    "word": "order",
+    "ipa": "/ˈɔːrdər/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A request to buy goods or services.",
+        "zh": "訂單",
+        "example": "Your order will be shipped tomorrow afternoon."
+      }
+    ]
+  },
+  {
+    "word": "promotion",
+    "ipa": "/prəˈmoʊʃən/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An activity intended to increase sales or interest.",
+        "zh": "促銷；推廣",
+        "example": "The promotion attracted many first-time shoppers."
+      },
+      {
+        "en": "An advancement to a higher position or rank at work.",
+        "zh": "晉升；升職",
+        "example": "He received a promotion to senior manager after three years."
+      }
+    ]
+  },
+  {
+    "word": "bargain",
+    "ipa": "/ˈbɑːrɡən/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "Something bought at a lower than usual price.",
+        "zh": "便宜貨；划算交易",
+        "example": "This printer is a bargain at the sale price."
+      }
+    ]
+  },
+  {
+    "word": "exchange",
+    "ipa": "/ɪksˈtʃeɪndʒ/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The act of giving one thing and receiving another.",
+        "zh": "更換；交換",
+        "example": "The shop allows an exchange within thirty days."
+      },
+      {
+        "en": "The process of converting one currency to another.",
+        "zh": "外幣兌換；匯兌",
+        "example": "Check the exchange rate before converting your currency."
+      }
+    ]
+  },
+  {
+    "word": "catalog",
+    "ipa": "/ˈkætəlɔːɡ/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A list or book showing products for sale.",
+        "zh": "型錄；目錄",
+        "example": "The new catalog features office furniture and supplies."
+      }
+    ]
+  },
+  {
+    "word": "vendor",
+    "ipa": "/ˈvendər/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A person or company that sells goods or services.",
+        "zh": "供應商；賣方",
+        "example": "We selected a vendor with reliable customer support."
+      }
+    ]
+  },
+  {
+    "word": "product",
+    "ipa": "/ˈprɑːdʌkt/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Something made or sold by a company.",
+        "zh": "產品",
+        "example": "The product received excellent reviews from customers."
+      }
+    ]
+  },
+  {
+    "word": "reschedule",
+    "ipa": "/ˌriːˈskedʒuːl/",
+    "pos": "v.",
+    "category": "Office/Workplace",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "To change the planned time of an event.",
+        "zh": "重新安排時間",
+        "example": "Can we reschedule tomorrow's meeting to next Monday?"
+      }
+    ]
+  },
+  {
+    "word": "prompt",
+    "ipa": "/prɑːmpt/",
+    "pos": "adj.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Done quickly and without delay.",
+        "zh": "迅速的；準時的",
+        "example": "Thank you for your prompt response to our inquiry."
+      }
+    ]
+  },
+  {
+    "word": "agenda",
+    "ipa": "/əˈdʒendə/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A list of topics to be discussed at a meeting.",
+        "zh": "議程",
+        "example": "The agenda includes budget updates and staffing plans."
+      }
+    ]
+  },
+  {
+    "word": "appointment",
+    "ipa": "/əˈpɔɪntmənt/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "An arranged meeting at a specific time.",
+        "zh": "預約；約會",
+        "example": "I have an appointment with the director at two o'clock."
+      }
+    ]
+  },
+  {
+    "word": "colleague",
+    "ipa": "/ˈkɑːliːɡ/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "A person you work with.",
+        "zh": "同事",
+        "example": "My colleague will send the report after lunch."
+      }
+    ]
+  },
+  {
+    "word": "supervisor",
+    "ipa": "/ˈsuːpərvaɪzər/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A person who oversees work or workers.",
+        "zh": "主管",
+        "example": "Ask your supervisor before changing the schedule."
+      }
+    ]
+  },
+  {
+    "word": "department",
+    "ipa": "/dɪˈpɑːrtmənt/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A division of an organization with a specific function.",
+        "zh": "部門",
+        "example": "The marketing department is moving to the third floor."
+      }
+    ]
+  },
+  {
+    "word": "memo",
+    "ipa": "/ˈmemoʊ/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A short written message used in an organization.",
+        "zh": "備忘錄；通知",
+        "example": "The memo explains the new parking rules."
+      }
+    ]
+  },
+  {
+    "word": "deadline",
+    "ipa": "/ˈdedlaɪn/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The latest time by which something must be finished.",
+        "zh": "截止期限",
+        "example": "The deadline for the application is Friday."
+      }
+    ]
+  },
+  {
+    "word": "workspace",
+    "ipa": "/ˈwɜːrkspeɪs/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "An area where someone does work.",
+        "zh": "工作空間",
+        "example": "Please keep your workspace clean and organized."
+      }
+    ]
+  },
+  {
+    "word": "conference",
+    "ipa": "/ˈkɑːnfərəns/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A formal meeting for discussion or learning.",
+        "zh": "會議；研討會",
+        "example": "The annual conference will take place in June."
+      }
+    ]
+  },
+  {
+    "word": "notify",
+    "ipa": "/ˈnoʊtɪfaɪ/",
+    "pos": "v.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To formally tell someone about something.",
+        "zh": "通知",
+        "example": "Please notify reception if a visitor arrives early."
+      }
+    ]
+  },
+  {
+    "word": "request",
+    "ipa": "/rɪˈkwest/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An act of asking for something formally or politely.",
+        "zh": "請求",
+        "example": "Your request for extra chairs has been approved."
+      }
+    ]
+  },
+  {
+    "word": "approve",
+    "ipa": "/əˈpruːv/",
+    "pos": "v.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To officially accept or allow something.",
+        "zh": "核准；同意",
+        "example": "The manager must approve all overtime hours."
+      }
+    ]
+  },
+  {
+    "word": "postpone",
+    "ipa": "/poʊstˈpoʊn/",
+    "pos": "v.",
+    "category": "Office/Workplace",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To delay an event until a later time.",
+        "zh": "延後",
+        "example": "They will postpone the workshop because of the storm."
+      }
+    ]
+  },
+  {
+    "word": "remind",
+    "ipa": "/rɪˈmaɪnd/",
+    "pos": "v.",
+    "category": "Office/Workplace",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "To help someone remember something.",
+        "zh": "提醒",
+        "example": "Please remind everyone to sign the attendance sheet."
+      }
+    ]
+  },
+  {
+    "word": "procedure",
+    "ipa": "/prəˈsiːdʒər/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An official way of doing something.",
+        "zh": "程序；流程",
+        "example": "The safety procedure must be followed at all times."
+      }
+    ]
+  },
+  {
+    "word": "equipment",
+    "ipa": "/ɪˈkwɪpmənt/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Tools or machines needed for a task.",
+        "zh": "設備",
+        "example": "New video equipment was installed in the meeting room."
+      }
+    ]
+  },
+  {
+    "word": "recruit",
+    "ipa": "/rɪˈkruːt/",
+    "pos": "v.",
+    "category": "HR",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To find and hire new people for a job.",
+        "zh": "招募",
+        "example": "The company plans to recruit engineers next month."
+      }
+    ]
+  },
+  {
+    "word": "applicant",
+    "ipa": "/ˈæplɪkənt/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A person who applies for a job or opportunity.",
+        "zh": "申請人；應徵者",
+        "example": "Each applicant must submit a resume online."
+      }
+    ]
+  },
+  {
+    "word": "resume",
+    "ipa": "/ˈrezəmeɪ/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A document describing education and work experience.",
+        "zh": "履歷",
+        "example": "Please attach your resume to the application form."
+      },
+      {
+        "en": "To start doing something again after a pause.",
+        "zh": "恢復；繼續",
+        "example": "Work will resume on Monday after the public holiday."
+      }
+    ]
+  },
+  {
+    "word": "interview",
+    "ipa": "/ˈɪntərvjuː/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A formal meeting to evaluate a candidate.",
+        "zh": "面試",
+        "example": "The interview lasted about forty minutes."
+      },
+      {
+        "en": "A conversation in which a journalist questions someone.",
+        "zh": "採訪；訪談",
+        "example": "The CEO gave an interview to a financial newspaper."
+      }
+    ]
+  },
+  {
+    "word": "hire",
+    "ipa": "/ˈhaɪər/",
+    "pos": "v.",
+    "category": "HR",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To employ someone for a job.",
+        "zh": "雇用",
+        "example": "We need to hire two more customer service agents."
+      },
+      {
+        "en": "To rent or borrow something for a temporary period.",
+        "zh": "租用；租借",
+        "example": "We hired a van for the office relocation."
+      }
+    ]
+  },
+  {
+    "word": "training",
+    "ipa": "/ˈtreɪnɪŋ/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Instruction that helps people learn skills for work.",
+        "zh": "訓練",
+        "example": "The training session begins at nine tomorrow."
+      }
+    ]
+  },
+  {
+    "word": "orientation",
+    "ipa": "/ˌɔːriənˈteɪʃən/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "An introduction to a new job, school, or program.",
+        "zh": "新人訓練；說明會",
+        "example": "New employees attend orientation on their first day."
+      }
+    ]
+  },
+  {
+    "word": "candidate",
+    "ipa": "/ˈkændɪdət/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A person being considered for a position.",
+        "zh": "候選人；應徵者",
+        "example": "The best candidate has five years of sales experience."
+      }
+    ]
+  },
+  {
+    "word": "qualification",
+    "ipa": "/ˌkwɑːlɪfɪˈkeɪʃən/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A skill, experience, or credential needed for something.",
+        "zh": "資格；條件",
+        "example": "A nursing qualification is required for this position."
+      }
+    ]
+  },
+  {
+    "word": "benefit",
+    "ipa": "/ˈbenɪfɪt/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An advantage or extra compensation provided to employees.",
+        "zh": "福利；好處",
+        "example": "Health insurance is an important employee benefit."
+      }
+    ]
+  },
+  {
+    "word": "pension",
+    "ipa": "/ˈpenʃən/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Money paid regularly after someone retires.",
+        "zh": "退休金",
+        "example": "The company pension plan is described in the handbook."
+      }
+    ]
+  },
+  {
+    "word": "vacancy",
+    "ipa": "/ˈveɪkənsi/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "An available job or empty position.",
+        "zh": "職缺；空缺",
+        "example": "There is a vacancy in the accounting department."
+      }
+    ]
+  },
+  {
+    "word": "appraisal",
+    "ipa": "/əˈpreɪzəl/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "An official evaluation of performance or value.",
+        "zh": "績效評估",
+        "example": "The annual appraisal includes feedback from supervisors."
+      }
+    ]
+  },
+  {
+    "word": "probation",
+    "ipa": "/proʊˈbeɪʃən/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A trial period during which work performance is evaluated.",
+        "zh": "試用期",
+        "example": "The new assistant is on probation for three months."
+      }
+    ]
+  },
+  {
+    "word": "personnel",
+    "ipa": "/ˌpɜːrsəˈnel/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "People employed in an organization or the department managing them.",
+        "zh": "人事；員工",
+        "example": "Personnel records are stored securely in the HR office."
+      }
+    ]
+  },
+  {
+    "word": "attendance",
+    "ipa": "/əˈtendəns/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The act or record of being present.",
+        "zh": "出勤；出席",
+        "example": "Good attendance is required during the training program."
+      }
+    ]
+  },
+  {
+    "word": "compensation",
+    "ipa": "/ˌkɑːmpənˈseɪʃən/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Pay or benefits given in return for work or loss.",
+        "zh": "薪酬；補償",
+        "example": "The compensation package includes a bonus and insurance."
+      }
+    ]
+  },
+  {
+    "word": "resign",
+    "ipa": "/rɪˈzaɪn/",
+    "pos": "v.",
+    "category": "HR",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To formally leave a job or position.",
+        "zh": "辭職",
+        "example": "She decided to resign after accepting another offer."
+      }
+    ]
+  },
+  {
+    "word": "campaign",
+    "ipa": "/kæmˈpeɪn/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A planned set of actions to achieve a goal.",
+        "zh": "行銷活動；活動",
+        "example": "The campaign increased website traffic by thirty percent."
+      }
+    ]
+  },
+  {
+    "word": "advertise",
+    "ipa": "/ˈædvərtaɪz/",
+    "pos": "v.",
+    "category": "Marketing",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To make a product or service known to the public.",
+        "zh": "廣告；宣傳",
+        "example": "They advertise the new service on social media."
+      }
+    ]
+  },
+  {
+    "word": "brand",
+    "ipa": "/brænd/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A name or image that identifies a product or company.",
+        "zh": "品牌",
+        "example": "The brand is popular among young professionals."
+      }
+    ]
+  },
+  {
+    "word": "survey",
+    "ipa": "/ˈsɜːrveɪ/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A set of questions used to collect opinions or information.",
+        "zh": "調查",
+        "example": "The survey asked customers about delivery speed."
+      }
+    ]
+  },
+  {
+    "word": "consumer",
+    "ipa": "/kənˈsuːmər/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A person who buys or uses goods and services.",
+        "zh": "消費者",
+        "example": "Consumer demand usually rises before the holiday season."
+      }
+    ]
+  },
+  {
+    "word": "launch",
+    "ipa": "/lɔːntʃ/",
+    "pos": "v.",
+    "category": "Marketing",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To introduce a new product, service, or project.",
+        "zh": "推出；發表",
+        "example": "The company will launch its new app in September."
+      }
+    ]
+  },
+  {
+    "word": "publicity",
+    "ipa": "/pʌbˈlɪsəti/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Attention given by media or the public.",
+        "zh": "宣傳；曝光",
+        "example": "The event received positive publicity in local newspapers."
+      }
+    ]
+  },
+  {
+    "word": "audience",
+    "ipa": "/ˈɔːdiəns/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The group of people a message or product is intended for.",
+        "zh": "觀眾；受眾",
+        "example": "The advertisement targets an audience of frequent travelers."
+      }
+    ]
+  },
+  {
+    "word": "segment",
+    "ipa": "/ˈseɡmənt/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A smaller group within a larger market or population.",
+        "zh": "區隔；部分",
+        "example": "This segment of customers prefers premium products."
+      }
+    ]
+  },
+  {
+    "word": "feedback",
+    "ipa": "/ˈfiːdbæk/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Information about reactions to a product or performance.",
+        "zh": "回饋；意見",
+        "example": "Customer feedback helped us improve the website."
+      }
+    ]
+  },
+  {
+    "word": "brochure",
+    "ipa": "/broʊˈʃʊr/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A small printed document giving information.",
+        "zh": "小冊子；型錄",
+        "example": "The brochure describes all available tour packages."
+      }
+    ]
+  },
+  {
+    "word": "sponsor",
+    "ipa": "/ˈspɑːnsər/",
+    "pos": "v.",
+    "category": "Marketing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To support an event or activity with money or resources.",
+        "zh": "贊助",
+        "example": "A local bank will sponsor the charity concert."
+      }
+    ]
+  },
+  {
+    "word": "awareness",
+    "ipa": "/əˈwernəs/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Knowledge or recognition of something.",
+        "zh": "知名度；意識",
+        "example": "The campaign raised awareness of the new brand."
+      }
+    ]
+  },
+  {
+    "word": "slogan",
+    "ipa": "/ˈsloʊɡən/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A short memorable phrase used in advertising.",
+        "zh": "標語；口號",
+        "example": "The slogan appears on every package and poster."
+      }
+    ]
+  },
+  {
+    "word": "endorse",
+    "ipa": "/ɪnˈdɔːrs/",
+    "pos": "v.",
+    "category": "Marketing",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To publicly support or recommend something.",
+        "zh": "背書；代言",
+        "example": "A famous athlete agreed to endorse the sports drink."
+      }
+    ]
+  },
+  {
+    "word": "distribute",
+    "ipa": "/dɪˈstrɪbjuːt/",
+    "pos": "v.",
+    "category": "Marketing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To give or deliver things to many people or places.",
+        "zh": "分發；配送",
+        "example": "The team will distribute flyers near the station."
+      }
+    ]
+  },
+  {
+    "word": "demographic",
+    "ipa": "/ˌdeməˈɡræfɪk/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A group defined by characteristics such as age or income.",
+        "zh": "人口族群",
+        "example": "The target demographic is adults between twenty and thirty."
+      }
+    ]
+  },
+  {
+    "word": "trend",
+    "ipa": "/trend/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A general direction of change or development.",
+        "zh": "趨勢",
+        "example": "The latest trend shows growing interest in online shopping."
+      }
+    ]
+  },
+  {
+    "word": "itinerary",
+    "ipa": "/aɪˈtɪnəreri/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "A planned route or schedule for a trip.",
+        "zh": "行程表",
+        "example": "Please review the itinerary before our trip to Osaka."
+      }
+    ]
+  },
+  {
+    "word": "reservation",
+    "ipa": "/ˌrezərˈveɪʃən/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "An arrangement to keep a seat, room, or service for someone.",
+        "zh": "預訂",
+        "example": "I made a reservation for two nights at the hotel."
+      }
+    ]
+  },
+  {
+    "word": "departure",
+    "ipa": "/dɪˈpɑːrtʃər/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The act or time of leaving a place.",
+        "zh": "出發",
+        "example": "The departure time has been changed to 8:30 a.m."
+      }
+    ]
+  },
+  {
+    "word": "arrival",
+    "ipa": "/əˈraɪvəl/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The act or time of reaching a destination.",
+        "zh": "抵達",
+        "example": "Passengers should check the arrival board for updates."
+      }
+    ]
+  },
+  {
+    "word": "boarding",
+    "ipa": "/ˈbɔːrdɪŋ/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "The process of getting onto a plane, train, or ship.",
+        "zh": "登機；上車",
+        "example": "Boarding begins thirty minutes before departure."
+      }
+    ]
+  },
+  {
+    "word": "passport",
+    "ipa": "/ˈpæspɔːrt/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "An official document used for international travel.",
+        "zh": "護照",
+        "example": "Your passport must be valid for at least six months."
+      }
+    ]
+  },
+  {
+    "word": "baggage",
+    "ipa": "/ˈbæɡɪdʒ/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Bags and suitcases taken on a trip.",
+        "zh": "行李",
+        "example": "Excess baggage may require an additional fee."
+      }
+    ]
+  },
+  {
+    "word": "accommodation",
+    "ipa": "/əˌkɑːməˈdeɪʃən/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A place to stay during a trip.",
+        "zh": "住宿",
+        "example": "The package includes accommodation near the convention center."
+      }
+    ]
+  },
+  {
+    "word": "destination",
+    "ipa": "/ˌdestɪˈneɪʃən/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The place someone is traveling to.",
+        "zh": "目的地",
+        "example": "Kyoto is a popular destination for international visitors."
+      }
+    ]
+  },
+  {
+    "word": "fare",
+    "ipa": "/fer/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "The price paid for a trip by bus, train, taxi, or plane.",
+        "zh": "票價",
+        "example": "The train fare is cheaper after rush hour."
+      }
+    ]
+  },
+  {
+    "word": "shuttle",
+    "ipa": "/ˈʃʌtəl/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "A vehicle that travels regularly between two places.",
+        "zh": "接駁車",
+        "example": "A free shuttle runs between the airport and the hotel."
+      }
+    ]
+  },
+  {
+    "word": "terminal",
+    "ipa": "/ˈtɜːrmɪnəl/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A building or station where passengers arrive and depart.",
+        "zh": "航廈；終點站",
+        "example": "The flight leaves from terminal two."
+      },
+      {
+        "en": "A device used to make electronic payments or access a system.",
+        "zh": "終端機；收銀機",
+        "example": "Each cashier has a payment terminal at the counter."
+      }
+    ]
+  },
+  {
+    "word": "delay",
+    "ipa": "/dɪˈleɪ/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A situation in which something happens later than expected.",
+        "zh": "延誤",
+        "example": "The delay was caused by heavy rain at the airport."
+      }
+    ]
+  },
+  {
+    "word": "transfer",
+    "ipa": "/trænsˈfɜːr/",
+    "pos": "v.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "To move from one vehicle, place, or service to another.",
+        "zh": "轉乘；轉移",
+        "example": "You must transfer to the blue line at Central Station."
+      },
+      {
+        "en": "To move an employee to a different position or location.",
+        "zh": "調職；轉調",
+        "example": "She was transferred to the Tokyo office last month."
+      }
+    ]
+  },
+  {
+    "word": "tourist",
+    "ipa": "/ˈtʊrɪst/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "A person who travels for pleasure.",
+        "zh": "觀光客",
+        "example": "A tourist asked for directions to the museum."
+      }
+    ]
+  },
+  {
+    "word": "guide",
+    "ipa": "/ɡaɪd/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "A person or book that shows or explains places.",
+        "zh": "導遊；指南",
+        "example": "The guide recommended a small restaurant near the temple."
+      },
+      {
+        "en": "To lead or direct someone toward a destination or goal.",
+        "zh": "引導；帶領",
+        "example": "The manager guided new staff through the onboarding process."
+      }
+    ]
+  },
+  {
+    "word": "luggage",
+    "ipa": "/ˈlʌɡɪdʒ/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "Suitcases and bags used for travel.",
+        "zh": "行李",
+        "example": "Please collect your luggage at carousel five."
+      }
+    ]
+  },
+  {
+    "word": "hotel",
+    "ipa": "/hoʊˈtel/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A place where travelers pay to stay.",
+        "zh": "旅館；飯店",
+        "example": "The hotel offers free breakfast and Wi-Fi."
+      }
+    ]
+  },
+  {
+    "word": "software",
+    "ipa": "/ˈsɔːftwer/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Programs used by a computer or device.",
+        "zh": "軟體",
+        "example": "The software automatically updates every Friday."
+      }
+    ]
+  },
+  {
+    "word": "hardware",
+    "ipa": "/ˈhɑːrdwer/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The physical parts of a computer system.",
+        "zh": "硬體",
+        "example": "The technician replaced the damaged hardware."
+      }
+    ]
+  },
+  {
+    "word": "network",
+    "ipa": "/ˈnetwɜːrk/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A system of connected computers or devices.",
+        "zh": "網路",
+        "example": "The office network was slow this morning."
+      }
+    ]
+  },
+  {
+    "word": "database",
+    "ipa": "/ˈdeɪtəbeɪs/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An organized collection of data stored electronically.",
+        "zh": "資料庫",
+        "example": "Customer records are saved in a secure database."
+      }
+    ]
+  },
+  {
+    "word": "password",
+    "ipa": "/ˈpæswɜːrd/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A secret word or code used to access a system.",
+        "zh": "密碼",
+        "example": "Please change your password every ninety days."
+      }
+    ]
+  },
+  {
+    "word": "upload",
+    "ipa": "/ˌʌpˈloʊd/",
+    "pos": "v.",
+    "category": "IT",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To send data from a local device to another system.",
+        "zh": "上傳",
+        "example": "Upload the signed form to the company portal."
+      }
+    ]
+  },
+  {
+    "word": "download",
+    "ipa": "/ˌdaʊnˈloʊd/",
+    "pos": "v.",
+    "category": "IT",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To copy data from another system to a local device.",
+        "zh": "下載",
+        "example": "You can download the report from the shared folder."
+      }
+    ]
+  },
+  {
+    "word": "install",
+    "ipa": "/ɪnˈstɔːl/",
+    "pos": "v.",
+    "category": "IT",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To put software or equipment in place for use.",
+        "zh": "安裝",
+        "example": "The IT team will install the new printer today."
+      }
+    ]
+  },
+  {
+    "word": "update",
+    "ipa": "/ˌʌpˈdeɪt/",
+    "pos": "v.",
+    "category": "IT",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To make software, information, or a system current.",
+        "zh": "更新",
+        "example": "Please update the spreadsheet before the meeting."
+      }
+    ]
+  },
+  {
+    "word": "backup",
+    "ipa": "/ˈbækʌp/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A copy of data kept in case the original is lost.",
+        "zh": "備份",
+        "example": "The system creates a backup every night."
+      }
+    ]
+  },
+  {
+    "word": "server",
+    "ipa": "/ˈsɜːrvər/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A computer that provides data or services to other computers.",
+        "zh": "伺服器",
+        "example": "The server will be offline for maintenance tonight."
+      }
+    ]
+  },
+  {
+    "word": "device",
+    "ipa": "/dɪˈvaɪs/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A machine or piece of electronic equipment.",
+        "zh": "裝置",
+        "example": "Connect your device to the office Wi-Fi network."
+      }
+    ]
+  },
+  {
+    "word": "application",
+    "ipa": "/ˌæplɪˈkeɪʃən/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A software program used for a specific task.",
+        "zh": "應用程式；申請",
+        "example": "The application helps employees track expenses."
+      }
+    ]
+  },
+  {
+    "word": "security",
+    "ipa": "/sɪˈkjʊrəti/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Protection against danger, loss, or unauthorized access.",
+        "zh": "安全；保全",
+        "example": "Security settings prevent outsiders from viewing the files."
+      }
+    ]
+  },
+  {
+    "word": "access",
+    "ipa": "/ˈækses/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Permission or ability to use or enter something.",
+        "zh": "存取權；進入",
+        "example": "Only managers have access to the payroll system."
+      }
+    ]
+  },
+  {
+    "word": "troubleshoot",
+    "ipa": "/ˈtrʌbəlʃuːt/",
+    "pos": "v.",
+    "category": "IT",
+    "type": "Listening",
+    "freqListening": 3,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "To find and solve problems in a system or machine.",
+        "zh": "排除故障",
+        "example": "Call the help desk if you cannot troubleshoot the error."
+      }
+    ]
+  },
+  {
+    "word": "outage",
+    "ipa": "/ˈaʊtɪdʒ/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Listening",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A period when a service or system is not working.",
+        "zh": "中斷；停機",
+        "example": "The internet outage delayed several online meetings."
+      }
+    ]
+  },
+  {
+    "word": "wireless",
+    "ipa": "/ˈwaɪərləs/",
+    "pos": "adj.",
+    "category": "IT",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "Using signals rather than wires to connect.",
+        "zh": "無線的",
+        "example": "The cafe offers wireless internet to customers."
+      }
+    ]
+  },
+  {
+    "word": "inventory",
+    "ipa": "/ˈɪnvəntɔːri/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A detailed list or supply of goods in stock.",
+        "zh": "庫存",
+        "example": "The warehouse checks inventory every Friday."
+      }
+    ]
+  },
+  {
+    "word": "warehouse",
+    "ipa": "/ˈwerhaʊs/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A large building used for storing goods.",
+        "zh": "倉庫",
+        "example": "The warehouse is located near the port."
+      }
+    ]
+  },
+  {
+    "word": "supplier",
+    "ipa": "/səˈplaɪər/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A person or company that provides goods or materials.",
+        "zh": "供應商",
+        "example": "Our supplier delivered the parts two days late."
+      }
+    ]
+  },
+  {
+    "word": "delivery",
+    "ipa": "/dɪˈlɪvəri/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The act of bringing goods to a place or person.",
+        "zh": "配送；交付",
+        "example": "Delivery is available within three business days."
+      }
+    ]
+  },
+  {
+    "word": "freight",
+    "ipa": "/freɪt/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Goods transported by truck, train, ship, or plane.",
+        "zh": "貨運",
+        "example": "The freight charge depends on weight and distance."
+      }
+    ]
+  },
+  {
+    "word": "cargo",
+    "ipa": "/ˈkɑːrɡoʊ/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Goods carried by a ship, aircraft, or truck.",
+        "zh": "貨物",
+        "example": "The cargo arrived at the port before sunrise."
+      }
+    ]
+  },
+  {
+    "word": "dispatch",
+    "ipa": "/dɪˈspætʃ/",
+    "pos": "v.",
+    "category": "Logistics",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To send goods, vehicles, or people to a destination.",
+        "zh": "派送；派遣",
+        "example": "The company will dispatch a driver this afternoon."
+      }
+    ]
+  },
+  {
+    "word": "carrier",
+    "ipa": "/ˈkæriər/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A company that transports goods or passengers.",
+        "zh": "承運商",
+        "example": "The carrier provides tracking numbers for every package."
+      }
+    ]
+  },
+  {
+    "word": "distribution",
+    "ipa": "/ˌdɪstrɪˈbjuːʃən/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The process of delivering goods to many places.",
+        "zh": "配送；分銷",
+        "example": "The distribution center serves stores across the region."
+      }
+    ]
+  },
+  {
+    "word": "packaging",
+    "ipa": "/ˈpækɪdʒɪŋ/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Materials used to wrap or protect products.",
+        "zh": "包裝",
+        "example": "Improved packaging reduced damage during delivery."
+      }
+    ]
+  },
+  {
+    "word": "tracking",
+    "ipa": "/ˈtrækɪŋ/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The process of following the movement or status of something.",
+        "zh": "追蹤",
+        "example": "Online tracking shows that the package is in transit."
+      }
+    ]
+  },
+  {
+    "word": "route",
+    "ipa": "/ruːt/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A way or course from one place to another.",
+        "zh": "路線",
+        "example": "The driver chose a faster route to avoid traffic."
+      }
+    ]
+  },
+  {
+    "word": "clearance",
+    "ipa": "/ˈklɪrəns/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Official permission for goods to pass through customs.",
+        "zh": "清關；許可",
+        "example": "The shipment is waiting for customs clearance."
+      },
+      {
+        "en": "A sale in which goods are sold cheaply to clear remaining stock.",
+        "zh": "清倉特賣；出清",
+        "example": "The store held a clearance sale at the end of the season."
+      }
+    ]
+  },
+  {
+    "word": "container",
+    "ipa": "/kənˈteɪnər/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A large box used to transport goods.",
+        "zh": "貨櫃；容器",
+        "example": "Each container is sealed before it leaves the port."
+      }
+    ]
+  },
+  {
+    "word": "forklift",
+    "ipa": "/ˈfɔːrklɪft/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Listening",
+    "freqListening": 3,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "A small vehicle used for lifting and moving heavy goods.",
+        "zh": "堆高機",
+        "example": "A forklift moved the pallets into the warehouse."
+      }
+    ]
+  },
+  {
+    "word": "pallet",
+    "ipa": "/ˈpælət/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A flat wooden or plastic base used to move goods.",
+        "zh": "棧板",
+        "example": "The boxes were stacked on a pallet near the loading dock."
+      }
+    ]
+  },
+  {
+    "word": "import",
+    "ipa": "/ˈɪmpɔːrt/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A product brought into a country for sale.",
+        "zh": "進口品；進口",
+        "example": "The import of electronic parts increased this year."
+      }
+    ]
+  },
+  {
+    "word": "export",
+    "ipa": "/ˈekspɔːrt/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A product sent to another country for sale.",
+        "zh": "出口品；出口",
+        "example": "The export documents must be completed before shipping."
+      }
+    ]
+  },
+  {
+    "word": "deposit",
+    "ipa": "/dɪˈpɑːzɪt/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Money placed into a bank account or paid as security.",
+        "zh": "存款；押金",
+        "example": "The deposit will appear in your account tomorrow."
+      },
+      {
+        "en": "A sum of money paid in advance as security.",
+        "zh": "押金；訂金",
+        "example": "A deposit of one month's rent is required to secure the apartment."
+      }
+    ]
+  },
+  {
+    "word": "withdrawal",
+    "ipa": "/wɪðˈdrɔːəl/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The act of taking money out of an account.",
+        "zh": "提款",
+        "example": "A withdrawal over this amount requires identification."
+      }
+    ]
+  },
+  {
+    "word": "loan",
+    "ipa": "/loʊn/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Money borrowed and expected to be paid back.",
+        "zh": "貸款",
+        "example": "The bank approved a loan for the new equipment."
+      }
+    ]
+  },
+  {
+    "word": "interest",
+    "ipa": "/ˈɪntrəst/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Money paid for borrowing or saving money.",
+        "zh": "利息",
+        "example": "The interest rate is fixed for the first year."
+      },
+      {
+        "en": "A feeling of wanting to learn more about something.",
+        "zh": "興趣；關注",
+        "example": "The CEO expressed strong interest in the new proposal."
+      }
+    ]
+  },
+  {
+    "word": "mortgage",
+    "ipa": "/ˈmɔːrɡɪdʒ/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A loan used to buy property.",
+        "zh": "房貸；抵押貸款",
+        "example": "They applied for a mortgage before buying the apartment."
+      }
+    ]
+  },
+  {
+    "word": "teller",
+    "ipa": "/ˈtelər/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "A bank employee who helps customers with transactions.",
+        "zh": "銀行櫃員",
+        "example": "The teller helped me deposit the check."
+      }
+    ]
+  },
+  {
+    "word": "credit",
+    "ipa": "/ˈkredɪt/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An arrangement to buy now and pay later.",
+        "zh": "信用；貸方",
+        "example": "The store offers credit for large purchases."
+      }
+    ]
+  },
+  {
+    "word": "debit",
+    "ipa": "/ˈdebɪt/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An amount taken from a bank account.",
+        "zh": "借方；扣款",
+        "example": "The debit appeared on my statement this morning."
+      }
+    ]
+  },
+  {
+    "word": "statement",
+    "ipa": "/ˈsteɪtmənt/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Reading",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A document showing account activity or facts.",
+        "zh": "對帳單；聲明",
+        "example": "The monthly statement lists all deposits and withdrawals."
+      },
+      {
+        "en": "A formal declaration of facts or intentions.",
+        "zh": "聲明；陳述",
+        "example": "The director issued a statement about the company's future plans."
+      }
+    ]
+  },
+  {
+    "word": "wire",
+    "ipa": "/ˈwaɪər/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "An electronic transfer of money.",
+        "zh": "電匯",
+        "example": "The wire was sent to the overseas supplier yesterday."
+      }
+    ]
+  },
+  {
+    "word": "overdraft",
+    "ipa": "/ˈoʊvərdræft/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A situation where more money is taken than an account contains.",
+        "zh": "透支",
+        "example": "An overdraft fee will be charged if the balance is negative."
+      }
+    ]
+  },
+  {
+    "word": "installment",
+    "ipa": "/ɪnˈstɔːlmənt/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "One of several payments made over time.",
+        "zh": "分期付款",
+        "example": "The sofa can be paid for in monthly installment payments."
+      }
+    ]
+  },
+  {
+    "word": "collateral",
+    "ipa": "/kəˈlætərəl/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Property promised as security for a loan.",
+        "zh": "抵押品",
+        "example": "The lender required collateral before approving the loan."
+      }
+    ]
+  },
+  {
+    "word": "borrower",
+    "ipa": "/ˈbɑːroʊər/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A person or organization that receives a loan.",
+        "zh": "借款人",
+        "example": "The borrower must repay the loan within five years."
+      }
+    ]
+  },
+  {
+    "word": "lender",
+    "ipa": "/ˈlendər/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A person or institution that lends money.",
+        "zh": "貸方；貸款機構",
+        "example": "The lender reviewed the applicant's financial history."
+      }
+    ]
+  },
+  {
+    "word": "fee",
+    "ipa": "/fiː/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An amount of money charged for a service.",
+        "zh": "費用；手續費",
+        "example": "The bank charges a small fee for international transfers."
+      }
+    ]
+  },
+  {
+    "word": "savings",
+    "ipa": "/ˈseɪvɪŋz/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Money kept for future use.",
+        "zh": "儲蓄；存款",
+        "example": "She moved part of her paycheck into savings."
+      }
+    ]
+  },
+  {
+    "word": "checking",
+    "ipa": "/ˈtʃekɪŋ/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A bank account used for everyday payments.",
+        "zh": "支票帳戶",
+        "example": "The checking account has no monthly maintenance fee."
+      }
+    ]
+  },
+  {
+    "word": "contract",
+    "ipa": "/ˈkɑːntrækt/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A legal agreement between people or organizations.",
+        "zh": "合約",
+        "example": "The contract must be signed before work begins."
+      },
+      {
+        "en": "To formally engage a person or company to perform work.",
+        "zh": "委外承包；簽約",
+        "example": "The agency contracted three local designers for the campaign."
+      }
+    ]
+  },
+  {
+    "word": "agreement",
+    "ipa": "/əˈɡriːmənt/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An arrangement accepted by two or more parties.",
+        "zh": "協議；同意",
+        "example": "The agreement covers delivery dates and payment terms."
+      }
+    ]
+  },
+  {
+    "word": "clause",
+    "ipa": "/klɔːz/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A specific section of a legal document.",
+        "zh": "條款",
+        "example": "Please read the cancellation clause carefully."
+      }
+    ]
+  },
+  {
+    "word": "obligation",
+    "ipa": "/ˌɑːblɪˈɡeɪʃən/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A legal or moral duty to do something.",
+        "zh": "義務；責任",
+        "example": "The tenant has an obligation to pay rent on time."
+      }
+    ]
+  },
+  {
+    "word": "comply",
+    "ipa": "/kəmˈplaɪ/",
+    "pos": "v.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To act according to a rule, request, or law.",
+        "zh": "遵守",
+        "example": "All vendors must comply with safety regulations."
+      }
+    ]
+  },
+  {
+    "word": "terminate",
+    "ipa": "/ˈtɜːrmɪneɪt/",
+    "pos": "v.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To bring something to an end.",
+        "zh": "終止",
+        "example": "Either party may terminate the contract with notice."
+      }
+    ]
+  },
+  {
+    "word": "amend",
+    "ipa": "/əˈmend/",
+    "pos": "v.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To make a change to a document or law.",
+        "zh": "修訂",
+        "example": "The lawyers agreed to amend the payment clause."
+      }
+    ]
+  },
+  {
+    "word": "renew",
+    "ipa": "/rɪˈnuː/",
+    "pos": "v.",
+    "category": "Contracts",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To make an agreement valid for another period.",
+        "zh": "續約；更新",
+        "example": "We plan to renew the lease for one more year."
+      }
+    ]
+  },
+  {
+    "word": "signature",
+    "ipa": "/ˈsɪɡnətʃər/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A person's written name used to show agreement.",
+        "zh": "簽名",
+        "example": "Your signature is required at the bottom of the form."
+      }
+    ]
+  },
+  {
+    "word": "condition",
+    "ipa": "/kənˈdɪʃən/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A requirement that must be met.",
+        "zh": "條件；狀況",
+        "example": "Payment is a condition of final delivery."
+      },
+      {
+        "en": "The state or quality of something.",
+        "zh": "狀況；情況",
+        "example": "The used equipment is in excellent working condition."
+      }
+    ]
+  },
+  {
+    "word": "provision",
+    "ipa": "/prəˈvɪʒən/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A statement or rule in a legal document.",
+        "zh": "規定；條文",
+        "example": "The provision protects confidential information."
+      }
+    ]
+  },
+  {
+    "word": "penalty",
+    "ipa": "/ˈpenəlti/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A punishment or fee for breaking a rule or agreement.",
+        "zh": "罰款；懲罰",
+        "example": "Late delivery may result in a penalty."
+      }
+    ]
+  },
+  {
+    "word": "valid",
+    "ipa": "/ˈvælɪd/",
+    "pos": "adj.",
+    "category": "Contracts",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Legally or officially acceptable.",
+        "zh": "有效的",
+        "example": "The coupon is valid until the end of June."
+      }
+    ]
+  },
+  {
+    "word": "binding",
+    "ipa": "/ˈbaɪndɪŋ/",
+    "pos": "adj.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Creating a legal duty that must be followed.",
+        "zh": "有約束力的",
+        "example": "The signed agreement is legally binding."
+      }
+    ]
+  },
+  {
+    "word": "confidential",
+    "ipa": "/ˌkɑːnfɪˈdenʃəl/",
+    "pos": "adj.",
+    "category": "Contracts",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Meant to be kept private or secret.",
+        "zh": "機密的",
+        "example": "The report contains confidential client information."
+      }
+    ]
+  },
+  {
+    "word": "dispute",
+    "ipa": "/dɪˈspjuːt/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A disagreement or argument about something important.",
+        "zh": "爭議；糾紛",
+        "example": "The dispute was settled through mediation."
+      }
+    ]
+  },
+  {
+    "word": "party",
+    "ipa": "/ˈpɑːrti/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A person or organization involved in an agreement.",
+        "zh": "合約一方；當事人",
+        "example": "Each party must keep a copy of the signed contract."
+      },
+      {
+        "en": "A social event or gathering for celebration.",
+        "zh": "派對；聚會",
+        "example": "The company hosted a party to celebrate its tenth anniversary."
+      }
+    ]
+  },
+  {
+    "word": "legal",
+    "ipa": "/ˈliːɡəl/",
+    "pos": "adj.",
+    "category": "Contracts",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Related to law or allowed by law.",
+        "zh": "法律的；合法的",
+        "example": "The company asked for legal advice before signing."
+      }
+    ]
+  },
+  {
+    "word": "renovation",
+    "ipa": "/ˌrenəˈveɪʃən/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The process of repairing and improving a building or space.",
+        "zh": "整修；翻新",
+        "example": "The office renovation will be completed by next month."
+      }
+    ]
+  },
+  {
+    "word": "production",
+    "ipa": "/prəˈdʌkʃən/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The process of making goods.",
+        "zh": "生產",
+        "example": "Production will increase when the new line opens."
+      }
+    ]
+  },
+  {
+    "word": "assembly",
+    "ipa": "/əˈsembli/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The process of putting parts together.",
+        "zh": "組裝",
+        "example": "The assembly of each unit takes about ten minutes."
+      }
+    ]
+  },
+  {
+    "word": "factory",
+    "ipa": "/ˈfæktəri/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A building where goods are made.",
+        "zh": "工廠",
+        "example": "The factory operates twenty-four hours a day."
+      }
+    ]
+  },
+  {
+    "word": "machine",
+    "ipa": "/məˈʃiːn/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A device with moving parts used to do work.",
+        "zh": "機器",
+        "example": "The machine stopped because a part was loose."
+      }
+    ]
+  },
+  {
+    "word": "machinery",
+    "ipa": "/məˈʃiːnəri/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Machines used in a factory or industrial process.",
+        "zh": "機械設備",
+        "example": "Heavy machinery requires regular safety checks."
+      }
+    ]
+  },
+  {
+    "word": "quality",
+    "ipa": "/ˈkwɑːləti/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The standard or degree of excellence of something.",
+        "zh": "品質",
+        "example": "Quality control rejected three damaged units."
+      }
+    ]
+  },
+  {
+    "word": "inspection",
+    "ipa": "/ɪnˈspekʃən/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A careful official check of something.",
+        "zh": "檢查；檢驗",
+        "example": "The inspection found a problem with the wiring."
+      }
+    ]
+  },
+  {
+    "word": "defect",
+    "ipa": "/ˈdiːfekt/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A fault or problem in something.",
+        "zh": "缺陷；瑕疵",
+        "example": "The defect was discovered before the product shipped."
+      }
+    ]
+  },
+  {
+    "word": "output",
+    "ipa": "/ˈaʊtpʊt/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The amount produced by a person, machine, or system.",
+        "zh": "產量；輸出",
+        "example": "Daily output rose after the equipment upgrade."
+      }
+    ]
+  },
+  {
+    "word": "capacity",
+    "ipa": "/kəˈpæsəti/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The maximum amount that can be produced or held.",
+        "zh": "產能；容量",
+        "example": "The plant is operating at full capacity."
+      },
+      {
+        "en": "A particular role, position, or function.",
+        "zh": "職能；身份",
+        "example": "She attended the meeting in her capacity as department head."
+      }
+    ]
+  },
+  {
+    "word": "material",
+    "ipa": "/məˈtɪriəl/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A substance used to make something.",
+        "zh": "材料",
+        "example": "The material must be stored in a dry place."
+      }
+    ]
+  },
+  {
+    "word": "component",
+    "ipa": "/kəmˈpoʊnənt/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "One part of a machine, product, or system.",
+        "zh": "零件；組件",
+        "example": "A missing component delayed final assembly."
+      }
+    ]
+  },
+  {
+    "word": "process",
+    "ipa": "/ˈprɑːses/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A series of actions used to achieve a result.",
+        "zh": "流程；過程",
+        "example": "The new process reduces waste and saves time."
+      },
+      {
+        "en": "To handle or deal with something using an established method.",
+        "zh": "處理；加工",
+        "example": "The team will process all refund requests within three business days."
+      }
+    ]
+  },
+  {
+    "word": "automate",
+    "ipa": "/ˈɔːtəmeɪt/",
+    "pos": "v.",
+    "category": "Manufacturing",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To make a process operate by machines or computers.",
+        "zh": "自動化",
+        "example": "The factory will automate part of the packaging line."
+      }
+    ]
+  },
+  {
+    "word": "facility",
+    "ipa": "/fəˈsɪləti/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A building or place designed for a particular purpose.",
+        "zh": "設施；工廠",
+        "example": "The facility produces medical equipment."
+      },
+      {
+        "en": "Equipment or services provided for convenience.",
+        "zh": "設施；服務配備",
+        "example": "The hotel offers excellent facilities, including a gym and a pool."
+      }
+    ]
+  },
+  {
+    "word": "maintenance",
+    "ipa": "/ˈmeɪntənəns/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Work done to keep equipment or buildings in good condition.",
+        "zh": "維護；保養",
+        "example": "Regular maintenance prevents expensive machine failures."
+      }
+    ]
+  },
+  {
+    "word": "technician",
+    "ipa": "/tekˈnɪʃən/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Listening",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A worker trained in technical tasks.",
+        "zh": "技術員",
+        "example": "A technician repaired the conveyor belt."
+      }
+    ]
+  },
+  {
+    "word": "manage",
+    "ipa": "/ˈmænɪdʒ/",
+    "pos": "v.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To be responsible for controlling work or people.",
+        "zh": "管理；設法",
+        "example": "She will manage the sales team during the project."
+      },
+      {
+        "en": "To succeed in doing something despite difficulty.",
+        "zh": "設法；辦到",
+        "example": "She managed to finish the report despite the tight deadline."
+      }
+    ]
+  },
+  {
+    "word": "policy",
+    "ipa": "/ˈpɑːləsi/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "An official rule or plan used by an organization.",
+        "zh": "政策；保單",
+        "example": "The return policy is explained on the receipt."
+      },
+      {
+        "en": "A contract describing the terms of insurance coverage.",
+        "zh": "保險單",
+        "example": "The health insurance policy covers most medical expenses."
+      }
+    ]
+  },
+  {
+    "word": "initiative",
+    "ipa": "/ɪˈnɪʃətɪv/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A new plan intended to solve a problem or improve something.",
+        "zh": "倡議；主動性",
+        "example": "The initiative reduced energy use across all offices."
+      }
+    ]
+  },
+  {
+    "word": "taxable",
+    "ipa": "/ˈtæksəbəl/",
+    "pos": "adj.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Subject to being taxed by law.",
+        "zh": "應課稅的",
+        "example": "Some employee benefits are considered taxable income."
+      }
+    ]
+  },
+  {
+    "word": "fund",
+    "ipa": "/fʌnd/",
+    "pos": "n.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Money saved or provided for a specific purpose.",
+        "zh": "資金；基金",
+        "example": "The emergency fund covers unexpected business costs."
+      }
+    ]
+  },
+  {
+    "word": "allocate",
+    "ipa": "/ˈæləkeɪt/",
+    "pos": "v.",
+    "category": "Finance",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To set aside money or resources for a purpose.",
+        "zh": "分配；撥出",
+        "example": "The finance team will allocate funds to each department."
+      }
+    ]
+  },
+  {
+    "word": "service",
+    "ipa": "/ˈsɜːrvɪs/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Work done for a customer rather than a physical item.",
+        "zh": "服務",
+        "example": "The hotel is known for friendly service."
+      }
+    ]
+  },
+  {
+    "word": "shopper",
+    "ipa": "/ˈʃɑːpər/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "A person who is buying things in a store.",
+        "zh": "購物者",
+        "example": "A shopper asked whether the jacket came in blue."
+      }
+    ]
+  },
+  {
+    "word": "sample",
+    "ipa": "/ˈsæmpəl/",
+    "pos": "n.",
+    "category": "Commerce",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A small amount or example used to show what something is like.",
+        "zh": "樣品；試用",
+        "example": "The salesperson gave each visitor a product sample."
+      },
+      {
+        "en": "To try a small portion of food or a product.",
+        "zh": "試吃；試用",
+        "example": "Visitors were invited to sample the new menu items."
+      }
+    ]
+  },
+  {
+    "word": "photocopy",
+    "ipa": "/ˈfoʊtoʊkɑːpi/",
+    "pos": "v.",
+    "category": "Office/Workplace",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "To make a paper copy of a document.",
+        "zh": "影印；影本",
+        "example": "Could you photocopy this contract before the meeting?"
+      }
+    ]
+  },
+  {
+    "word": "stationery",
+    "ipa": "/ˈsteɪʃəneri/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "Paper, envelopes, and other office writing supplies.",
+        "zh": "文具",
+        "example": "The office ordered stationery for the new employees."
+      }
+    ]
+  },
+  {
+    "word": "commute",
+    "ipa": "/kəˈmjuːt/",
+    "pos": "v.",
+    "category": "Office/Workplace",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "To travel regularly between home and work.",
+        "zh": "通勤",
+        "example": "Many employees commute by train every morning."
+      }
+    ]
+  },
+  {
+    "word": "retire",
+    "ipa": "/rɪˈtaɪər/",
+    "pos": "v.",
+    "category": "HR",
+    "type": "Listening",
+    "freqListening": 4,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "To stop working because of age or choice.",
+        "zh": "退休",
+        "example": "Mr. Lin will retire at the end of the year."
+      }
+    ]
+  },
+  {
+    "word": "handbook",
+    "ipa": "/ˈhændbʊk/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A book of rules, instructions, or information.",
+        "zh": "手冊；指南",
+        "example": "The employee handbook explains vacation policies."
+      }
+    ]
+  },
+  {
+    "word": "mentor",
+    "ipa": "/ˈmentɔːr/",
+    "pos": "n.",
+    "category": "HR",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "An experienced person who advises someone less experienced.",
+        "zh": "導師；指導",
+        "example": "Each trainee is paired with a mentor for six months."
+      }
+    ]
+  },
+  {
+    "word": "appeal",
+    "ipa": "/əˈpiːl/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The quality of being attractive or interesting.",
+        "zh": "吸引力；上訴",
+        "example": "The simple design gives the product broad appeal."
+      },
+      {
+        "en": "A serious or formal request for help or action.",
+        "zh": "呼籲；請求",
+        "example": "The manager made an appeal for volunteers to join the project."
+      }
+    ]
+  },
+  {
+    "word": "display",
+    "ipa": "/dɪˈspleɪ/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "An arrangement of products or information for people to see.",
+        "zh": "展示；陳列",
+        "example": "The window display attracted many customers."
+      }
+    ]
+  },
+  {
+    "word": "loyalty",
+    "ipa": "/ˈlɔɪəlti/",
+    "pos": "n.",
+    "category": "Marketing",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Continued support for a person, brand, or organization.",
+        "zh": "忠誠度",
+        "example": "The store rewards customer loyalty with points."
+      }
+    ]
+  },
+  {
+    "word": "flight",
+    "ipa": "/flaɪt/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A journey by airplane.",
+        "zh": "航班；飛行",
+        "example": "The flight to Seoul leaves at noon."
+      }
+    ]
+  },
+  {
+    "word": "agency",
+    "ipa": "/ˈeɪdʒənsi/",
+    "pos": "n.",
+    "category": "Travel",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A business that provides a particular service.",
+        "zh": "代理機構；仲介",
+        "example": "The travel agency booked our tickets and hotel."
+      }
+    ]
+  },
+  {
+    "word": "cancel",
+    "ipa": "/ˈkænsəl/",
+    "pos": "v.",
+    "category": "Travel",
+    "type": "Listening",
+    "freqListening": 5,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To decide that a planned event or booking will not happen.",
+        "zh": "取消",
+        "example": "The airline may cancel the flight because of bad weather."
+      }
+    ]
+  },
+  {
+    "word": "account",
+    "ipa": "/əˈkaʊnt/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A record or profile that allows access to a service.",
+        "zh": "帳戶；客戶",
+        "example": "Create an account before using the online platform."
+      },
+      {
+        "en": "A formal explanation or description of events.",
+        "zh": "說明；陳述",
+        "example": "Please give a full account of what happened during the meeting."
+      }
+    ]
+  },
+  {
+    "word": "encrypt",
+    "ipa": "/ɪnˈkrɪpt/",
+    "pos": "v.",
+    "category": "IT",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To convert information into a secure coded form.",
+        "zh": "加密",
+        "example": "The software will encrypt sensitive customer data."
+      }
+    ]
+  },
+  {
+    "word": "platform",
+    "ipa": "/ˈplætfɔːrm/",
+    "pos": "n.",
+    "category": "IT",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A system or service on which applications or activities run.",
+        "zh": "平台",
+        "example": "The platform supports online training courses."
+      }
+    ]
+  },
+  {
+    "word": "manifest",
+    "ipa": "/ˈmænɪfest/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A list of cargo or passengers on a vehicle or vessel.",
+        "zh": "艙單；貨物清單",
+        "example": "The manifest lists every item in the shipment."
+      }
+    ]
+  },
+  {
+    "word": "shortage",
+    "ipa": "/ˈʃɔːrtɪdʒ/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A situation in which there is not enough of something.",
+        "zh": "短缺",
+        "example": "A parts shortage delayed production for a week."
+      }
+    ]
+  },
+  {
+    "word": "storage",
+    "ipa": "/ˈstɔːrɪdʒ/",
+    "pos": "n.",
+    "category": "Logistics",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The act or space used to keep goods safely.",
+        "zh": "儲存；倉儲",
+        "example": "Cold storage is required for some food products."
+      }
+    ]
+  },
+  {
+    "word": "remittance",
+    "ipa": "/rɪˈmɪtəns/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Money sent to someone in another place.",
+        "zh": "匯款",
+        "example": "The remittance arrived in the supplier's bank account."
+      }
+    ]
+  },
+  {
+    "word": "authorize",
+    "ipa": "/ˈɔːθəraɪz/",
+    "pos": "v.",
+    "category": "Banking",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "To give official permission for something.",
+        "zh": "授權；批准",
+        "example": "Only the account owner can authorize the transfer."
+      }
+    ]
+  },
+  {
+    "word": "vault",
+    "ipa": "/vɔːlt/",
+    "pos": "n.",
+    "category": "Banking",
+    "type": "Listening",
+    "freqListening": 3,
+    "freqReading": 3,
+    "senses": [
+      {
+        "en": "A secure room or container for valuables.",
+        "zh": "金庫",
+        "example": "Important documents are stored in the bank vault."
+      }
+    ]
+  },
+  {
+    "word": "execute",
+    "ipa": "/ˈeksɪkjuːt/",
+    "pos": "v.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To carry out a plan or formally complete a legal document.",
+        "zh": "執行",
+        "example": "The director will execute the agreement on Monday."
+      }
+    ]
+  },
+  {
+    "word": "consent",
+    "ipa": "/kənˈsent/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Permission for something to happen.",
+        "zh": "同意；許可",
+        "example": "Written consent is required before sharing personal data."
+      }
+    ]
+  },
+  {
+    "word": "license",
+    "ipa": "/ˈlaɪsəns/",
+    "pos": "n.",
+    "category": "Contracts",
+    "type": "Reading",
+    "freqListening": 2,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Official permission to do, use, or own something.",
+        "zh": "執照；許可證",
+        "example": "The software license allows installation on five computers."
+      }
+    ]
+  },
+  {
+    "word": "safety",
+    "ipa": "/ˈseɪfti/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "The condition of being protected from danger.",
+        "zh": "安全",
+        "example": "Safety training is required for all factory workers."
+      }
+    ]
+  },
+  {
+    "word": "prototype",
+    "ipa": "/ˈproʊtətaɪp/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "An early model used to test a design.",
+        "zh": "原型",
+        "example": "Engineers tested the prototype before mass production."
+      }
+    ]
+  },
+  {
+    "word": "specification",
+    "ipa": "/ˌspesɪfɪˈkeɪʃən/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Reading",
+    "freqListening": 1,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A detailed description of requirements or design.",
+        "zh": "規格；明細",
+        "example": "The parts must meet the exact specification."
+      }
+    ]
+  }
+]
