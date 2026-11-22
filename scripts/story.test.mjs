@@ -25,6 +25,10 @@ assert.ok(episodeProblems(ep('x', [{ ...email, text: 'Please ____ and ____.' }, 
 assert.ok(episodeProblems(ep('x', [{ ...call, text: 'Hello there.' }, call, email, call]), known).length, 'call must contain the word');
 assert.ok(episodeProblems(ep('x', [email, email, email, email]), known).length, 'needs both kinds');
 assert.ok(episodeProblems(good, new Set(['verify'])).length, 'word must be in vocab book');
+// AI-style wording teaches the player machine English, so it must be rejected...
+assert.ok(episodeProblems(ep('x', [{ ...email, text: 'Please ____ the invoice — we must leverage it.' }, call, email, call]), known).length, 'AI tells rejected');
+// ...unless the tell IS the word being tested.
+assert.deepEqual(episodeProblems(ep('x', [{ ...email, word: 'leverage', text: 'We can ____ our size.', options: ['leverage', 'postpone', 'reimburse'], answer: 'leverage', rescue: { ...email.rescue, options: ['leverage', 'reimburse'], answer: 'leverage' } }, call, email, call]), new Set([...known, 'leverage'])), [], 'tested word exempt');
 
 // Picker: the episode with your missed word wins over an untouched one.
 const vocab = [

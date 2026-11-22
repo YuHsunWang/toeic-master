@@ -14,7 +14,7 @@ const ARTICLE_LOADERS =
     ? import.meta.glob('../news/articles.json', { import: 'default' })
     : {};
 
-function NewsCard({ news, article }) {
+function NewsCard({ news, article, showSummary = false }) {
   return (
     <div className="bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-4 mb-4">
       <p className="text-[10px] font-black text-[var(--muted)] uppercase tracking-widest mb-1">
@@ -23,6 +23,9 @@ function NewsCard({ news, article }) {
       <a href={news.url} target="_blank" rel="noreferrer" className="text-sm font-black text-[var(--primary)] underline">
         {news.headline}
       </a>
+      {showSummary && news.summary && (
+        <p className="mt-2 text-sm font-bold text-[var(--text)] leading-relaxed">{news.summary}</p>
+      )}
       {article && (
         <details className="mt-3">
           <summary className="text-xs font-black text-[var(--muted)] cursor-pointer">Read the article</summary>
@@ -129,7 +132,7 @@ export default function StoryPanel({ vocabulary, handleSpeak, currentlySpeaking 
       <div className={card}>
         <p className="text-[10px] font-black text-[var(--muted)] uppercase tracking-widest mb-2">{episode.title}</p>
         <p className="text-lg font-black text-[var(--text)] leading-relaxed mb-5">{episode.ending}</p>
-        {episode.news && <NewsCard news={episode.news} article={article} />}
+        {episode.news && <NewsCard news={episode.news} article={article} showSummary />}
         {missed.length > 0 && (
           <p className="text-sm font-bold text-[var(--danger)] mb-5">Words to watch: {missed.join(', ')}</p>
         )}
