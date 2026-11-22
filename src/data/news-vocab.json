@@ -1,0 +1,104 @@
+[
+  {
+    "word": "independent",
+    "ipa": "/ˌɪndɪˈpendənt/",
+    "pos": "adj.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Able to operate or make decisions without being controlled by another organization.",
+        "zh": "獨立的；自主經營的",
+        "example": "Our team hired an independent testing company to check the quality of the fabric."
+      }
+    ],
+    "news": "news-20261120-1"
+  },
+  {
+    "word": "labor",
+    "ipa": "/ˈleɪbər/",
+    "pos": "n.",
+    "category": "Manufacturing",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Work done by people, especially the work needed to produce goods or provide a service.",
+        "zh": "勞力；人工",
+        "example": "The repair estimate includes two hours of labor and the cost of a new belt."
+      }
+    ],
+    "news": "news-20261120-1"
+  },
+  {
+    "word": "potential",
+    "ipa": "/pəˈtenʃəl/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "The possibility that someone or something can develop or succeed in the future.",
+        "zh": "潛力；發展可能性",
+        "example": "The online store has the potential to reach customers outside the city."
+      }
+    ],
+    "news": "news-20261120-1"
+  },
+  {
+    "word": "partner",
+    "ipa": "/ˈpɑːrtnər/",
+    "pos": "n.",
+    "category": "Business",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "A person or organization that works with another on a shared activity or goal.",
+        "zh": "合作夥伴",
+        "example": "We chose a local partner to handle repairs while our own team sets up the service center."
+      }
+    ],
+    "news": "news-20261117-2"
+  },
+  {
+    "word": "qualified",
+    "ipa": "/ˈkwɑːləfaɪd/",
+    "pos": "adj.",
+    "category": "HR",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "Having the training, skills, or credentials needed to do a particular job.",
+        "zh": "具備資格的；合格的",
+        "example": "Only a qualified electrician can approve the wiring in the new office."
+      }
+    ],
+    "news": "news-20261117-2"
+  },
+  {
+    "word": "schedule",
+    "ipa": "/ˈskedʒuːl/",
+    "pos": "n.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 5,
+    "freqReading": 5,
+    "senses": [
+      {
+        "en": "A plan that shows when activities are meant to happen.",
+        "zh": "時程表；行程表",
+        "example": "The revised schedule gives each department twenty minutes to present its results."
+      }
+    ],
+    "news": "news-20261117-2"
+  }
+]

@@ -24,6 +24,8 @@ import {
 import { vocabDb, ttsCacheDb } from './db.js';
 import { speak, preloadTTS } from './speechService.js';
 import { filterQuizVocabulary, generateQuiz } from './quiz.js';
+import StoryPanel from './StoryPanel.jsx';
+import NEWS_VOCAB from './data/news-vocab.json';
 import {
   getGeminiApiKey,
   hasGeminiApiKey,
@@ -168,8 +170,11 @@ export default function App() {
 
   // Seed sample words on first open (so users without an API key still have content)
   useEffect(() => {
-    vocabDb.seedIfEmpty().then(seeded => {
+    vocabDb.seedIfEmpty().then(async seeded => {
       if (seeded) flashMessage('Loaded the starter vocabulary. Happy studying!', 3500);
+      // After seeding, so a fresh install still gets the starter book first.
+      const added = await vocabDb.importNews(NEWS_VOCAB);
+      if (added > 0 && !seeded) flashMessage(`Added ${added} words from this week's news.`, 3500);
     });
   }, []);
 
@@ -765,10 +770,11 @@ export default function App() {
           </div>
         </header>
 
-        <div className="grid grid-cols-2 gap-2 mb-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-1">
+        <div className="grid grid-cols-3 gap-2 mb-6 bg-[var(--surface)] border border-[var(--border)] rounded-2xl p-1">
           {[
             { value: 'list', label: 'List' },
-            { value: 'quiz', label: 'Quiz' }
+            { value: 'quiz', label: 'Quiz' },
+            { value: 'story', label: 'Story' }
           ].map(tab => (
             <button
               key={tab.value}
@@ -882,8 +888,14 @@ export default function App() {
           </div>
         </div>
           </>
-        ) : (
+        ) : mode === 'quiz' ? (
           <QuizPanel />
+        ) : (
+          <StoryPanel
+            vocabulary={vocabulary}
+            handleSpeak={handleSpeak}
+            currentlySpeaking={currentlySpeaking}
+          />
         )}
       </div>
 

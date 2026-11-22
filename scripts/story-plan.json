@@ -1,0 +1,2001 @@
+[
+  {
+    "id": "ep01",
+    "words": [
+      {
+        "word": "deposit",
+        "category": "Banking",
+        "meanings": [
+          "存款；押金",
+          "押金；訂金"
+        ]
+      },
+      {
+        "word": "withdrawal",
+        "category": "Banking",
+        "meanings": [
+          "提款"
+        ]
+      },
+      {
+        "word": "loan",
+        "category": "Banking",
+        "meanings": [
+          "貸款"
+        ]
+      },
+      {
+        "word": "interest",
+        "category": "Banking",
+        "meanings": [
+          "利息",
+          "興趣；關注"
+        ]
+      },
+      {
+        "word": "mortgage",
+        "category": "Banking",
+        "meanings": [
+          "房貸；抵押貸款"
+        ]
+      },
+      {
+        "word": "teller",
+        "category": "Banking",
+        "meanings": [
+          "銀行櫃員"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep02",
+    "words": [
+      {
+        "word": "credit",
+        "category": "Banking",
+        "meanings": [
+          "信用；貸方"
+        ]
+      },
+      {
+        "word": "debit",
+        "category": "Banking",
+        "meanings": [
+          "借方；扣款"
+        ]
+      },
+      {
+        "word": "statement",
+        "category": "Banking",
+        "meanings": [
+          "對帳單；聲明",
+          "聲明；陳述"
+        ]
+      },
+      {
+        "word": "wire",
+        "category": "Banking",
+        "meanings": [
+          "電匯"
+        ]
+      },
+      {
+        "word": "overdraft",
+        "category": "Banking",
+        "meanings": [
+          "透支"
+        ]
+      },
+      {
+        "word": "installment",
+        "category": "Banking",
+        "meanings": [
+          "分期付款"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep03",
+    "words": [
+      {
+        "word": "collateral",
+        "category": "Banking",
+        "meanings": [
+          "抵押品"
+        ]
+      },
+      {
+        "word": "borrower",
+        "category": "Banking",
+        "meanings": [
+          "借款人"
+        ]
+      },
+      {
+        "word": "lender",
+        "category": "Banking",
+        "meanings": [
+          "貸方；貸款機構"
+        ]
+      },
+      {
+        "word": "fee",
+        "category": "Banking",
+        "meanings": [
+          "費用；手續費"
+        ]
+      },
+      {
+        "word": "savings",
+        "category": "Banking",
+        "meanings": [
+          "儲蓄；存款"
+        ]
+      },
+      {
+        "word": "checking",
+        "category": "Banking",
+        "meanings": [
+          "支票帳戶"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep04",
+    "words": [
+      {
+        "word": "remittance",
+        "category": "Banking",
+        "meanings": [
+          "匯款"
+        ]
+      },
+      {
+        "word": "authorize",
+        "category": "Banking",
+        "meanings": [
+          "授權；批准"
+        ]
+      },
+      {
+        "word": "vault",
+        "category": "Banking",
+        "meanings": [
+          "金庫"
+        ]
+      },
+      {
+        "word": "acquire",
+        "category": "Business",
+        "meanings": [
+          "取得；收購"
+        ]
+      },
+      {
+        "word": "negotiate",
+        "category": "Business",
+        "meanings": [
+          "談判；協商"
+        ]
+      },
+      {
+        "word": "strategy",
+        "category": "Business",
+        "meanings": [
+          "策略"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep05",
+    "words": [
+      {
+        "word": "expansion",
+        "category": "Business",
+        "meanings": [
+          "擴張；拓展"
+        ]
+      },
+      {
+        "word": "merger",
+        "category": "Business",
+        "meanings": [
+          "合併"
+        ]
+      },
+      {
+        "word": "subsidiary",
+        "category": "Business",
+        "meanings": [
+          "子公司"
+        ]
+      },
+      {
+        "word": "revenue",
+        "category": "Business",
+        "meanings": [
+          "營收"
+        ]
+      },
+      {
+        "word": "client",
+        "category": "Business",
+        "meanings": [
+          "客戶"
+        ]
+      },
+      {
+        "word": "partnership",
+        "category": "Business",
+        "meanings": [
+          "合作關係；合夥"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep06",
+    "words": [
+      {
+        "word": "objective",
+        "category": "Business",
+        "meanings": [
+          "目標"
+        ]
+      },
+      {
+        "word": "proposal",
+        "category": "Business",
+        "meanings": [
+          "提案；企劃書"
+        ]
+      },
+      {
+        "word": "headquarters",
+        "category": "Business",
+        "meanings": [
+          "總部"
+        ]
+      },
+      {
+        "word": "branch",
+        "category": "Business",
+        "meanings": [
+          "分公司；分行"
+        ]
+      },
+      {
+        "word": "competitor",
+        "category": "Business",
+        "meanings": [
+          "競爭者"
+        ]
+      },
+      {
+        "word": "stakeholder",
+        "category": "Business",
+        "meanings": [
+          "利害關係人"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep07",
+    "words": [
+      {
+        "word": "presentation",
+        "category": "Business",
+        "meanings": [
+          "簡報；發表"
+        ]
+      },
+      {
+        "word": "executive",
+        "category": "Business",
+        "meanings": [
+          "主管；高階主管"
+        ]
+      },
+      {
+        "word": "operate",
+        "category": "Business",
+        "meanings": [
+          "經營；運作"
+        ]
+      },
+      {
+        "word": "manage",
+        "category": "Business",
+        "meanings": [
+          "管理；設法",
+          "設法；辦到"
+        ]
+      },
+      {
+        "word": "policy",
+        "category": "Business",
+        "meanings": [
+          "政策；保單",
+          "保險單"
+        ]
+      },
+      {
+        "word": "initiative",
+        "category": "Business",
+        "meanings": [
+          "倡議；主動性"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep08",
+    "words": [
+      {
+        "word": "warranty",
+        "category": "Commerce",
+        "meanings": [
+          "保固；保證書"
+        ]
+      },
+      {
+        "word": "refund",
+        "category": "Commerce",
+        "meanings": [
+          "退款"
+        ]
+      },
+      {
+        "word": "receipt",
+        "category": "Commerce",
+        "meanings": [
+          "收據"
+        ]
+      },
+      {
+        "word": "discount",
+        "category": "Commerce",
+        "meanings": [
+          "折扣"
+        ]
+      },
+      {
+        "word": "merchandise",
+        "category": "Commerce",
+        "meanings": [
+          "商品"
+        ]
+      },
+      {
+        "word": "customer",
+        "category": "Commerce",
+        "meanings": [
+          "顧客"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep09",
+    "words": [
+      {
+        "word": "retailer",
+        "category": "Commerce",
+        "meanings": [
+          "零售商"
+        ]
+      },
+      {
+        "word": "wholesale",
+        "category": "Commerce",
+        "meanings": [
+          "批發的"
+        ]
+      },
+      {
+        "word": "purchase",
+        "category": "Commerce",
+        "meanings": [
+          "購買"
+        ]
+      },
+      {
+        "word": "checkout",
+        "category": "Commerce",
+        "meanings": [
+          "結帳；收銀台"
+        ]
+      },
+      {
+        "word": "stock",
+        "category": "Commerce",
+        "meanings": [
+          "庫存；存貨",
+          "股票；股份"
+        ]
+      },
+      {
+        "word": "order",
+        "category": "Commerce",
+        "meanings": [
+          "訂單"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep10",
+    "words": [
+      {
+        "word": "promotion",
+        "category": "Commerce",
+        "meanings": [
+          "促銷；推廣",
+          "晉升；升職"
+        ]
+      },
+      {
+        "word": "bargain",
+        "category": "Commerce",
+        "meanings": [
+          "便宜貨；划算交易"
+        ]
+      },
+      {
+        "word": "exchange",
+        "category": "Commerce",
+        "meanings": [
+          "更換；交換",
+          "外幣兌換；匯兌"
+        ]
+      },
+      {
+        "word": "catalog",
+        "category": "Commerce",
+        "meanings": [
+          "型錄；目錄"
+        ]
+      },
+      {
+        "word": "vendor",
+        "category": "Commerce",
+        "meanings": [
+          "供應商；賣方"
+        ]
+      },
+      {
+        "word": "product",
+        "category": "Commerce",
+        "meanings": [
+          "產品"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep11",
+    "words": [
+      {
+        "word": "service",
+        "category": "Commerce",
+        "meanings": [
+          "服務"
+        ]
+      },
+      {
+        "word": "shopper",
+        "category": "Commerce",
+        "meanings": [
+          "購物者"
+        ]
+      },
+      {
+        "word": "sample",
+        "category": "Commerce",
+        "meanings": [
+          "樣品；試用",
+          "試吃；試用"
+        ]
+      },
+      {
+        "word": "contract",
+        "category": "Contracts",
+        "meanings": [
+          "合約",
+          "委外承包；簽約"
+        ]
+      },
+      {
+        "word": "agreement",
+        "category": "Contracts",
+        "meanings": [
+          "協議；同意"
+        ]
+      },
+      {
+        "word": "clause",
+        "category": "Contracts",
+        "meanings": [
+          "條款"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep12",
+    "words": [
+      {
+        "word": "obligation",
+        "category": "Contracts",
+        "meanings": [
+          "義務；責任"
+        ]
+      },
+      {
+        "word": "comply",
+        "category": "Contracts",
+        "meanings": [
+          "遵守"
+        ]
+      },
+      {
+        "word": "terminate",
+        "category": "Contracts",
+        "meanings": [
+          "終止"
+        ]
+      },
+      {
+        "word": "amend",
+        "category": "Contracts",
+        "meanings": [
+          "修訂"
+        ]
+      },
+      {
+        "word": "renew",
+        "category": "Contracts",
+        "meanings": [
+          "續約；更新"
+        ]
+      },
+      {
+        "word": "signature",
+        "category": "Contracts",
+        "meanings": [
+          "簽名"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep13",
+    "words": [
+      {
+        "word": "condition",
+        "category": "Contracts",
+        "meanings": [
+          "條件；狀況",
+          "狀況；情況"
+        ]
+      },
+      {
+        "word": "provision",
+        "category": "Contracts",
+        "meanings": [
+          "規定；條文"
+        ]
+      },
+      {
+        "word": "penalty",
+        "category": "Contracts",
+        "meanings": [
+          "罰款；懲罰"
+        ]
+      },
+      {
+        "word": "valid",
+        "category": "Contracts",
+        "meanings": [
+          "有效的"
+        ]
+      },
+      {
+        "word": "binding",
+        "category": "Contracts",
+        "meanings": [
+          "有約束力的"
+        ]
+      },
+      {
+        "word": "confidential",
+        "category": "Contracts",
+        "meanings": [
+          "機密的"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep14",
+    "words": [
+      {
+        "word": "dispute",
+        "category": "Contracts",
+        "meanings": [
+          "爭議；糾紛"
+        ]
+      },
+      {
+        "word": "party",
+        "category": "Contracts",
+        "meanings": [
+          "合約一方；當事人",
+          "派對；聚會"
+        ]
+      },
+      {
+        "word": "legal",
+        "category": "Contracts",
+        "meanings": [
+          "法律的；合法的"
+        ]
+      },
+      {
+        "word": "execute",
+        "category": "Contracts",
+        "meanings": [
+          "執行"
+        ]
+      },
+      {
+        "word": "consent",
+        "category": "Contracts",
+        "meanings": [
+          "同意；許可"
+        ]
+      },
+      {
+        "word": "license",
+        "category": "Contracts",
+        "meanings": [
+          "執照；許可證"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep15",
+    "words": [
+      {
+        "word": "invoice",
+        "category": "Finance",
+        "meanings": [
+          "發票；請款單"
+        ]
+      },
+      {
+        "word": "budget",
+        "category": "Finance",
+        "meanings": [
+          "預算"
+        ]
+      },
+      {
+        "word": "expense",
+        "category": "Finance",
+        "meanings": [
+          "費用；開支"
+        ]
+      },
+      {
+        "word": "forecast",
+        "category": "Finance",
+        "meanings": [
+          "預測"
+        ]
+      },
+      {
+        "word": "profit",
+        "category": "Finance",
+        "meanings": [
+          "利潤"
+        ]
+      },
+      {
+        "word": "loss",
+        "category": "Finance",
+        "meanings": [
+          "虧損；損失"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep16",
+    "words": [
+      {
+        "word": "asset",
+        "category": "Finance",
+        "meanings": [
+          "資產"
+        ]
+      },
+      {
+        "word": "liability",
+        "category": "Finance",
+        "meanings": [
+          "負債；責任"
+        ]
+      },
+      {
+        "word": "equity",
+        "category": "Finance",
+        "meanings": [
+          "股權；權益"
+        ]
+      },
+      {
+        "word": "audit",
+        "category": "Finance",
+        "meanings": [
+          "審計；查帳"
+        ]
+      },
+      {
+        "word": "reimbursement",
+        "category": "Finance",
+        "meanings": [
+          "報銷；補償"
+        ]
+      },
+      {
+        "word": "estimate",
+        "category": "Finance",
+        "meanings": [
+          "估價；估計"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep17",
+    "words": [
+      {
+        "word": "balance",
+        "category": "Finance",
+        "meanings": [
+          "餘額；差額",
+          "均衡；平衡"
+        ]
+      },
+      {
+        "word": "quarter",
+        "category": "Finance",
+        "meanings": [
+          "季度；四分之一"
+        ]
+      },
+      {
+        "word": "dividend",
+        "category": "Finance",
+        "meanings": [
+          "股利；紅利"
+        ]
+      },
+      {
+        "word": "payroll",
+        "category": "Finance",
+        "meanings": [
+          "薪資名冊；薪資作業"
+        ]
+      },
+      {
+        "word": "transaction",
+        "category": "Finance",
+        "meanings": [
+          "交易"
+        ]
+      },
+      {
+        "word": "currency",
+        "category": "Finance",
+        "meanings": [
+          "貨幣"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep18",
+    "words": [
+      {
+        "word": "taxable",
+        "category": "Finance",
+        "meanings": [
+          "應課稅的"
+        ]
+      },
+      {
+        "word": "fund",
+        "category": "Finance",
+        "meanings": [
+          "資金；基金"
+        ]
+      },
+      {
+        "word": "allocate",
+        "category": "Finance",
+        "meanings": [
+          "分配；撥出"
+        ]
+      },
+      {
+        "word": "recruit",
+        "category": "HR",
+        "meanings": [
+          "招募"
+        ]
+      },
+      {
+        "word": "applicant",
+        "category": "HR",
+        "meanings": [
+          "申請人；應徵者"
+        ]
+      },
+      {
+        "word": "resume",
+        "category": "HR",
+        "meanings": [
+          "履歷",
+          "恢復；繼續"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep19",
+    "words": [
+      {
+        "word": "interview",
+        "category": "HR",
+        "meanings": [
+          "面試",
+          "採訪；訪談"
+        ]
+      },
+      {
+        "word": "hire",
+        "category": "HR",
+        "meanings": [
+          "雇用",
+          "租用；租借"
+        ]
+      },
+      {
+        "word": "training",
+        "category": "HR",
+        "meanings": [
+          "訓練"
+        ]
+      },
+      {
+        "word": "orientation",
+        "category": "HR",
+        "meanings": [
+          "新人訓練；說明會"
+        ]
+      },
+      {
+        "word": "candidate",
+        "category": "HR",
+        "meanings": [
+          "候選人；應徵者"
+        ]
+      },
+      {
+        "word": "qualification",
+        "category": "HR",
+        "meanings": [
+          "資格；條件"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep20",
+    "words": [
+      {
+        "word": "benefit",
+        "category": "HR",
+        "meanings": [
+          "福利；好處"
+        ]
+      },
+      {
+        "word": "pension",
+        "category": "HR",
+        "meanings": [
+          "退休金"
+        ]
+      },
+      {
+        "word": "vacancy",
+        "category": "HR",
+        "meanings": [
+          "職缺；空缺"
+        ]
+      },
+      {
+        "word": "appraisal",
+        "category": "HR",
+        "meanings": [
+          "績效評估"
+        ]
+      },
+      {
+        "word": "probation",
+        "category": "HR",
+        "meanings": [
+          "試用期"
+        ]
+      },
+      {
+        "word": "personnel",
+        "category": "HR",
+        "meanings": [
+          "人事；員工"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep21",
+    "words": [
+      {
+        "word": "attendance",
+        "category": "HR",
+        "meanings": [
+          "出勤；出席"
+        ]
+      },
+      {
+        "word": "compensation",
+        "category": "HR",
+        "meanings": [
+          "薪酬；補償"
+        ]
+      },
+      {
+        "word": "resign",
+        "category": "HR",
+        "meanings": [
+          "辭職"
+        ]
+      },
+      {
+        "word": "retire",
+        "category": "HR",
+        "meanings": [
+          "退休"
+        ]
+      },
+      {
+        "word": "handbook",
+        "category": "HR",
+        "meanings": [
+          "手冊；指南"
+        ]
+      },
+      {
+        "word": "mentor",
+        "category": "HR",
+        "meanings": [
+          "導師；指導"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep22",
+    "words": [
+      {
+        "word": "software",
+        "category": "IT",
+        "meanings": [
+          "軟體"
+        ]
+      },
+      {
+        "word": "hardware",
+        "category": "IT",
+        "meanings": [
+          "硬體"
+        ]
+      },
+      {
+        "word": "network",
+        "category": "IT",
+        "meanings": [
+          "網路"
+        ]
+      },
+      {
+        "word": "database",
+        "category": "IT",
+        "meanings": [
+          "資料庫"
+        ]
+      },
+      {
+        "word": "password",
+        "category": "IT",
+        "meanings": [
+          "密碼"
+        ]
+      },
+      {
+        "word": "upload",
+        "category": "IT",
+        "meanings": [
+          "上傳"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep23",
+    "words": [
+      {
+        "word": "download",
+        "category": "IT",
+        "meanings": [
+          "下載"
+        ]
+      },
+      {
+        "word": "install",
+        "category": "IT",
+        "meanings": [
+          "安裝"
+        ]
+      },
+      {
+        "word": "update",
+        "category": "IT",
+        "meanings": [
+          "更新"
+        ]
+      },
+      {
+        "word": "backup",
+        "category": "IT",
+        "meanings": [
+          "備份"
+        ]
+      },
+      {
+        "word": "server",
+        "category": "IT",
+        "meanings": [
+          "伺服器"
+        ]
+      },
+      {
+        "word": "device",
+        "category": "IT",
+        "meanings": [
+          "裝置"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep24",
+    "words": [
+      {
+        "word": "application",
+        "category": "IT",
+        "meanings": [
+          "應用程式；申請"
+        ]
+      },
+      {
+        "word": "security",
+        "category": "IT",
+        "meanings": [
+          "安全；保全"
+        ]
+      },
+      {
+        "word": "access",
+        "category": "IT",
+        "meanings": [
+          "存取權；進入"
+        ]
+      },
+      {
+        "word": "troubleshoot",
+        "category": "IT",
+        "meanings": [
+          "排除故障"
+        ]
+      },
+      {
+        "word": "outage",
+        "category": "IT",
+        "meanings": [
+          "中斷；停機"
+        ]
+      },
+      {
+        "word": "wireless",
+        "category": "IT",
+        "meanings": [
+          "無線的"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep25",
+    "words": [
+      {
+        "word": "account",
+        "category": "IT",
+        "meanings": [
+          "帳戶；客戶",
+          "說明；陳述"
+        ]
+      },
+      {
+        "word": "encrypt",
+        "category": "IT",
+        "meanings": [
+          "加密"
+        ]
+      },
+      {
+        "word": "platform",
+        "category": "IT",
+        "meanings": [
+          "平台"
+        ]
+      },
+      {
+        "word": "inventory",
+        "category": "Logistics",
+        "meanings": [
+          "庫存"
+        ]
+      },
+      {
+        "word": "warehouse",
+        "category": "Logistics",
+        "meanings": [
+          "倉庫"
+        ]
+      },
+      {
+        "word": "supplier",
+        "category": "Logistics",
+        "meanings": [
+          "供應商"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep26",
+    "words": [
+      {
+        "word": "delivery",
+        "category": "Logistics",
+        "meanings": [
+          "配送；交付"
+        ]
+      },
+      {
+        "word": "freight",
+        "category": "Logistics",
+        "meanings": [
+          "貨運"
+        ]
+      },
+      {
+        "word": "cargo",
+        "category": "Logistics",
+        "meanings": [
+          "貨物"
+        ]
+      },
+      {
+        "word": "dispatch",
+        "category": "Logistics",
+        "meanings": [
+          "派送；派遣"
+        ]
+      },
+      {
+        "word": "carrier",
+        "category": "Logistics",
+        "meanings": [
+          "承運商"
+        ]
+      },
+      {
+        "word": "distribution",
+        "category": "Logistics",
+        "meanings": [
+          "配送；分銷"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep27",
+    "words": [
+      {
+        "word": "packaging",
+        "category": "Logistics",
+        "meanings": [
+          "包裝"
+        ]
+      },
+      {
+        "word": "tracking",
+        "category": "Logistics",
+        "meanings": [
+          "追蹤"
+        ]
+      },
+      {
+        "word": "route",
+        "category": "Logistics",
+        "meanings": [
+          "路線"
+        ]
+      },
+      {
+        "word": "clearance",
+        "category": "Logistics",
+        "meanings": [
+          "清關；許可",
+          "清倉特賣；出清"
+        ]
+      },
+      {
+        "word": "container",
+        "category": "Logistics",
+        "meanings": [
+          "貨櫃；容器"
+        ]
+      },
+      {
+        "word": "forklift",
+        "category": "Logistics",
+        "meanings": [
+          "堆高機"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep28",
+    "words": [
+      {
+        "word": "pallet",
+        "category": "Logistics",
+        "meanings": [
+          "棧板"
+        ]
+      },
+      {
+        "word": "import",
+        "category": "Logistics",
+        "meanings": [
+          "進口品；進口"
+        ]
+      },
+      {
+        "word": "export",
+        "category": "Logistics",
+        "meanings": [
+          "出口品；出口"
+        ]
+      },
+      {
+        "word": "manifest",
+        "category": "Logistics",
+        "meanings": [
+          "艙單；貨物清單"
+        ]
+      },
+      {
+        "word": "shortage",
+        "category": "Logistics",
+        "meanings": [
+          "短缺"
+        ]
+      },
+      {
+        "word": "storage",
+        "category": "Logistics",
+        "meanings": [
+          "儲存；倉儲"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep29",
+    "words": [
+      {
+        "word": "renovation",
+        "category": "Manufacturing",
+        "meanings": [
+          "整修；翻新"
+        ]
+      },
+      {
+        "word": "production",
+        "category": "Manufacturing",
+        "meanings": [
+          "生產"
+        ]
+      },
+      {
+        "word": "assembly",
+        "category": "Manufacturing",
+        "meanings": [
+          "組裝"
+        ]
+      },
+      {
+        "word": "factory",
+        "category": "Manufacturing",
+        "meanings": [
+          "工廠"
+        ]
+      },
+      {
+        "word": "machine",
+        "category": "Manufacturing",
+        "meanings": [
+          "機器"
+        ]
+      },
+      {
+        "word": "machinery",
+        "category": "Manufacturing",
+        "meanings": [
+          "機械設備"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep30",
+    "words": [
+      {
+        "word": "quality",
+        "category": "Manufacturing",
+        "meanings": [
+          "品質"
+        ]
+      },
+      {
+        "word": "inspection",
+        "category": "Manufacturing",
+        "meanings": [
+          "檢查；檢驗"
+        ]
+      },
+      {
+        "word": "defect",
+        "category": "Manufacturing",
+        "meanings": [
+          "缺陷；瑕疵"
+        ]
+      },
+      {
+        "word": "output",
+        "category": "Manufacturing",
+        "meanings": [
+          "產量；輸出"
+        ]
+      },
+      {
+        "word": "capacity",
+        "category": "Manufacturing",
+        "meanings": [
+          "產能；容量",
+          "職能；身份"
+        ]
+      },
+      {
+        "word": "material",
+        "category": "Manufacturing",
+        "meanings": [
+          "材料"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep31",
+    "words": [
+      {
+        "word": "component",
+        "category": "Manufacturing",
+        "meanings": [
+          "零件；組件"
+        ]
+      },
+      {
+        "word": "process",
+        "category": "Manufacturing",
+        "meanings": [
+          "流程；過程",
+          "處理；加工"
+        ]
+      },
+      {
+        "word": "automate",
+        "category": "Manufacturing",
+        "meanings": [
+          "自動化"
+        ]
+      },
+      {
+        "word": "facility",
+        "category": "Manufacturing",
+        "meanings": [
+          "設施；工廠",
+          "設施；服務配備"
+        ]
+      },
+      {
+        "word": "maintenance",
+        "category": "Manufacturing",
+        "meanings": [
+          "維護；保養"
+        ]
+      },
+      {
+        "word": "technician",
+        "category": "Manufacturing",
+        "meanings": [
+          "技術員"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep32",
+    "words": [
+      {
+        "word": "safety",
+        "category": "Manufacturing",
+        "meanings": [
+          "安全"
+        ]
+      },
+      {
+        "word": "prototype",
+        "category": "Manufacturing",
+        "meanings": [
+          "原型"
+        ]
+      },
+      {
+        "word": "specification",
+        "category": "Manufacturing",
+        "meanings": [
+          "規格；明細"
+        ]
+      },
+      {
+        "word": "campaign",
+        "category": "Marketing",
+        "meanings": [
+          "行銷活動；活動"
+        ]
+      },
+      {
+        "word": "advertise",
+        "category": "Marketing",
+        "meanings": [
+          "廣告；宣傳"
+        ]
+      },
+      {
+        "word": "brand",
+        "category": "Marketing",
+        "meanings": [
+          "品牌"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep33",
+    "words": [
+      {
+        "word": "survey",
+        "category": "Marketing",
+        "meanings": [
+          "調查"
+        ]
+      },
+      {
+        "word": "consumer",
+        "category": "Marketing",
+        "meanings": [
+          "消費者"
+        ]
+      },
+      {
+        "word": "launch",
+        "category": "Marketing",
+        "meanings": [
+          "推出；發表"
+        ]
+      },
+      {
+        "word": "publicity",
+        "category": "Marketing",
+        "meanings": [
+          "宣傳；曝光"
+        ]
+      },
+      {
+        "word": "audience",
+        "category": "Marketing",
+        "meanings": [
+          "觀眾；受眾"
+        ]
+      },
+      {
+        "word": "segment",
+        "category": "Marketing",
+        "meanings": [
+          "區隔；部分"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep34",
+    "words": [
+      {
+        "word": "feedback",
+        "category": "Marketing",
+        "meanings": [
+          "回饋；意見"
+        ]
+      },
+      {
+        "word": "brochure",
+        "category": "Marketing",
+        "meanings": [
+          "小冊子；型錄"
+        ]
+      },
+      {
+        "word": "sponsor",
+        "category": "Marketing",
+        "meanings": [
+          "贊助"
+        ]
+      },
+      {
+        "word": "awareness",
+        "category": "Marketing",
+        "meanings": [
+          "知名度；意識"
+        ]
+      },
+      {
+        "word": "slogan",
+        "category": "Marketing",
+        "meanings": [
+          "標語；口號"
+        ]
+      },
+      {
+        "word": "endorse",
+        "category": "Marketing",
+        "meanings": [
+          "背書；代言"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep35",
+    "words": [
+      {
+        "word": "distribute",
+        "category": "Marketing",
+        "meanings": [
+          "分發；配送"
+        ]
+      },
+      {
+        "word": "demographic",
+        "category": "Marketing",
+        "meanings": [
+          "人口族群"
+        ]
+      },
+      {
+        "word": "trend",
+        "category": "Marketing",
+        "meanings": [
+          "趨勢"
+        ]
+      },
+      {
+        "word": "appeal",
+        "category": "Marketing",
+        "meanings": [
+          "吸引力；上訴",
+          "呼籲；請求"
+        ]
+      },
+      {
+        "word": "display",
+        "category": "Marketing",
+        "meanings": [
+          "展示；陳列"
+        ]
+      },
+      {
+        "word": "loyalty",
+        "category": "Marketing",
+        "meanings": [
+          "忠誠度"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep36",
+    "words": [
+      {
+        "word": "reschedule",
+        "category": "Office/Workplace",
+        "meanings": [
+          "重新安排時間"
+        ]
+      },
+      {
+        "word": "prompt",
+        "category": "Office/Workplace",
+        "meanings": [
+          "迅速的；準時的"
+        ]
+      },
+      {
+        "word": "agenda",
+        "category": "Office/Workplace",
+        "meanings": [
+          "議程"
+        ]
+      },
+      {
+        "word": "appointment",
+        "category": "Office/Workplace",
+        "meanings": [
+          "預約；約會"
+        ]
+      },
+      {
+        "word": "colleague",
+        "category": "Office/Workplace",
+        "meanings": [
+          "同事"
+        ]
+      },
+      {
+        "word": "supervisor",
+        "category": "Office/Workplace",
+        "meanings": [
+          "主管"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep37",
+    "words": [
+      {
+        "word": "department",
+        "category": "Office/Workplace",
+        "meanings": [
+          "部門"
+        ]
+      },
+      {
+        "word": "memo",
+        "category": "Office/Workplace",
+        "meanings": [
+          "備忘錄；通知"
+        ]
+      },
+      {
+        "word": "deadline",
+        "category": "Office/Workplace",
+        "meanings": [
+          "截止期限"
+        ]
+      },
+      {
+        "word": "workspace",
+        "category": "Office/Workplace",
+        "meanings": [
+          "工作空間"
+        ]
+      },
+      {
+        "word": "conference",
+        "category": "Office/Workplace",
+        "meanings": [
+          "會議；研討會"
+        ]
+      },
+      {
+        "word": "notify",
+        "category": "Office/Workplace",
+        "meanings": [
+          "通知"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep38",
+    "words": [
+      {
+        "word": "request",
+        "category": "Office/Workplace",
+        "meanings": [
+          "請求"
+        ]
+      },
+      {
+        "word": "approve",
+        "category": "Office/Workplace",
+        "meanings": [
+          "核准；同意"
+        ]
+      },
+      {
+        "word": "postpone",
+        "category": "Office/Workplace",
+        "meanings": [
+          "延後"
+        ]
+      },
+      {
+        "word": "remind",
+        "category": "Office/Workplace",
+        "meanings": [
+          "提醒"
+        ]
+      },
+      {
+        "word": "procedure",
+        "category": "Office/Workplace",
+        "meanings": [
+          "程序；流程"
+        ]
+      },
+      {
+        "word": "equipment",
+        "category": "Office/Workplace",
+        "meanings": [
+          "設備"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep39",
+    "words": [
+      {
+        "word": "photocopy",
+        "category": "Office/Workplace",
+        "meanings": [
+          "影印；影本"
+        ]
+      },
+      {
+        "word": "stationery",
+        "category": "Office/Workplace",
+        "meanings": [
+          "文具"
+        ]
+      },
+      {
+        "word": "commute",
+        "category": "Office/Workplace",
+        "meanings": [
+          "通勤"
+        ]
+      },
+      {
+        "word": "itinerary",
+        "category": "Travel",
+        "meanings": [
+          "行程表"
+        ]
+      },
+      {
+        "word": "reservation",
+        "category": "Travel",
+        "meanings": [
+          "預訂"
+        ]
+      },
+      {
+        "word": "departure",
+        "category": "Travel",
+        "meanings": [
+          "出發"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep40",
+    "words": [
+      {
+        "word": "arrival",
+        "category": "Travel",
+        "meanings": [
+          "抵達"
+        ]
+      },
+      {
+        "word": "boarding",
+        "category": "Travel",
+        "meanings": [
+          "登機；上車"
+        ]
+      },
+      {
+        "word": "passport",
+        "category": "Travel",
+        "meanings": [
+          "護照"
+        ]
+      },
+      {
+        "word": "baggage",
+        "category": "Travel",
+        "meanings": [
+          "行李"
+        ]
+      },
+      {
+        "word": "accommodation",
+        "category": "Travel",
+        "meanings": [
+          "住宿"
+        ]
+      },
+      {
+        "word": "destination",
+        "category": "Travel",
+        "meanings": [
+          "目的地"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep41",
+    "words": [
+      {
+        "word": "fare",
+        "category": "Travel",
+        "meanings": [
+          "票價"
+        ]
+      },
+      {
+        "word": "shuttle",
+        "category": "Travel",
+        "meanings": [
+          "接駁車"
+        ]
+      },
+      {
+        "word": "terminal",
+        "category": "Travel",
+        "meanings": [
+          "航廈；終點站",
+          "終端機；收銀機"
+        ]
+      },
+      {
+        "word": "delay",
+        "category": "Travel",
+        "meanings": [
+          "延誤"
+        ]
+      },
+      {
+        "word": "transfer",
+        "category": "Travel",
+        "meanings": [
+          "轉乘；轉移",
+          "調職；轉調"
+        ]
+      },
+      {
+        "word": "tourist",
+        "category": "Travel",
+        "meanings": [
+          "觀光客"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ep42",
+    "words": [
+      {
+        "word": "guide",
+        "category": "Travel",
+        "meanings": [
+          "導遊；指南",
+          "引導；帶領"
+        ]
+      },
+      {
+        "word": "luggage",
+        "category": "Travel",
+        "meanings": [
+          "行李"
+        ]
+      },
+      {
+        "word": "hotel",
+        "category": "Travel",
+        "meanings": [
+          "旅館；飯店"
+        ]
+      },
+      {
+        "word": "flight",
+        "category": "Travel",
+        "meanings": [
+          "航班；飛行"
+        ]
+      },
+      {
+        "word": "agency",
+        "category": "Travel",
+        "meanings": [
+          "代理機構；仲介"
+        ]
+      },
+      {
+        "word": "cancel",
+        "category": "Travel",
+        "meanings": [
+          "取消"
+        ]
+      }
+    ]
+  }
+]
