@@ -1,0 +1,5714 @@
+[
+  {
+    "id": "ep01",
+    "title": "The Second Warehouse",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "deposit",
+        "from": "Linda",
+        "setup": "你入職第一天就收到新倉庫的租約。",
+        "text": "The landlord will hold a $2,000 ____ until the lease ends. We'll get the full amount back if we return the space in good condition.",
+        "options": [
+          "fee",
+          "deposit",
+          "commission"
+        ],
+        "answer": "deposit",
+        "rescue": {
+          "reaction": "Think of money the landlord holds until we hand back the keys.",
+          "options": [
+            "deposit",
+            "fee"
+          ],
+          "answer": "deposit"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "mortgage",
+        "from": "Ms. Chen",
+        "setup": "陳經理來電交代倉庫租購的決定。",
+        "text": "The bank sent us a mortgage quote for buying the smaller warehouse, but the seller won't wait past noon. Can you tell Linda we're going ahead with the lease?",
+        "question": "陳經理要你轉告 Linda 什麼？",
+        "options": [
+          "公司要接受銀行報價",
+          "公司要請賣方延長期限",
+          "公司決定簽租約"
+        ],
+        "answer": "公司決定簽租約",
+        "rescue": {
+          "reaction": "We need somewhere to store the spring stock, and the rental unit is still available today.",
+          "options": [
+            "公司決定簽租約",
+            "公司要接受銀行報價"
+          ],
+          "answer": "公司決定簽租約"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "interest",
+        "from": "Linda",
+        "setup": "Linda 請你補完租倉庫的成本比較表。",
+        "text": "The short-term loan rate is 5 percent per year. Show the ____ separately from the amount we borrow.",
+        "options": [
+          "tax",
+          "interest",
+          "insurance"
+        ],
+        "answer": "interest",
+        "rescue": {
+          "reaction": "I need to see the cost of borrowing the money at that rate.",
+          "options": [
+            "insurance",
+            "interest"
+          ],
+          "answer": "interest"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "loan",
+        "from": "Bank representative",
+        "setup": "銀行來電追問原先申請的短期貸款。",
+        "text": "The short-term loan is ready if you'd like it. I can hold the offer until Friday, so please call me by then if you decide to take it.",
+        "question": "銀行請你在什麼情況下回電？",
+        "options": [
+          "決定借款時",
+          "收到月底對帳單時",
+          "還清款項時"
+        ],
+        "answer": "決定借款時",
+        "rescue": {
+          "reaction": "There's nothing to repay yet because the money hasn't been sent.",
+          "options": [
+            "還清款項時",
+            "決定借款時"
+          ],
+          "answer": "決定借款時"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "withdrawal",
+        "from": "Linda",
+        "setup": "Linda 確認公司帳戶的餘額足夠。",
+        "text": "Please record the $2,000 cash ____ on today's bank log. We need a record of the cash the bank hands us before we pay the landlord.",
+        "options": [
+          "transfer",
+          "deposit",
+          "withdrawal"
+        ],
+        "answer": "withdrawal",
+        "rescue": {
+          "reaction": "We're taking bills out of the account and carrying them to the signing.",
+          "options": [
+            "deposit",
+            "withdrawal"
+          ],
+          "answer": "withdrawal"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "teller",
+        "from": "Ben",
+        "setup": "Ben 到分行後打電話請你幫忙。",
+        "text": "The teller has the cash ready, but she needs to see the signed form. Could you bring it down to the bank?",
+        "question": "Ben 請你帶什麼去銀行？",
+        "options": [
+          "簽好的表單",
+          "倉庫鑰匙",
+          "租金收據"
+        ],
+        "answer": "簽好的表單",
+        "rescue": {
+          "reaction": "The cash is already here, and the woman at the counter is waiting for our paperwork.",
+          "options": [
+            "簽好的表單",
+            "倉庫鑰匙"
+          ],
+          "answer": "簽好的表單"
+        }
+      }
+    ],
+    "ending": "你替租約備妥訂金，Linda 把原本夾在文件裡的購屋試算表抽了出來。"
+  },
+  {
+    "id": "ep02",
+    "title": "One Payment Too Many",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "debit",
+        "from": "Linda",
+        "setup": "Linda 在登錄貨架款項時看到兩筆相同的金額。",
+        "text": "I see a $600 debit on the account for the shelving. Before we send anything else, could you find out if that was yesterday's scheduled payment?",
+        "question": "Linda 想先確認什麼？",
+        "options": [
+          "供應商是否調漲售價",
+          "這筆扣款是否為昨天預定的付款",
+          "貨架是否已經送達"
+        ],
+        "answer": "這筆扣款是否為昨天預定的付款",
+        "rescue": {
+          "reaction": "The money has left our account, and I want to know if it matches the payment we expected.",
+          "options": [
+            "這筆扣款是否為昨天預定的付款",
+            "供應商是否調漲售價"
+          ],
+          "answer": "這筆扣款是否為昨天預定的付款"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "statement",
+        "from": "Linda",
+        "setup": "你找到付款排程後，Linda 請你把銀行紀錄附上。",
+        "text": "Please attach the May bank ____ showing every amount paid into and out of the account that month.",
+        "options": [
+          "statement",
+          "forecast",
+          "application"
+        ],
+        "answer": "statement",
+        "rescue": {
+          "reaction": "Use the bank's monthly record of what actually went through.",
+          "options": [
+            "application",
+            "statement"
+          ],
+          "answer": "statement"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "installment",
+        "from": "Ben",
+        "setup": "Ben 找出公司訂購貨架時談好的付款條件。",
+        "text": "The price is split into three equal payments. The second ____ is due on June 15.",
+        "options": [
+          "deposit",
+          "installment",
+          "discount"
+        ],
+        "answer": "installment",
+        "rescue": {
+          "reaction": "We're paying the same amount again, one part of the total at a time.",
+          "options": [
+            "discount",
+            "installment"
+          ],
+          "answer": "installment"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "wire",
+        "from": "Supplier",
+        "setup": "貨架供應商打來問另一封付款通知是怎麼回事。",
+        "text": "We received your scheduled payment this morning, so there's no need to wire us another $600. Could you remove that extra payment from your list?",
+        "question": "供應商請你怎麼處理另一筆款項？",
+        "options": [
+          "從付款清單刪除",
+          "把金額調高",
+          "改到下週付款"
+        ],
+        "answer": "從付款清單刪除",
+        "rescue": {
+          "reaction": "We've received everything due this month, and a second transfer would pay us twice.",
+          "options": [
+            "把金額調高",
+            "從付款清單刪除"
+          ],
+          "answer": "從付款清單刪除"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "overdraft",
+        "from": "Bank representative",
+        "setup": "銀行回覆你稍早查詢的餘額警示。",
+        "text": "That extra payment hasn't gone out, so it hasn't caused an overdraft. Your balance is still forty dollars above zero.",
+        "question": "目前帳戶餘額是多少？",
+        "options": [
+          "負四十元",
+          "零元",
+          "正四十元"
+        ],
+        "answer": "正四十元",
+        "rescue": {
+          "reaction": "There are still forty dollars available in the account.",
+          "options": [
+            "正四十元",
+            "零元"
+          ],
+          "answer": "正四十元"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "credit",
+        "from": "Linda",
+        "setup": "Linda 收到銀行退回上個月手續費的通知。",
+        "text": "The bank returned last month's $15 service charge. Expect a $15 ____ to appear in the account tomorrow.",
+        "options": [
+          "debit",
+          "credit",
+          "charge"
+        ],
+        "answer": "credit",
+        "rescue": {
+          "reaction": "Tomorrow's entry will put the money back into the account.",
+          "options": [
+            "credit",
+            "debit"
+          ],
+          "answer": "credit"
+        }
+      }
+    ],
+    "ending": "你把重複扣款的提醒撤掉，並替下一期付款設好行事曆提醒。"
+  },
+  {
+    "id": "ep03",
+    "title": "A Van for Two Stops",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "lender",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你替公司要添購的取貨廂型車找貸款。",
+        "text": "Please ask each ____ for the annual rate and the total cost of borrowing $18,000.",
+        "options": [
+          "dealer",
+          "lender",
+          "insurer"
+        ],
+        "answer": "lender",
+        "rescue": {
+          "reaction": "We need quotes from the institutions that would give us the money up front.",
+          "options": [
+            "insurer",
+            "lender"
+          ],
+          "answer": "lender"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "borrower",
+        "from": "Bank representative",
+        "setup": "分行承辦人來電確認申請表上的公司名稱。",
+        "text": "The borrower will be Harbor & Pine Trading, correct? Please put the company name in that box instead of the driver's name.",
+        "question": "哪個名稱應該填在承辦人指定的欄位？",
+        "options": [
+          "公司名稱",
+          "駕駛姓名",
+          "車商名稱"
+        ],
+        "answer": "公司名稱",
+        "rescue": {
+          "reaction": "We're lending the money to the business, even if one employee drives the van.",
+          "options": [
+            "車商名稱",
+            "公司名稱"
+          ],
+          "answer": "公司名稱"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "collateral",
+        "from": "Ben",
+        "setup": "Ben 剛看完貸款條件，想確認要交哪份資料。",
+        "text": "The bank will accept the van itself as collateral. Can you send them the dealer's description of the van?",
+        "question": "Ben 請你寄給銀行什麼資料？",
+        "options": [
+          "駕駛的值班表",
+          "新車的取貨路線",
+          "車商提供的車輛說明"
+        ],
+        "answer": "車商提供的車輛說明",
+        "rescue": {
+          "reaction": "The bank needs details about the vehicle that will secure the loan.",
+          "options": [
+            "新車的取貨路線",
+            "車商提供的車輛說明"
+          ],
+          "answer": "車商提供的車輛說明"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "fee",
+        "from": "Linda",
+        "setup": "Linda 請你把銀行的報價分項登錄。",
+        "text": "Record the one-time application ____ of $75 separately from the monthly payments. It covers the bank's work on the paperwork.",
+        "options": [
+          "fee",
+          "discount",
+          "refund"
+        ],
+        "answer": "fee",
+        "rescue": {
+          "reaction": "That charge is for processing the application.",
+          "options": [
+            "fee",
+            "discount"
+          ],
+          "answer": "fee"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "checking",
+        "from": "Linda",
+        "setup": "Linda 打來交代每月該從哪個帳戶扣款。",
+        "text": "Use our checking account for the monthly payment. It's the account we already use to pay suppliers.",
+        "question": "Linda 要從哪個帳戶扣車貸？",
+        "options": [
+          "替公司留存預備金的帳戶",
+          "專門收客戶訂金的帳戶",
+          "平常付供應商貨款的帳戶"
+        ],
+        "answer": "平常付供應商貨款的帳戶",
+        "rescue": {
+          "reaction": "The same account handles our regular bills.",
+          "options": [
+            "平常付供應商貨款的帳戶",
+            "替公司留存預備金的帳戶"
+          ],
+          "answer": "平常付供應商貨款的帳戶"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "savings",
+        "from": "Linda",
+        "setup": "送件前，Linda 補了一封信交代預備金的用途。",
+        "text": "Leave the money in our ____ account untouched. We set it aside to earn interest and cover emergencies.",
+        "options": [
+          "payroll",
+          "savings",
+          "checking"
+        ],
+        "answer": "savings",
+        "rescue": {
+          "reaction": "This is the account where we keep our reserve, away from everyday spending.",
+          "options": [
+            "savings",
+            "payroll"
+          ],
+          "answer": "savings"
+        }
+      }
+    ],
+    "ending": "分行寄來補齊資料的貸款申請回條，Ben 把兩個取貨點圈在地圖上。"
+  },
+  {
+    "id": "ep04",
+    "title": "A Label Printer by Friday",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "strategy",
+        "from": "Ms. Chen",
+        "setup": "陳經理打來談隔壁工坊出售的二手設備。",
+        "text": "Our strategy is to buy only the equipment we can use this month. Could you check whether the seller will split the printers and the spare parts into separate lots?",
+        "question": "陳經理請你向賣方確認什麼？",
+        "options": [
+          "備用零件能否延長保固",
+          "印表機和備用零件能否分開賣",
+          "整批設備能否提早到貨"
+        ],
+        "answer": "印表機和備用零件能否分開賣",
+        "rescue": {
+          "reaction": "We may want just one item, so I need to know whether we can buy it on its own.",
+          "options": [
+            "整批設備能否提早到貨",
+            "印表機和備用零件能否分開賣"
+          ],
+          "answer": "印表機和備用零件能否分開賣"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "acquire",
+        "from": "Ben",
+        "setup": "Ben 翻到其中一台印表機的照片。",
+        "text": "We should ____ the label printer for our packing desk. Our old one jammed twice this morning, and the seller is offering this one at half the price of a new unit.",
+        "options": [
+          "acquire",
+          "upgrade",
+          "repair"
+        ],
+        "answer": "acquire",
+        "rescue": {
+          "reaction": "We'd be buying the seller's machine to replace ours.",
+          "options": [
+            "upgrade",
+            "acquire"
+          ],
+          "answer": "acquire"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "negotiate",
+        "from": "Ms. Chen",
+        "setup": "陳經理看完賣方開的價，打電話交代底線。",
+        "text": "You can negotiate the price of the printer, but don't go above six hundred dollars. We can collect it ourselves if that helps.",
+        "question": "陳經理同意你怎麼談這筆買賣？",
+        "options": [
+          "接受含運費的七百元報價",
+          "改買整批設備以取得折扣",
+          "把價格談到六百元以內"
+        ],
+        "answer": "把價格談到六百元以內",
+        "rescue": {
+          "reaction": "Six hundred is the most we can pay for the printer.",
+          "options": [
+            "把價格談到六百元以內",
+            "改買整批設備以取得折扣"
+          ],
+          "answer": "把價格談到六百元以內"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "authorize",
+        "from": "Linda",
+        "setup": "賣方接受價格後，Linda 請你走公司付款流程。",
+        "text": "Please ask Ms. Chen to ____ the payment in our banking portal. Finance can release the funds once she's given permission.",
+        "options": [
+          "schedule",
+          "authorize",
+          "review"
+        ],
+        "answer": "authorize",
+        "rescue": {
+          "reaction": "We need her approval before the money can go out.",
+          "options": [
+            "authorize",
+            "schedule"
+          ],
+          "answer": "authorize"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "vault",
+        "from": "Bank representative",
+        "setup": "銀行還要核對紙本簽名才能放行匯款，承辦人打來約時間。",
+        "text": "Your original signature card is in the vault, and I've asked a colleague to bring it up. Could you come to the branch after two instead of at noon?",
+        "question": "銀行建議你幾點去分行？",
+        "options": [
+          "中午十二點",
+          "上午開門時",
+          "下午兩點以後"
+        ],
+        "answer": "下午兩點以後",
+        "rescue": {
+          "reaction": "We need time to get the signature record out of secure storage.",
+          "options": [
+            "下午兩點以後",
+            "中午十二點"
+          ],
+          "answer": "下午兩點以後"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "remittance",
+        "from": "Supplier",
+        "setup": "你從銀行回來時，賣方寄信確認款項。",
+        "text": "Your ____ of $580 arrived this afternoon. The printer is paid for in full and ready for pickup.",
+        "options": [
+          "invoice",
+          "remittance",
+          "estimate"
+        ],
+        "answer": "remittance",
+        "rescue": {
+          "reaction": "The funds have reached us, and there's nothing left to pay.",
+          "options": [
+            "estimate",
+            "remittance"
+          ],
+          "answer": "remittance"
+        }
+      }
+    ],
+    "ending": "賣方同意分開販售設備，你把標籤機的取貨單交給 Ben。"
+  },
+  {
+    "id": "ep05",
+    "title": "Space on the Shelf",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "expansion",
+        "from": "Ms. Chen",
+        "setup": "陳經理把 Ortiz 女士的新門市圖寄給你。",
+        "text": "Ms. Ortiz is opening two more shops as part of her company's ____. Please find out how much shelf space she can give us.",
+        "options": [
+          "reorganization",
+          "relocation",
+          "expansion"
+        ],
+        "answer": "expansion",
+        "rescue": {
+          "reaction": "Her current shops will stay open while the new locations are added.",
+          "options": [
+            "relocation",
+            "expansion"
+          ],
+          "answer": "expansion"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "merger",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士看到你寄來的門市名單後打來更正。",
+        "text": "After our merger with North Market, both chains will share one buying office. For now, please send the offer directly to me.",
+        "question": "試賣提案目前應該寄給誰？",
+        "options": [
+          "Ortiz 女士本人",
+          "合併後的採購辦公室",
+          "各門市的店長"
+        ],
+        "answer": "Ortiz 女士本人",
+        "rescue": {
+          "reaction": "I'll handle this order myself while the two businesses are joining.",
+          "options": [
+            "Ortiz 女士本人",
+            "合併後的採購辦公室"
+          ],
+          "answer": "Ortiz 女士本人"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "subsidiary",
+        "from": "Linda",
+        "setup": "Linda 發現 Ortiz 女士旗下的門市用另一個名稱請款。",
+        "text": "Bill Market Home, a wholly owned ____ of our client's company. It is a separate business even though the parent company owns it.",
+        "options": [
+          "franchise",
+          "department",
+          "subsidiary"
+        ],
+        "answer": "subsidiary",
+        "rescue": {
+          "reaction": "The parent owns this entire business, and it has its own billing records.",
+          "options": [
+            "subsidiary",
+            "franchise"
+          ],
+          "answer": "subsidiary"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "revenue",
+        "from": "Linda",
+        "setup": "Linda 核對試賣試算表時停在第一欄。",
+        "text": "Your revenue figure looks low because you've already taken out the shipping cost. Could you put total sales on that line?",
+        "question": "Linda 要你在這一欄填什麼？",
+        "options": [
+          "預估配送成本",
+          "銷售總額",
+          "扣掉運費後的收入"
+        ],
+        "answer": "銷售總額",
+        "rescue": {
+          "reaction": "Use the amount customers pay before we subtract any expenses.",
+          "options": [
+            "銷售總額",
+            "預估配送成本"
+          ],
+          "answer": "銷售總額"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "client",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你把試賣條件留在客戶往來紀錄裡。",
+        "text": "Ms. Ortiz is our ____ on this deal. Her company buys goods from us and sells them in its own stores.",
+        "options": [
+          "client",
+          "broker",
+          "supplier"
+        ],
+        "answer": "client",
+        "rescue": {
+          "reaction": "Her company is the one placing orders with Harbor & Pine.",
+          "options": [
+            "supplier",
+            "client"
+          ],
+          "answer": "client"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "partnership",
+        "from": "Ms. Ortiz",
+        "setup": "下午接近下班時，Ortiz 女士打來縮小合作範圍。",
+        "text": "I'd like to start this partnership with one shop before we include the others. Can you send me a short list of items to try there?",
+        "question": "Ortiz 女士希望怎麼開始合作？",
+        "options": [
+          "等全數門市備貨後一起開賣",
+          "先在一間門市試賣",
+          "兩間新門市同步開賣"
+        ],
+        "answer": "先在一間門市試賣",
+        "rescue": {
+          "reaction": "Let's find out what sells at a single location first.",
+          "options": [
+            "兩間新門市同步開賣",
+            "先在一間門市試賣"
+          ],
+          "answer": "先在一間門市試賣"
+        }
+      }
+    ],
+    "ending": "你寄出第一間門市的試賣清單，Ortiz 女士回信訂下下週的樣品時段。"
+  },
+  {
+    "id": "ep06",
+    "title": "A Desk Near the Port",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "branch",
+        "from": "Ben",
+        "setup": "Ben 邊量港邊辦公室的桌子邊打給你。",
+        "text": "This branch has room for two desks, but I only found one power outlet. Could you add a second outlet to the setup list?",
+        "question": "Ben 發現港邊辦公室缺什麼？",
+        "options": [
+          "第二張辦公桌的空間",
+          "司機的臨停位置",
+          "一個額外的電源插座"
+        ],
+        "answer": "一個額外的電源插座",
+        "rescue": {
+          "reaction": "Both desks will fit here, but they'll need somewhere to plug in their equipment.",
+          "options": [
+            "一個額外的電源插座",
+            "司機的臨停位置"
+          ],
+          "answer": "一個額外的電源插座"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "objective",
+        "from": "Ms. Chen",
+        "setup": "陳經理看到草稿列了不少裝修細節。",
+        "text": "The main ____ of the port office is to cut the time drivers spend collecting paperwork. Please put that goal on the first page.",
+        "options": [
+          "expense",
+          "objective",
+          "requirement"
+        ],
+        "answer": "objective",
+        "rescue": {
+          "reaction": "Start with what we hope to achieve by opening the office.",
+          "options": [
+            "objective",
+            "expense"
+          ],
+          "answer": "objective"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "competitor",
+        "from": "Ben",
+        "setup": "Ben 在港邊跟司機聊過後再打給你。",
+        "text": "A competitor already lets drivers pick up paperwork in the evening. Do you think we could stay open until seven twice a week?",
+        "question": "Ben 建議試辦哪種服務？",
+        "options": [
+          "每天提早到早上七點開門",
+          "每週增加兩個白天取件時段",
+          "每週兩天延長營業到晚上七點"
+        ],
+        "answer": "每週兩天延長營業到晚上七點",
+        "rescue": {
+          "reaction": "I was thinking about drivers who finish their routes after regular office hours.",
+          "options": [
+            "每週兩天延長營業到晚上七點",
+            "每天提早到早上七點開門"
+          ],
+          "answer": "每週兩天延長營業到晚上七點"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "stakeholder",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你先聽聽每天會用到辦公點的人怎麼說。",
+        "text": "Anyone affected by the new pickup hours is a ____ and should have a chance to comment. Please invite a driver and a warehouse clerk.",
+        "options": [
+          "observer",
+          "stakeholder",
+          "sponsor"
+        ],
+        "answer": "stakeholder",
+        "rescue": {
+          "reaction": "We want input from the people whose work will change.",
+          "options": [
+            "sponsor",
+            "stakeholder"
+          ],
+          "answer": "stakeholder"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "headquarters",
+        "from": "Linda",
+        "setup": "Linda 來電說明試辦申請要送去哪裡。",
+        "text": "Headquarters will review the plan next week. Send a copy to the operations director there along with the cost sheet.",
+        "question": "Linda 請你把成本表交給誰？",
+        "options": [
+          "總部的營運主管",
+          "港邊辦公點的值班人員",
+          "負責估價的裝修廠商"
+        ],
+        "answer": "總部的營運主管",
+        "rescue": {
+          "reaction": "The decision will be made at the main office, where the operations director works.",
+          "options": [
+            "負責估價的裝修廠商",
+            "總部的營運主管"
+          ],
+          "answer": "總部的營運主管"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "proposal",
+        "from": "Ms. Chen",
+        "setup": "收齊意見後，陳經理請你整理送審版本。",
+        "text": "Please send the final ____ this afternoon. It should describe the trial hours, expected costs, and what we need management to approve.",
+        "options": [
+          "minutes",
+          "receipt",
+          "proposal"
+        ],
+        "answer": "proposal",
+        "rescue": {
+          "reaction": "We're asking management to approve a plan for work that hasn't started.",
+          "options": [
+            "receipt",
+            "proposal"
+          ],
+          "answer": "proposal"
+        }
+      }
+    ],
+    "ending": "你送出港邊辦公點的試辦提案，把司機臨停的位置也標在附件裡。"
+  },
+  {
+    "id": "ep07",
+    "title": "The Saturday Desk",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "initiative",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你加入週六取貨服務的試辦。",
+        "text": "For our Saturday pickup ____, we're setting up a desk and trying it for two weeks. Please ask the warehouse team how many orders they can prepare.",
+        "options": [
+          "evaluation",
+          "survey",
+          "initiative"
+        ],
+        "answer": "initiative",
+        "rescue": {
+          "reaction": "This is a new effort to offer a service we haven't tried before.",
+          "options": [
+            "initiative",
+            "evaluation"
+          ],
+          "answer": "initiative"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "operate",
+        "from": "Ben",
+        "setup": "Ben 在倉庫門口打來告訴你現場限制。",
+        "text": "We can operate the pickup desk until noon on Saturdays, when the warehouse closes. Would that be enough time for Ms. Ortiz's drivers?",
+        "question": "Ben 想確認什麼？",
+        "options": [
+          "倉庫週日是否會提早開門",
+          "週六中午前取貨的安排是否可行",
+          "司機週五能否先送貨到倉庫"
+        ],
+        "answer": "週六中午前取貨的安排是否可行",
+        "rescue": {
+          "reaction": "We can serve her drivers that morning, up until closing time.",
+          "options": [
+            "週六中午前取貨的安排是否可行",
+            "倉庫週日是否會提早開門"
+          ],
+          "answer": "週六中午前取貨的安排是否可行"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "manage",
+        "from": "Ms. Ortiz",
+        "setup": "你詢問司機的班表後，Ortiz 女士打來回覆。",
+        "text": "We can manage a morning pickup, but our driver has another stop at ten. Could you have our boxes ready by nine?",
+        "question": "Ortiz 女士希望最晚幾點備妥貨物？",
+        "options": [
+          "上午九點",
+          "中午十二點",
+          "上午十點"
+        ],
+        "answer": "上午九點",
+        "rescue": {
+          "reaction": "Our driver needs to collect the boxes before heading to the ten o'clock stop.",
+          "options": [
+            "上午十點",
+            "上午九點"
+          ],
+          "answer": "上午九點"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "policy",
+        "from": "Ben",
+        "setup": "Ben 請你把取貨規定放進通知信。",
+        "text": "Our pickup ____ requires drivers to show photo ID before we hand over any goods. That rule applies on Saturdays as well.",
+        "options": [
+          "budget",
+          "policy",
+          "schedule"
+        ],
+        "answer": "policy",
+        "rescue": {
+          "reaction": "It's a rule every driver needs to follow, regardless of the day.",
+          "options": [
+            "schedule",
+            "policy"
+          ],
+          "answer": "policy"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "presentation",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你準備下午試辦會議要用的資料。",
+        "text": "Please prepare a five-minute ____ for the meeting. Bring two slides and talk us through the proposed opening hours.",
+        "options": [
+          "presentation",
+          "exercise",
+          "interview"
+        ],
+        "answer": "presentation",
+        "rescue": {
+          "reaction": "We need you to speak to the group, with a couple of slides to refer to.",
+          "options": [
+            "exercise",
+            "presentation"
+          ],
+          "answer": "presentation"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "executive",
+        "from": "Ms. Chen",
+        "setup": "陳經理在會後打來說明誰會看試辦成果。",
+        "text": "An executive from the operations team approved the trial. She wants to see how many orders are picked up on the first Saturday.",
+        "question": "營運主管想知道試辦首日的哪項數字？",
+        "options": [
+          "到場值班的員工人數",
+          "通知信寄出的總封數",
+          "實際取走的訂單數"
+        ],
+        "answer": "實際取走的訂單數",
+        "rescue": {
+          "reaction": "Count the orders that actually leave the pickup desk that day.",
+          "options": [
+            "實際取走的訂單數",
+            "通知信寄出的總封數"
+          ],
+          "answer": "實際取走的訂單數"
+        }
+      }
+    ],
+    "ending": "陳經理核准週六試辦，你把值班表上的空格留給下午才回覆的同事。"
+  },
+  {
+    "id": "ep08",
+    "title": "The Lamp at the Counter",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "customer",
+        "from": "Ben",
+        "setup": "Ben 在展示間櫃台接到一通報修電話。",
+        "text": "A customer just called about a desk lamp that won't turn on. Could you find the record of her purchase before she comes in?",
+        "question": "Ben 請你在顧客到店前查什麼？",
+        "options": [
+          "檯燈的進貨日期",
+          "當天的送貨路線",
+          "這筆購買紀錄"
+        ],
+        "answer": "這筆購買紀錄",
+        "rescue": {
+          "reaction": "She bought the lamp here, so we need to see when and how she paid.",
+          "options": [
+            "這筆購買紀錄",
+            "檯燈的進貨日期"
+          ],
+          "answer": "這筆購買紀錄"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "receipt",
+        "from": "Ben",
+        "setup": "Ben 把原本夾在保固卡裡的文件掃描給你。",
+        "text": "I've attached the ____ from our register. It shows that the customer paid $42 by card on June 3.",
+        "options": [
+          "quotation",
+          "receipt",
+          "order"
+        ],
+        "answer": "receipt",
+        "rescue": {
+          "reaction": "The card payment has already gone through, and this is her proof of purchase.",
+          "options": [
+            "order",
+            "receipt"
+          ],
+          "answer": "receipt"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "warranty",
+        "from": "Supplier",
+        "setup": "你把檯燈序號寄給供應商查詢。",
+        "text": "The lamp is still under ____. We cover faults reported within one year of purchase, so you may return this unit to us at no charge.",
+        "options": [
+          "warranty",
+          "review",
+          "inspection"
+        ],
+        "answer": "warranty",
+        "rescue": {
+          "reaction": "Our promise to cover manufacturing faults is still in effect.",
+          "options": [
+            "inspection",
+            "warranty"
+          ],
+          "answer": "warranty"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "merchandise",
+        "from": "Ms. Chen",
+        "setup": "陳經理打來交代同批檯燈的處理方式。",
+        "text": "Move the remaining merchandise from that batch off the sales floor until Ben can test it. There's space for the boxes by the repair counter.",
+        "question": "陳經理要你把剩下的檯燈搬去哪裡？",
+        "options": [
+          "出貨月台旁",
+          "原先的展示架下方",
+          "維修櫃台旁"
+        ],
+        "answer": "維修櫃台旁",
+        "rescue": {
+          "reaction": "Keep the boxed stock away from shoppers while we check the lamps.",
+          "options": [
+            "原先的展示架下方",
+            "維修櫃台旁"
+          ],
+          "answer": "維修櫃台旁"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "discount",
+        "from": "Ben",
+        "setup": "Ben 和顧客談過後，打來請你改櫃台紀錄。",
+        "text": "I offered her a discount on a different model, but she'd like her money back. Could you mark the return as a refund?",
+        "question": "顧客選擇哪種處理方式？",
+        "options": [
+          "退回原本支付的款項",
+          "以折扣價購買另一款檯燈",
+          "更換同款檯燈"
+        ],
+        "answer": "退回原本支付的款項",
+        "rescue": {
+          "reaction": "She'd rather leave without a lamp and get back what she paid.",
+          "options": [
+            "退回原本支付的款項",
+            "以折扣價購買另一款檯燈"
+          ],
+          "answer": "退回原本支付的款項"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "refund",
+        "from": "Linda",
+        "setup": "你登錄退貨後，Linda 寄信說明入帳方式。",
+        "text": "Please issue a ____ of $42 to the card she paid with. We've received the returned lamp, and the sale will be reversed.",
+        "options": [
+          "deposit",
+          "reward",
+          "refund"
+        ],
+        "answer": "refund",
+        "rescue": {
+          "reaction": "Put the purchase price back on her card as a reversal of the sale.",
+          "options": [
+            "refund",
+            "deposit"
+          ],
+          "answer": "refund"
+        }
+      }
+    ],
+    "ending": "顧客拿到故障檯燈的退款，Ben 把其餘同批商品移到待檢區。"
+  },
+  {
+    "id": "ep09",
+    "title": "Bowls Before Opening",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "retailer",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你接手 Ortiz 女士門市的補貨單。",
+        "text": "Ms. Ortiz is the ____ for these ceramic bowls. Her shops sell them one at a time to people who need dishes for their homes.",
+        "options": [
+          "retailer",
+          "manufacturer",
+          "wholesaler"
+        ],
+        "answer": "retailer",
+        "rescue": {
+          "reaction": "Her shops sell directly to the people who will use the bowls.",
+          "options": [
+            "wholesaler",
+            "retailer"
+          ],
+          "answer": "retailer"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "stock",
+        "from": "Ben",
+        "setup": "Ben 到倉庫清點後打給你。",
+        "text": "We have one case of blue bowls in stock and three cases of white ones. Can you ask Ms. Ortiz whether she needs more than a case of blue?",
+        "question": "倉庫目前有幾箱藍碗？",
+        "options": [
+          "四箱",
+          "一箱",
+          "三箱"
+        ],
+        "answer": "一箱",
+        "rescue": {
+          "reaction": "There are plenty of white bowls, but only one sealed case in blue.",
+          "options": [
+            "三箱",
+            "一箱"
+          ],
+          "answer": "一箱"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "wholesale",
+        "from": "Linda",
+        "setup": "Linda 發現你從門市網站抄了價格。",
+        "text": "Use the ____ price of $4 per bowl for the case Ms. Ortiz will resell. Her shoppers will pay the $8 retail price.",
+        "options": [
+          "wholesale",
+          "clearance",
+          "retail"
+        ],
+        "answer": "wholesale",
+        "rescue": {
+          "reaction": "Use the rate we charge a store buying in bulk for resale.",
+          "options": [
+            "clearance",
+            "wholesale"
+          ],
+          "answer": "wholesale"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "checkout",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士試著在線上下單，不過畫面顯示了單個售價。",
+        "text": "At checkout the website charged me for a single bowl. Could you send me a link that lets me pay for the whole case?",
+        "question": "Ortiz 女士希望收到哪種連結？",
+        "options": [
+          "能查詢單個售價的連結",
+          "能預約門市取貨的連結",
+          "能支付整箱貨款的連結"
+        ],
+        "answer": "能支付整箱貨款的連結",
+        "rescue": {
+          "reaction": "I'm ready to pay, and I need the link for the box of twelve.",
+          "options": [
+            "能支付整箱貨款的連結",
+            "能預約門市取貨的連結"
+          ],
+          "answer": "能支付整箱貨款的連結"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "purchase",
+        "from": "Ms. Ortiz",
+        "setup": "你確認整箱價格後，Ortiz 女士回信同意付款。",
+        "text": "We'll ____ one case of blue bowls at the agreed price. Please send the payment link so we can buy it today.",
+        "options": [
+          "return",
+          "purchase",
+          "inspect"
+        ],
+        "answer": "purchase",
+        "rescue": {
+          "reaction": "I have approval to pay for the case today.",
+          "options": [
+            "purchase",
+            "return"
+          ],
+          "answer": "purchase"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "order",
+        "from": "Ben",
+        "setup": "付款完成後，Ben 從倉庫打來確認出貨標籤。",
+        "text": "The order is ready to go, and I've put it by the loading door. What address should I write on the shipping label?",
+        "question": "Ben 還需要知道什麼？",
+        "options": [
+          "顧客的付款方式",
+          "每箱陶碗的售價",
+          "貨物的收件地址"
+        ],
+        "answer": "貨物的收件地址",
+        "rescue": {
+          "reaction": "I have the box and the label here, but I need to know where the box is going.",
+          "options": [
+            "貨物的收件地址",
+            "顧客的付款方式"
+          ],
+          "answer": "貨物的收件地址"
+        }
+      }
+    ],
+    "ending": "你替 Ortiz 女士保留了最後一箱藍碗，在開店前把確認單寄到她手上。"
+  },
+  {
+    "id": "ep10",
+    "title": "The Green Lunch Bag",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "promotion",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你替展示間的週末特賣挑商品。",
+        "text": "For this weekend's ____, we'll offer a lower price on insulated lunch bags and put them by the entrance. Please choose a sample for the display.",
+        "options": [
+          "promotion",
+          "survey",
+          "review"
+        ],
+        "answer": "promotion",
+        "rescue": {
+          "reaction": "The temporary sale is meant to bring more shoppers into the showroom.",
+          "options": [
+            "review",
+            "promotion"
+          ],
+          "answer": "promotion"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "catalog",
+        "from": "Ben",
+        "setup": "Ben 找到供應商剛寄來的型錄。",
+        "text": "The new catalog shows that the lunch bag comes in green now. Could you check whether our vendor can send us a green sample by Friday?",
+        "question": "Ben 想請供應商在週五前做什麼？",
+        "options": [
+          "送來整批藍色提袋",
+          "寄來新版型錄",
+          "寄來綠色樣品"
+        ],
+        "answer": "寄來綠色樣品",
+        "rescue": {
+          "reaction": "I can see the new color in the brochure, and I'd like to see it in person before the sale.",
+          "options": [
+            "寄來新版型錄",
+            "寄來綠色樣品"
+          ],
+          "answer": "寄來綠色樣品"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "product",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你為選中的保冷袋建立網頁。",
+        "text": "Create a ____ page for the lunch bag. Include its size, color choices, and a photo of the item we're selling.",
+        "options": [
+          "product",
+          "supplier",
+          "payment"
+        ],
+        "answer": "product",
+        "rescue": {
+          "reaction": "Give shoppers a single page with the details of the bag itself.",
+          "options": [
+            "product",
+            "supplier"
+          ],
+          "answer": "product"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "vendor",
+        "from": "Ben",
+        "setup": "Ben 從展示間打來說明誰能處理樣品出貨。",
+        "text": "The vendor says the sales office has a green bag ready for us. Could you ask their shipping clerk to send it straight to the showroom?",
+        "question": "Ben 請你找誰安排寄送？",
+        "options": [
+          "公司負責付款的同事",
+          "展示間的收銀員",
+          "供應商的出貨人員"
+        ],
+        "answer": "供應商的出貨人員",
+        "rescue": {
+          "reaction": "The sample is with the company that sells us the bags, and their shipping staff can send it.",
+          "options": [
+            "供應商的出貨人員",
+            "公司負責付款的同事"
+          ],
+          "answer": "供應商的出貨人員"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "bargain",
+        "from": "Ben",
+        "setup": "Ben 把附近店家的售價貼在特賣草稿上。",
+        "text": "At $12, this lunch bag is a ____ compared with similar bags that cost $25. Let's keep the price large enough to read from the entrance.",
+        "options": [
+          "risk",
+          "bargain",
+          "luxury"
+        ],
+        "answer": "bargain",
+        "rescue": {
+          "reaction": "We're giving shoppers unusually good value for their money.",
+          "options": [
+            "bargain",
+            "risk"
+          ],
+          "answer": "bargain"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "exchange",
+        "from": "Supplier",
+        "setup": "供應商發現第一個展示樣品寄錯顏色。",
+        "text": "We can exchange the blue sample for a green one today. Please give the blue bag to the driver when she drops off the replacement.",
+        "question": "司機送來替換品時，你要把什麼交給她？",
+        "options": [
+          "藍色展示樣品",
+          "整批特賣提袋",
+          "綠色展示樣品"
+        ],
+        "answer": "藍色展示樣品",
+        "rescue": {
+          "reaction": "The driver will bring the color you wanted and take the original sample back.",
+          "options": [
+            "綠色展示樣品",
+            "藍色展示樣品"
+          ],
+          "answer": "藍色展示樣品"
+        }
+      }
+    ],
+    "ending": "供應商送來綠色樣品，你把它拍進週末特賣的網頁。"
+  },
+  {
+    "id": "ep11",
+    "title": "A Spoonful at the Market",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "sample",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士來電談週末市集的果醬攤。",
+        "text": "Could we offer a sample of the peach jam to anyone who stops by? I'd like them to try a little before they buy a jar.",
+        "question": "Ortiz 女士希望逛市集的人先做什麼？",
+        "options": [
+          "試吃一小口桃子果醬",
+          "試用攤位的結帳服務",
+          "先購買一整罐果醬"
+        ],
+        "answer": "試吃一小口桃子果醬",
+        "rescue": {
+          "reaction": "Give people a taste so they can decide whether a whole jar is worth buying.",
+          "options": [
+            "試用攤位的結帳服務",
+            "試吃一小口桃子果醬"
+          ],
+          "answer": "試吃一小口桃子果醬"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "service",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你向試吃攤位的合作廠商詢價。",
+        "text": "The agency charges by the hour for its staffing ____. Please ask what it costs to have two people serve jam at the booth.",
+        "options": [
+          "software",
+          "consultation",
+          "service"
+        ],
+        "answer": "service",
+        "rescue": {
+          "reaction": "We're paying the agency to provide people to work at the booth.",
+          "options": [
+            "service",
+            "consultation"
+          ],
+          "answer": "service"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "shopper",
+        "from": "Ben",
+        "setup": "Ben 剛從市集場地勘查回來。",
+        "text": "A shopper asked me if she could buy jam at the stall as well as taste it. Could you put the price per jar on the sign?",
+        "question": "Ben 請你在牌子上加上哪項資訊？",
+        "options": [
+          "每次試吃的等候時間",
+          "每罐果醬的售價",
+          "攤位人員的聯絡方式"
+        ],
+        "answer": "每罐果醬的售價",
+        "rescue": {
+          "reaction": "People should be able to see what a full jar costs before they ask.",
+          "options": [
+            "每罐果醬的售價",
+            "每次試吃的等候時間"
+          ],
+          "answer": "每罐果醬的售價"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "clause",
+        "from": "Ms. Chen",
+        "setup": "試吃人力報價送來後，陳經理注意到清潔條款。",
+        "text": "Please revise the ____ on cleaning in section four. It should say that the agency will take away its used cups at the end of the day.",
+        "options": [
+          "diagram",
+          "estimate",
+          "clause"
+        ],
+        "answer": "clause",
+        "rescue": {
+          "reaction": "Change that particular term in the document so we know who handles the cups.",
+          "options": [
+            "clause",
+            "diagram"
+          ],
+          "answer": "clause"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "agreement",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士和你確認最後的試吃時段。",
+        "text": "We've reached an agreement on the hours. Let's open the stall at ten and stop serving samples at two.",
+        "question": "雙方同意幾點停止提供試吃？",
+        "options": [
+          "上午十點",
+          "下午兩點",
+          "下午四點"
+        ],
+        "answer": "下午兩點",
+        "rescue": {
+          "reaction": "We've settled on four hours of sampling, starting at ten in the morning.",
+          "options": [
+            "下午四點",
+            "下午兩點"
+          ],
+          "answer": "下午兩點"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "contract",
+        "from": "Ms. Chen",
+        "setup": "廠商答應負責清潔，陳經理請你簽收文件。",
+        "text": "File the signed ____ with the staffing agency. It sets out the hours, payment terms, and what each company has promised to do.",
+        "options": [
+          "contract",
+          "estimate",
+          "schedule"
+        ],
+        "answer": "contract",
+        "rescue": {
+          "reaction": "Both companies signed this document to confirm their commitments.",
+          "options": [
+            "schedule",
+            "contract"
+          ],
+          "answer": "contract"
+        }
+      }
+    ],
+    "ending": "你收好試吃攤位的雙方簽名文件，Ben 列印了週六的值班表。"
+  },
+  {
+    "id": "ep12",
+    "title": "One More Year of Pickup",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "renew",
+        "from": "Ben",
+        "setup": "倉庫的夜間取件服務本月底到期，Ben 打來問續約進度。",
+        "text": "Can we renew the pickup service for another year? The drivers use it nearly every night, and the current agreement ends this month.",
+        "question": "Ben 希望夜間取件服務延長多久？",
+        "options": [
+          "一年",
+          "一個月",
+          "一季"
+        ],
+        "answer": "一年",
+        "rescue": {
+          "reaction": "I'd like the service to carry on for twelve more months after this agreement ends.",
+          "options": [
+            "一年",
+            "一個月"
+          ],
+          "answer": "一年"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "obligation",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你確認現行合約對廠商的要求。",
+        "text": "Under the current contract, the pickup company has an ____ to answer calls until 10 p.m. Please check that the same duty appears in the new draft.",
+        "options": [
+          "incentive",
+          "option",
+          "obligation"
+        ],
+        "answer": "obligation",
+        "rescue": {
+          "reaction": "Taking calls until ten is something the company is required to do.",
+          "options": [
+            "obligation",
+            "incentive"
+          ],
+          "answer": "obligation"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "comply",
+        "from": "Supplier",
+        "setup": "取件廠商來電確認自己能配合新的大樓規定。",
+        "text": "We can comply with the building's new pickup rules. Just let our drivers know which entrance they should use after six.",
+        "question": "廠商想讓司機知道什麼？",
+        "options": [
+          "到哪裡查詢尚未支付的費用",
+          "晚上六點後該走哪個入口",
+          "哪些日子可以延後取件"
+        ],
+        "answer": "晚上六點後該走哪個入口",
+        "rescue": {
+          "reaction": "The drivers can follow the rules once they know which door is open to them in the evening.",
+          "options": [
+            "晚上六點後該走哪個入口",
+            "到哪裡查詢尚未支付的費用"
+          ],
+          "answer": "晚上六點後該走哪個入口"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "amend",
+        "from": "Ms. Chen",
+        "setup": "你發現草稿仍寫著舊的取件入口。",
+        "text": "Please ____ the draft so it names the east entrance for evening pickups. All other terms have already been agreed.",
+        "options": [
+          "amend",
+          "withdraw",
+          "renew"
+        ],
+        "answer": "amend",
+        "rescue": {
+          "reaction": "We need a small change to the wording before the new document is ready.",
+          "options": [
+            "renew",
+            "amend"
+          ],
+          "answer": "amend"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "terminate",
+        "from": "Supplier",
+        "setup": "廠商來電解釋合約裡的提前終止規定。",
+        "text": "Either company can terminate the agreement early, but it must give thirty days' written notice. That gives both sides time to make other plans.",
+        "question": "如果要提前結束合約，公司要怎麼做？",
+        "options": [
+          "等到年底再寄付款通知",
+          "提前三十天以書面通知",
+          "在結束當天打電話告知"
+        ],
+        "answer": "提前三十天以書面通知",
+        "rescue": {
+          "reaction": "Someone who wants to end the service has to write to the other company a month in advance.",
+          "options": [
+            "在結束當天打電話告知",
+            "提前三十天以書面通知"
+          ],
+          "answer": "提前三十天以書面通知"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "signature",
+        "from": "Linda",
+        "setup": "廠商已簽好新版合約，Linda 核對時發現少一個欄位。",
+        "text": "The vendor has signed, but Ms. Chen's ____ is still missing from the last page. Please ask her to sign above her printed name.",
+        "options": [
+          "signature",
+          "title",
+          "address"
+        ],
+        "answer": "signature",
+        "rescue": {
+          "reaction": "We need the handwritten name that shows she's approved the agreement.",
+          "options": [
+            "title",
+            "signature"
+          ],
+          "answer": "signature"
+        }
+      }
+    ],
+    "ending": "你把續約後的取件時段貼在前台，Ben 留了一份給晚班司機。"
+  },
+  {
+    "id": "ep13",
+    "title": "The Price Sheet",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "confidential",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你把給 Ortiz 女士的試賣報價和公開資料分開。",
+        "text": "Mark the price sheet as ____. It contains private rates for Ms. Ortiz and must stay out of the public brochure.",
+        "options": [
+          "preliminary",
+          "confidential",
+          "optional"
+        ],
+        "answer": "confidential",
+        "rescue": {
+          "reaction": "Those rates are for the client alone to see.",
+          "options": [
+            "confidential",
+            "preliminary"
+          ],
+          "answer": "confidential"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "condition",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士打來確認試賣報價的數量門檻。",
+        "text": "I can meet the condition of ordering fifty units, but only if we can split them between two stores. Could you check whether that's possible?",
+        "question": "Ortiz 女士想確認能否怎麼安排五十件商品？",
+        "options": [
+          "全部集中到一間門市",
+          "分五次各買十件",
+          "分給兩間門市"
+        ],
+        "answer": "分給兩間門市",
+        "rescue": {
+          "reaction": "The total will be fifty, and she'd like stock at both locations.",
+          "options": [
+            "分給兩間門市",
+            "全部集中到一間門市"
+          ],
+          "answer": "分給兩間門市"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "valid",
+        "from": "Linda",
+        "setup": "Linda 核對價目表右下角的日期。",
+        "text": "The offer is ____ through May 31, and we'll honor any order placed at these rates by that date. After that, ask Finance to confirm the price again.",
+        "options": [
+          "provisional",
+          "valid",
+          "expired"
+        ],
+        "answer": "valid",
+        "rescue": {
+          "reaction": "The client can still accept these exact prices up to and including May 31.",
+          "options": [
+            "expired",
+            "valid"
+          ],
+          "answer": "valid"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "provision",
+        "from": "Ms. Chen",
+        "setup": "陳經理打來提醒你留意第五節的交貨條文。",
+        "text": "Section five has a provision on split deliveries. It allows two drop-offs at no extra cost if both addresses are in the city.",
+        "question": "什麼情況下可免費拆成兩次配送？",
+        "options": [
+          "兩個收貨地址都在市內",
+          "兩次配送都改在週末",
+          "由同一位司機配送兩次"
+        ],
+        "answer": "兩個收貨地址都在市內",
+        "rescue": {
+          "reaction": "Check where the stores are because the rule covers two city addresses.",
+          "options": [
+            "由同一位司機配送兩次",
+            "兩個收貨地址都在市內"
+          ],
+          "answer": "兩個收貨地址都在市內"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "penalty",
+        "from": "Linda",
+        "setup": "Linda 請你把晚交貨的費用標在內部行事曆上。",
+        "text": "The agreement sets a $50 ____ for each day a delivery is late. Add the delivery dates to our calendar so we can avoid that charge.",
+        "options": [
+          "allowance",
+          "discount",
+          "penalty"
+        ],
+        "answer": "penalty",
+        "rescue": {
+          "reaction": "We'd have to pay this charge if we missed a delivery date.",
+          "options": [
+            "discount",
+            "penalty"
+          ],
+          "answer": "penalty"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "binding",
+        "from": "Ms. Chen",
+        "setup": "你準備寄報價時，陳經理打來確認簽核流程。",
+        "text": "The final agreement becomes binding once both companies sign it. For now, send Ms. Ortiz the price sheet so she can review it.",
+        "question": "陳經理請你現在先做什麼？",
+        "options": [
+          "把價目表寄給 Ortiz 女士審閱",
+          "替公司在正式合約上簽名",
+          "把價目表放進公開型錄"
+        ],
+        "answer": "把價目表寄給 Ortiz 女士審閱",
+        "rescue": {
+          "reaction": "The client should see the rates today, and the signed agreement can come later.",
+          "options": [
+            "把價目表寄給 Ortiz 女士審閱",
+            "替公司在正式合約上簽名"
+          ],
+          "answer": "把價目表寄給 Ortiz 女士審閱"
+        }
+      }
+    ],
+    "ending": "Ortiz 女士收到有保密標記的價目表，公開版試賣資料則交給門市印製。"
+  },
+  {
+    "id": "ep14",
+    "title": "The Photo on Page Three",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "dispute",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士發現型錄上的商品照有兩家廠商聲稱擁有。",
+        "text": "There's a dispute over who owns the photo on page three. Can we hold that page until the photographer replies?",
+        "question": "攝影師回覆前，Ortiz 女士希望怎麼處理第三頁？",
+        "options": [
+          "直接刪除整本型錄",
+          "先暫緩送印",
+          "用同一張照片加印"
+        ],
+        "answer": "先暫緩送印",
+        "rescue": {
+          "reaction": "Two people claim the same photo, so give the photographer time to clear it up.",
+          "options": [
+            "先暫緩送印",
+            "直接刪除整本型錄"
+          ],
+          "answer": "先暫緩送印"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "legal",
+        "from": "Ms. Chen",
+        "setup": "陳經理把照片使用問題轉給公司法務窗口。",
+        "text": "Please seek ____ advice on who owns the rights to this photo. Our company lawyer can review the original agreement.",
+        "options": [
+          "legal",
+          "technical",
+          "financial"
+        ],
+        "answer": "legal",
+        "rescue": {
+          "reaction": "I want someone who understands ownership rights to read the agreement.",
+          "options": [
+            "financial",
+            "legal"
+          ],
+          "answer": "legal"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "party",
+        "from": "Ms. Chen",
+        "setup": "你找到原始合約，陳經理請你核對立約名單。",
+        "text": "The photographer is a ____ to the agreement. She signed it and agreed to provide the original image in exchange for a fee.",
+        "options": [
+          "consultant",
+          "party",
+          "witness"
+        ],
+        "answer": "party",
+        "rescue": {
+          "reaction": "She entered into the agreement herself and accepted the duties written in it.",
+          "options": [
+            "witness",
+            "party"
+          ],
+          "answer": "party"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "consent",
+        "from": "Photographer",
+        "setup": "攝影師確認照片是她拍的，並回電說明可用範圍。",
+        "text": "You have my consent to use the photo in the printed catalog. Please talk to me again if you want to put it on your website.",
+        "question": "攝影師這次同意將照片用在哪裡？",
+        "options": [
+          "紙本型錄",
+          "線上廣告",
+          "公司網站"
+        ],
+        "answer": "紙本型錄",
+        "rescue": {
+          "reaction": "I'm giving permission for the version you'll print on paper.",
+          "options": [
+            "線上廣告",
+            "紙本型錄"
+          ],
+          "answer": "紙本型錄"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "license",
+        "from": "Ms. Chen",
+        "setup": "攝影師寄回書面文件後，陳經理請你歸檔。",
+        "text": "Save the photographer's ____ in the image folder. It gives us the right to use her photo in the printed catalog for one year.",
+        "options": [
+          "invoice",
+          "estimate",
+          "license"
+        ],
+        "answer": "license",
+        "rescue": {
+          "reaction": "Keep the document that gives us permission to use the image.",
+          "options": [
+            "license",
+            "estimate"
+          ],
+          "answer": "license"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "execute",
+        "from": "Ben",
+        "setup": "Ben 拿著更新後的型錄頁面打給你。",
+        "text": "We're ready to execute the print plan with the approved photo. Could you send the printer the updated version of page three?",
+        "question": "Ben 請你把什麼寄給印刷廠？",
+        "options": [
+          "攝影師的報價單",
+          "更新後的第三頁",
+          "印好的舊型錄"
+        ],
+        "answer": "更新後的第三頁",
+        "rescue": {
+          "reaction": "The print shop needs the page with the approved image so production can start.",
+          "options": [
+            "更新後的第三頁",
+            "攝影師的報價單"
+          ],
+          "answer": "更新後的第三頁"
+        }
+      }
+    ],
+    "ending": "取得攝影師確認後，你把第三頁的商品照放回要送印的型錄。"
+  },
+  {
+    "id": "ep15",
+    "title": "The Rush Order",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "invoice",
+        "from": "Linda",
+        "setup": "你在替 Ortiz 女士算急單報價時，Linda 發現紙箱請款單有問題。",
+        "text": "The invoice lists forty cartons, but we received only thirty. Can you ask the box supplier for a corrected bill before we price the rush order?",
+        "question": "Linda 請你向紙箱供應商索取什麼？",
+        "options": [
+          "另外十個紙箱的樣品",
+          "更正後的請款單",
+          "急單的運費報價"
+        ],
+        "answer": "更正後的請款單",
+        "rescue": {
+          "reaction": "We need a bill for the thirty cartons we actually got.",
+          "options": [
+            "急單的運費報價",
+            "更正後的請款單"
+          ],
+          "answer": "更正後的請款單"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "expense",
+        "from": "Linda",
+        "setup": "紙箱款項更正後，Linda 請你補上另一筆成本。",
+        "text": "Please include the courier payment as a shipping ____ on the cost sheet. It is money we spend to send the order.",
+        "options": [
+          "expense",
+          "rebate",
+          "deposit"
+        ],
+        "answer": "expense",
+        "rescue": {
+          "reaction": "Put the courier charge under money going out to cover the shipment.",
+          "options": [
+            "deposit",
+            "expense"
+          ],
+          "answer": "expense"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "budget",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士打來說明這批商品的採購上限。",
+        "text": "My budget for this order is $900, including shipping. Could you see what delivery on Thursday would cost?",
+        "question": "Ortiz 女士想先了解哪一項費用？",
+        "options": [
+          "週四取消訂單的費用",
+          "再加十個紙箱的費用",
+          "週四到貨的配送費用"
+        ],
+        "answer": "週四到貨的配送費用",
+        "rescue": {
+          "reaction": "The total has to stay within nine hundred, and I can wait until Thursday for the boxes.",
+          "options": [
+            "再加十個紙箱的費用",
+            "週四到貨的配送費用"
+          ],
+          "answer": "週四到貨的配送費用"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "forecast",
+        "from": "Ms. Chen",
+        "setup": "陳經理想知道週四前下單的可能數量。",
+        "text": "Update the sales ____ for the rest of this week. Use the current inquiries to predict how many orders we're likely to receive.",
+        "options": [
+          "forecast",
+          "record",
+          "statement"
+        ],
+        "answer": "forecast",
+        "rescue": {
+          "reaction": "We need your best view of what will happen over the next few days.",
+          "options": [
+            "forecast",
+            "record"
+          ],
+          "answer": "forecast"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "loss",
+        "from": "Linda",
+        "setup": "Linda 打來說明最快和最便宜的運送方式差在哪裡。",
+        "text": "With overnight shipping, we'd make a loss of thirty dollars on this order. Standard freight would get it there Thursday and cost us less.",
+        "question": "哪種方式會讓公司在這筆訂單上虧錢？",
+        "options": [
+          "客戶自行取貨",
+          "普通貨運",
+          "隔夜快遞"
+        ],
+        "answer": "隔夜快遞",
+        "rescue": {
+          "reaction": "The faster service would push our costs above what the customer pays.",
+          "options": [
+            "隔夜快遞",
+            "客戶自行取貨"
+          ],
+          "answer": "隔夜快遞"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "profit",
+        "from": "Linda",
+        "setup": "你改用普通貨運後，Linda 回信確認報價。",
+        "text": "With standard freight, we'll make a ____ of $80. That's what remains of the sale price after we pay all the costs.",
+        "options": [
+          "payment",
+          "profit",
+          "loss"
+        ],
+        "answer": "profit",
+        "rescue": {
+          "reaction": "The money coming in is eighty dollars more than the money going out.",
+          "options": [
+            "profit",
+            "payment"
+          ],
+          "answer": "profit"
+        }
+      }
+    ],
+    "ending": "Ortiz 女士同意改用普通貨運，你送出的報價仍留有利潤。"
+  },
+  {
+    "id": "ep16",
+    "title": "The Spare Forklift",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "audit",
+        "from": "Linda",
+        "setup": "Linda 請你找出備用堆高機的採購紀錄。",
+        "text": "The year-end ____ starts this afternoon. The outside accountants will check whether the equipment records match our receipts.",
+        "options": [
+          "reorganization",
+          "audit",
+          "forecast"
+        ],
+        "answer": "audit",
+        "rescue": {
+          "reaction": "The accountants are coming to verify what's in our books.",
+          "options": [
+            "forecast",
+            "audit"
+          ],
+          "answer": "audit"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "asset",
+        "from": "Ben",
+        "setup": "Ben 在倉庫找到備用車，打來問要登在哪裡。",
+        "text": "The spare forklift is still an asset on our books, even though we rarely use it. Can you check whether its serial number matches the number on the list?",
+        "question": "Ben 請你核對哪個號碼？",
+        "options": [
+          "堆高機的序號",
+          "估價單的編號",
+          "倉庫的門牌號碼"
+        ],
+        "answer": "堆高機的序號",
+        "rescue": {
+          "reaction": "I need to confirm that the machine in front of me is the one the company records show.",
+          "options": [
+            "估價單的編號",
+            "堆高機的序號"
+          ],
+          "answer": "堆高機的序號"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "estimate",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你問車商二手堆高機大概能賣多少。",
+        "text": "Ask the dealer for a written ____ of the forklift's resale value. An approximate amount is enough for today's meeting.",
+        "options": [
+          "invoice",
+          "receipt",
+          "estimate"
+        ],
+        "answer": "estimate",
+        "rescue": {
+          "reaction": "We need a rough selling price and haven't agreed to a sale.",
+          "options": [
+            "estimate",
+            "receipt"
+          ],
+          "answer": "estimate"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "liability",
+        "from": "Linda",
+        "setup": "Linda 找到當年買車時的分期資料。",
+        "text": "The unpaid amount on the forklift loan is still a liability. Please show that debt separately from the value of the machine.",
+        "question": "Linda 要你把哪筆金額另外列出？",
+        "options": [
+          "堆高機的預估售價",
+          "堆高機貸款的未償金額",
+          "堆高機的每月保養費"
+        ],
+        "answer": "堆高機貸款的未償金額",
+        "rescue": {
+          "reaction": "What we still owe the lender needs its own line.",
+          "options": [
+            "堆高機貸款的未償金額",
+            "堆高機的預估售價"
+          ],
+          "answer": "堆高機貸款的未償金額"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "equity",
+        "from": "Linda",
+        "setup": "堆高機資料補齊後，Linda 請你核對總表最後一欄。",
+        "text": "After subtracting total liabilities from total assets, enter the remainder under shareholders' ____. That line shows the owners' combined stake in the business.",
+        "options": [
+          "income",
+          "salary",
+          "equity"
+        ],
+        "answer": "equity",
+        "rescue": {
+          "reaction": "This is the part of the business value that belongs to its owners after debts are counted.",
+          "options": [
+            "equity",
+            "income"
+          ],
+          "answer": "equity"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "reimbursement",
+        "from": "Ben",
+        "setup": "查完車輛紀錄後，Ben 帶回了他代墊的影印費收據。",
+        "text": "I paid for copies of the dealer's records myself. Where should I send the receipt for reimbursement?",
+        "question": "Ben 為什麼要交收據？",
+        "options": [
+          "申請提高車輛出售價格",
+          "申請退回他代墊的影印費",
+          "確認影印文件的份數"
+        ],
+        "answer": "申請退回他代墊的影印費",
+        "rescue": {
+          "reaction": "The money came out of my pocket, and it's a company expense.",
+          "options": [
+            "確認影印文件的份數",
+            "申請退回他代墊的影印費"
+          ],
+          "answer": "申請退回他代墊的影印費"
+        }
+      }
+    ],
+    "ending": "你把堆高機的估價和未清款項並排寫在稽核資料裡，Linda 如期交件。"
+  },
+  {
+    "id": "ep17",
+    "title": "Before the Books Close",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "quarter",
+        "from": "Linda",
+        "setup": "Linda 在月底結帳時發現一筆倉庫付款還沒登錄。",
+        "text": "This is the last day of the quarter, so I need all payments for April through June. Could you send the missing warehouse payment record today?",
+        "question": "Linda 正在結算哪段期間的付款？",
+        "options": [
+          "六月一個月",
+          "一月到三月",
+          "四月到六月"
+        ],
+        "answer": "四月到六月",
+        "rescue": {
+          "reaction": "Today's report covers the three months that end in June.",
+          "options": [
+            "一月到三月",
+            "四月到六月"
+          ],
+          "answer": "四月到六月"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "transaction",
+        "from": "Linda",
+        "setup": "你找到倉庫付款通知，但上面只有一個參考編號。",
+        "text": "Please match that reference number to the bank ____ for the warehouse payment. That entry shows when the money actually left our account.",
+        "options": [
+          "transaction",
+          "application",
+          "forecast"
+        ],
+        "answer": "transaction",
+        "rescue": {
+          "reaction": "Find the entry for that specific movement of money in the bank records.",
+          "options": [
+            "transaction",
+            "application"
+          ],
+          "answer": "transaction"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "currency",
+        "from": "Bank representative",
+        "setup": "銀行承辦人來電確認另一筆貨款的付款幣別。",
+        "text": "The supplier asked for payment in euros, but the currency on your form is US dollars. Could you send us a corrected form by three?",
+        "question": "銀行發現付款表填錯哪裡？",
+        "options": [
+          "填了週五，供應商要求週三",
+          "填了歐元，供應商要求美元",
+          "填了美元，供應商要求歐元"
+        ],
+        "answer": "填了美元，供應商要求歐元",
+        "rescue": {
+          "reaction": "The problem is the kind of money on the form, and the supplier bills in euros.",
+          "options": [
+            "填了美元，供應商要求歐元",
+            "填了週五，供應商要求週三"
+          ],
+          "answer": "填了美元，供應商要求歐元"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "payroll",
+        "from": "Linda",
+        "setup": "外幣付款送件後，Linda 請你看今天的另一個截止時間。",
+        "text": "Please send the ____ file by four so the bank can deposit this month's wages into employees' accounts.",
+        "options": [
+          "invoice",
+          "payroll",
+          "inventory"
+        ],
+        "answer": "payroll",
+        "rescue": {
+          "reaction": "The file tells the bank how much to pay each member of staff.",
+          "options": [
+            "payroll",
+            "invoice"
+          ],
+          "answer": "payroll"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "dividend",
+        "from": "Ms. Chen",
+        "setup": "陳經理打來轉告董事會對股利的決定。",
+        "text": "The board has moved the dividend payment to next month. Could you take it off today's bank transfer list?",
+        "question": "你該怎麼處理今天清單上的股利？",
+        "options": [
+          "從今天的轉帳清單移除",
+          "轉入員工薪資帳戶",
+          "今天照原金額轉帳"
+        ],
+        "answer": "從今天的轉帳清單移除",
+        "rescue": {
+          "reaction": "The shareholders will receive their payment next month.",
+          "options": [
+            "今天照原金額轉帳",
+            "從今天的轉帳清單移除"
+          ],
+          "answer": "從今天的轉帳清單移除"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "balance",
+        "from": "Linda",
+        "setup": "Linda 要你確認所有轉帳後還有多少可用資金。",
+        "text": "Please confirm the closing ____ in our bank account. It should show exactly how much money is left after today's transfers.",
+        "options": [
+          "withdrawal",
+          "balance",
+          "deposit"
+        ],
+        "answer": "balance",
+        "rescue": {
+          "reaction": "I need the amount still in the account at the end of the day.",
+          "options": [
+            "deposit",
+            "balance"
+          ],
+          "answer": "balance"
+        }
+      }
+    ],
+    "ending": "薪資轉帳趕在銀行截止前送出，Linda 留下足夠餘額支付港口費用。"
+  },
+  {
+    "id": "ep18",
+    "title": "Help for the Holiday Rush",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "recruit",
+        "from": "Ms. Chen",
+        "setup": "網路訂單一下子多了起來，陳經理請你找短期人手。",
+        "text": "We need to ____ two people for the holiday packing shift. Please put a job ad on our careers page and invite suitable people to apply.",
+        "options": [
+          "train",
+          "transfer",
+          "recruit"
+        ],
+        "answer": "recruit",
+        "rescue": {
+          "reaction": "We need to attract people to apply for two open jobs.",
+          "options": [
+            "recruit",
+            "transfer"
+          ],
+          "answer": "recruit"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "fund",
+        "from": "Linda",
+        "setup": "Linda 來電提醒你旺季支出有專用預算。",
+        "text": "There's enough money in the holiday staffing fund for two people at twenty hours a week each. Can you put those hours in the ad?",
+        "question": "每位短期員工每週可以排幾小時？",
+        "options": [
+          "十小時",
+          "二十小時",
+          "四十小時"
+        ],
+        "answer": "二十小時",
+        "rescue": {
+          "reaction": "We've set aside enough for two staff members, each at half of a forty-hour week.",
+          "options": [
+            "二十小時",
+            "十小時"
+          ],
+          "answer": "二十小時"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "allocate",
+        "from": "Linda",
+        "setup": "Linda 請你把新人上工前的費用獨立列出。",
+        "text": "Please ____ $300 of the staffing budget to training. Set that amount aside before you calculate the money available for shifts.",
+        "options": [
+          "charge",
+          "advance",
+          "allocate"
+        ],
+        "answer": "allocate",
+        "rescue": {
+          "reaction": "Reserve part of the existing budget for those first practice sessions.",
+          "options": [
+            "allocate",
+            "charge"
+          ],
+          "answer": "allocate"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "taxable",
+        "from": "Linda",
+        "setup": "你把短期人員的獎金標在表上，Linda 打來確認分類。",
+        "text": "I've checked with payroll, and the holiday bonus is taxable. Put it on the earnings sheet so they can calculate the deduction.",
+        "question": "Linda 要你把旺季獎金列在哪裡？",
+        "options": [
+          "訓練費預算表",
+          "薪資所得表",
+          "員工代墊費用表"
+        ],
+        "answer": "薪資所得表",
+        "rescue": {
+          "reaction": "Payroll needs the bonus recorded with the pay it uses to work out tax.",
+          "options": [
+            "員工代墊費用表",
+            "薪資所得表"
+          ],
+          "answer": "薪資所得表"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "applicant",
+        "from": "Ms. Chen",
+        "setup": "職缺刊登後不久，陳經理請你記下每份來件。",
+        "text": "Send a confirmation email to each ____ for a packing job. Let them know when we expect to start interviews.",
+        "options": [
+          "applicant",
+          "supervisor",
+          "reference"
+        ],
+        "answer": "applicant",
+        "rescue": {
+          "reaction": "We're writing to the people who put their names forward for the job.",
+          "options": [
+            "reference",
+            "applicant"
+          ],
+          "answer": "applicant"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "resume",
+        "from": "Ben",
+        "setup": "Ben 看過收件清單後，打電話指給你兩份值得先看的履歷。",
+        "text": "Two people worked with our inventory system at their last job. Could you check each resume for their dates of employment before you schedule the interviews?",
+        "question": "排面談前，Ben 請你從履歷確認什麼？",
+        "options": [
+          "兩人希望的每小時薪資",
+          "兩人能來面談的時段",
+          "兩人過去的任職期間"
+        ],
+        "answer": "兩人過去的任職期間",
+        "rescue": {
+          "reaction": "Check when they started and finished those previous jobs.",
+          "options": [
+            "兩人能來面談的時段",
+            "兩人過去的任職期間"
+          ],
+          "answer": "兩人過去的任職期間"
+        }
+      }
+    ],
+    "ending": "你把兩位會操作庫存系統的人排進面談時段，Linda 也在預算表上保留了訓練費。"
+  },
+  {
+    "id": "ep19",
+    "title": "A Seat at the Service Desk",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "qualification",
+        "from": "Ms. Chen",
+        "setup": "客服櫃台需要人手，陳經理請你先整理應徵條件。",
+        "text": "List a forklift certificate as a required ____ for the service desk job. The person will occasionally move orders away from the counter.",
+        "options": [
+          "permission",
+          "benefit",
+          "qualification"
+        ],
+        "answer": "qualification",
+        "rescue": {
+          "reaction": "This certificate shows the job seeker has a skill the position requires.",
+          "options": [
+            "qualification",
+            "permission"
+          ],
+          "answer": "qualification"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "candidate",
+        "from": "Ben",
+        "setup": "Ben 打來談兩位符合條件的應徵者。",
+        "text": "One candidate has worked at a busy pickup counter for three years. Could you offer her the first appointment this afternoon?",
+        "question": "Ben 建議先請哪位應徵者來？",
+        "options": [
+          "今天下午無法到場的人",
+          "有三年取貨櫃台經驗的人",
+          "只做過電話客服的人"
+        ],
+        "answer": "有三年取貨櫃台經驗的人",
+        "rescue": {
+          "reaction": "Give the earliest slot to the person who's already handled pickups in a busy place.",
+          "options": [
+            "有三年取貨櫃台經驗的人",
+            "今天下午無法到場的人"
+          ],
+          "answer": "有三年取貨櫃台經驗的人"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "interview",
+        "from": "Ben",
+        "setup": "確定第一個時段後，Ben 打來改場地。",
+        "text": "Please move the interview to the small meeting room. The service desk will be too noisy to talk there this afternoon.",
+        "question": "面談要改到哪裡？",
+        "options": [
+          "小會議室",
+          "倉庫門口",
+          "客服櫃台"
+        ],
+        "answer": "小會議室",
+        "rescue": {
+          "reaction": "We need somewhere quiet to speak with the applicant.",
+          "options": [
+            "客服櫃台",
+            "小會議室"
+          ],
+          "answer": "小會議室"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "hire",
+        "from": "Ms. Chen",
+        "setup": "試著處理一筆退貨後，應徵者離開會議室。",
+        "text": "I'd like to ____ the applicant we met at two. Please offer her the service desk position with a start date of Monday.",
+        "options": [
+          "train",
+          "hire",
+          "transfer"
+        ],
+        "answer": "hire",
+        "rescue": {
+          "reaction": "Let's offer her a job with Harbor & Pine.",
+          "options": [
+            "transfer",
+            "hire"
+          ],
+          "answer": "hire"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "training",
+        "from": "Ben",
+        "setup": "Ben 打來安排新同事學習門市系統。",
+        "text": "I'll handle her training on the returns system. Can you reserve a computer for us on Tuesday afternoon?",
+        "question": "Ben 請你為退貨系統教學保留什麼？",
+        "options": [
+          "一台電腦",
+          "一個展示櫃台",
+          "一間會議室"
+        ],
+        "answer": "一台電腦",
+        "rescue": {
+          "reaction": "We'll need a machine to practice entering returns.",
+          "options": [
+            "一個展示櫃台",
+            "一台電腦"
+          ],
+          "answer": "一台電腦"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "orientation",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你排新同事到職第一天的時段。",
+        "text": "Schedule an ____ session for her first morning. We'll show her around, introduce her to the team, and explain how the office works.",
+        "options": [
+          "appraisal",
+          "interview",
+          "orientation"
+        ],
+        "answer": "orientation",
+        "rescue": {
+          "reaction": "Her first session should help her get familiar with the workplace.",
+          "options": [
+            "orientation",
+            "interview"
+          ],
+          "answer": "orientation"
+        }
+      }
+    ],
+    "ending": "新同事接受了錄取通知，你把到職首日的安排寄給她。"
+  },
+  {
+    "id": "ep20",
+    "title": "The Review on Friday",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "probation",
+        "from": "Ms. Chen",
+        "setup": "陳經理打來提醒你倉庫新同事的試用即將結束。",
+        "text": "Leo's probation ends on Friday, so we need to decide whether to keep him in the role. Could you collect the warehouse team's notes by noon?",
+        "question": "陳經理請你中午前收齊什麼？",
+        "options": [
+          "新職缺收到的履歷",
+          "新同事下個月的休假單",
+          "倉庫團隊對新同事的紀錄"
+        ],
+        "answer": "倉庫團隊對新同事的紀錄",
+        "rescue": {
+          "reaction": "Friday is the end of his trial period, and we need to hear from the people who've worked with him.",
+          "options": [
+            "倉庫團隊對新同事的紀錄",
+            "新職缺收到的履歷"
+          ],
+          "answer": "倉庫團隊對新同事的紀錄"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "appraisal",
+        "from": "Ms. Chen",
+        "setup": "你收到值班同事的紀錄後，陳經理請你整理成表。",
+        "text": "Please prepare Leo's performance ____. It should assess the accuracy of his work and the progress he's made since he joined.",
+        "options": [
+          "schedule",
+          "appraisal",
+          "contract"
+        ],
+        "answer": "appraisal",
+        "rescue": {
+          "reaction": "We need a review of how well he's been doing his job.",
+          "options": [
+            "contract",
+            "appraisal"
+          ],
+          "answer": "appraisal"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "personnel",
+        "from": "Linda",
+        "setup": "Linda 來電交代通過試用後的人事紀錄。",
+        "text": "The personnel office needs a copy of the review once Ms. Chen signs it. That's the team that keeps our employee records.",
+        "question": "簽好的評估表要交給哪個部門？",
+        "options": [
+          "保管員工資料的人事部門",
+          "負責計算工時的倉庫團隊",
+          "核對供應商帳款的財務部門"
+        ],
+        "answer": "保管員工資料的人事部門",
+        "rescue": {
+          "reaction": "Send it to the office responsible for staff files.",
+          "options": [
+            "核對供應商帳款的財務部門",
+            "保管員工資料的人事部門"
+          ],
+          "answer": "保管員工資料的人事部門"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "vacancy",
+        "from": "Ms. Chen",
+        "setup": "面談結束後，陳經理請你更新職缺清單。",
+        "text": "Leo will stay in the warehouse role, so please mark that ____ as filled. We no longer need applicants for this position.",
+        "options": [
+          "complaint",
+          "assignment",
+          "vacancy"
+        ],
+        "answer": "vacancy",
+        "rescue": {
+          "reaction": "Take down the ad for the job because Leo will be staying.",
+          "options": [
+            "assignment",
+            "vacancy"
+          ],
+          "answer": "vacancy"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "benefit",
+        "from": "Linda",
+        "setup": "Linda 請你準備新同事能申請的福利說明。",
+        "text": "Add the transit pass to the employee ____ package. Every staff member will receive the pass on top of regular pay.",
+        "options": [
+          "benefits",
+          "expenses",
+          "bonuses"
+        ],
+        "answer": "benefits",
+        "rescue": {
+          "reaction": "Staff can use the pass without paying for it out of their wages.",
+          "options": [
+            "benefits",
+            "expenses"
+          ],
+          "answer": "benefits"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "pension",
+        "from": "Linda",
+        "setup": "Linda 回頭確認新同事也拿到退休計畫的資料。",
+        "text": "Could you give Leo the pension booklet? It explains how to save through work for an income after he retires.",
+        "question": "Linda 要交給 Leo 的手冊在介紹什麼？",
+        "options": [
+          "年底績效獎金",
+          "大眾運輸通勤補助",
+          "公司提供的退休儲蓄計畫"
+        ],
+        "answer": "公司提供的退休儲蓄計畫",
+        "rescue": {
+          "reaction": "It's the booklet about money he'll be able to live on after he stops working.",
+          "options": [
+            "公司提供的退休儲蓄計畫",
+            "年底績效獎金"
+          ],
+          "answer": "公司提供的退休儲蓄計畫"
+        }
+      }
+    ],
+    "ending": "陳經理確認新同事通過試用，Linda 把福利說明放進要交給他的資料袋。"
+  },
+  {
+    "id": "ep21",
+    "title": "The Returns Handover",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "retire",
+        "from": "Ms. Chen",
+        "setup": "你剛接手退貨交接事宜，陳經理打來確認老同事的最後一天。",
+        "text": "Maya plans to retire at the end of the month after twenty years here. Can you book a handover session with her before she finishes work next Thursday?",
+        "question": "陳經理請你在 Maya 下週四下班前安排什麼？",
+        "options": [
+          "退貨流程交接",
+          "等 Maya 離開後再開會",
+          "替 Maya 安排求職面談"
+        ],
+        "answer": "退貨流程交接",
+        "rescue": {
+          "reaction": "She's finishing her working life, and we need her to show us what she does while she's still here.",
+          "options": [
+            "替 Maya 安排求職面談",
+            "退貨流程交接"
+          ],
+          "answer": "退貨流程交接"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "resign",
+        "from": "Ms. Chen",
+        "setup": "原本要接手的同事有了新的工作安排。",
+        "text": "Sam has decided to ____ from his position and take a job closer to home. Please remove him from next month's returns schedule.",
+        "options": [
+          "retire",
+          "resign",
+          "transfer"
+        ],
+        "answer": "resign",
+        "rescue": {
+          "reaction": "He has chosen to leave his post here and work for another company.",
+          "options": [
+            "transfer",
+            "resign"
+          ],
+          "answer": "resign"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "mentor",
+        "from": "Ms. Chen",
+        "setup": "陳經理另外找到能陪新人練習的人。",
+        "text": "Ben has agreed to ____ the new returns clerk. He'll show her how the job works and meet with her once a week to answer questions.",
+        "options": [
+          "mentor",
+          "evaluate",
+          "hire"
+        ],
+        "answer": "mentor",
+        "rescue": {
+          "reaction": "Ben will guide her as she learns the job over the next few weeks.",
+          "options": [
+            "evaluate",
+            "mentor"
+          ],
+          "answer": "mentor"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "handbook",
+        "from": "Ben",
+        "setup": "Ben 整理舊資料時發現有兩份手冊。",
+        "text": "The blue handbook has the current returns procedure. Can you leave it at the counter for the new clerk and put the gray one in the archive?",
+        "question": "哪份手冊要留在櫃台？",
+        "options": [
+          "灰色手冊",
+          "兩份都留下",
+          "藍色手冊"
+        ],
+        "answer": "藍色手冊",
+        "rescue": {
+          "reaction": "Leave her the guide that explains how we handle returns today.",
+          "options": [
+            "藍色手冊",
+            "兩份都留下"
+          ],
+          "answer": "藍色手冊"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "attendance",
+        "from": "Linda",
+        "setup": "交接時間訂好後，Linda 打來確認如何登錄。",
+        "text": "Please keep an attendance sheet for the handover session. I need to know exactly who was there, since two people are joining between shifts.",
+        "question": "Linda 要你記下交接會議的哪項資訊？",
+        "options": [
+          "當天處理的退貨件數",
+          "實際到場的人員",
+          "會議室的租借費用"
+        ],
+        "answer": "實際到場的人員",
+        "rescue": {
+          "reaction": "Write down the names of those who show up.",
+          "options": [
+            "實際到場的人員",
+            "當天處理的退貨件數"
+          ],
+          "answer": "實際到場的人員"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "compensation",
+        "from": "Linda",
+        "setup": "Linda 寄信說明排班之外參與交接的人會如何計薪。",
+        "text": "Staff who come in outside their regular hours will receive extra ____ for their time. Enter the additional pay on this week's payroll sheet.",
+        "options": [
+          "training",
+          "leave",
+          "compensation"
+        ],
+        "answer": "compensation",
+        "rescue": {
+          "reaction": "Those employees will be paid for the extra time they work.",
+          "options": [
+            "compensation",
+            "training"
+          ],
+          "answer": "compensation"
+        }
+      }
+    ],
+    "ending": "Ben 接手帶新人處理退貨，你把最後一次交接的出席紀錄寄給 Linda。"
+  },
+  {
+    "id": "ep22",
+    "title": "The Missing Monday Sales",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "software",
+        "from": "Raj",
+        "setup": "週一的門市銷售檔打不開，Raj 來電問你用哪個程式。",
+        "text": "The old software can't read the store's new file format. Can you open the sales file in the new spreadsheet program?",
+        "question": "Raj 建議用什麼開啟銷售檔？",
+        "options": [
+          "新版試算表程式",
+          "舊版試算表程式",
+          "郵件程式"
+        ],
+        "answer": "新版試算表程式",
+        "rescue": {
+          "reaction": "Use the program that handles the current kind of sales file.",
+          "options": [
+            "郵件程式",
+            "新版試算表程式"
+          ],
+          "answer": "新版試算表程式"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "hardware",
+        "from": "Raj",
+        "setup": "程式能開啟檔案後，你的電腦仍時不時斷線。",
+        "text": "The program passed its test, so I'll check your computer's ____ next. I'll start by testing the physical network port.",
+        "options": [
+          "permissions",
+          "settings",
+          "hardware"
+        ],
+        "answer": "hardware",
+        "rescue": {
+          "reaction": "I'm checking a physical part of your computer.",
+          "options": [
+            "settings",
+            "hardware"
+          ],
+          "answer": "hardware"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "network",
+        "from": "Raj",
+        "setup": "Raj 換了一條線，從隔壁桌打來請你測試。",
+        "text": "You're connected to the office network now. Could you open the shared sales folder and tell me whether it loads?",
+        "question": "Raj 要你做哪項測試？",
+        "options": [
+          "開啟共用的銷售資料夾",
+          "重新安裝試算表程式",
+          "向門市索取新的銷售檔"
+        ],
+        "answer": "開啟共用的銷售資料夾",
+        "rescue": {
+          "reaction": "If you can reach the common folder from your desk, the connection is working.",
+          "options": [
+            "開啟共用的銷售資料夾",
+            "重新安裝試算表程式"
+          ],
+          "answer": "開啟共用的銷售資料夾"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "password",
+        "from": "Raj",
+        "setup": "網路恢復後，銷售入口網站還是不讓你登入。",
+        "text": "If your ____ has expired, choose Reset on the company sign-in page and create a new one before trying again.",
+        "options": [
+          "subscription",
+          "session",
+          "password"
+        ],
+        "answer": "password",
+        "rescue": {
+          "reaction": "You'll need a new secret phrase to sign in.",
+          "options": [
+            "password",
+            "subscription"
+          ],
+          "answer": "password"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "database",
+        "from": "Linda",
+        "setup": "Linda 來電確認週一的銷售檔該存在哪一區。",
+        "text": "The sales database has separate sections for each store. Import Monday's figures into the West Store section, the one Ms. Ortiz uses.",
+        "question": "週一的銷售資料要匯入哪裡？",
+        "options": [
+          "東區門市的銷售專區",
+          "西區門市的銷售專區",
+          "所有門市的總表"
+        ],
+        "answer": "西區門市的銷售專區",
+        "rescue": {
+          "reaction": "Keep these records under the location that sent the numbers.",
+          "options": [
+            "西區門市的銷售專區",
+            "東區門市的銷售專區"
+          ],
+          "answer": "西區門市的銷售專區"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "upload",
+        "from": "Raj",
+        "setup": "登入和預覽都成功後，Raj 請你把檔案放進網站。",
+        "text": "Please ____ the completed sales file from your computer to the reporting site. Once it arrives there, Linda can import the figures.",
+        "options": [
+          "upload",
+          "remove",
+          "download"
+        ],
+        "answer": "upload",
+        "rescue": {
+          "reaction": "Send the copy on your computer up to the company site.",
+          "options": [
+            "download",
+            "upload"
+          ],
+          "answer": "upload"
+        }
+      }
+    ],
+    "ending": "週一銷售資料出現在總表上，Raj 也在你的位置貼好了網路插座的標籤。"
+  },
+  {
+    "id": "ep23",
+    "title": "The Scanner at Bay Two",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "device",
+        "from": "Ben",
+        "setup": "Ben 把二號月台閒置的條碼掃描器送給你。",
+        "text": "Please record the serial number of this handheld ____ in the equipment log. You can find it on the back of the scanner.",
+        "options": [
+          "device",
+          "account",
+          "program"
+        ],
+        "answer": "device",
+        "rescue": {
+          "reaction": "The number is printed on the piece of equipment you're holding.",
+          "options": [
+            "account",
+            "device"
+          ],
+          "answer": "device"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "server",
+        "from": "Raj",
+        "setup": "你把掃描器交給 Raj，他打來核對測試去向。",
+        "text": "For the first scan, send the result to the test server. That way your practice scan stays out of the live stock records.",
+        "question": "第一次掃描的結果要送去哪裡？",
+        "options": [
+          "正式庫存系統",
+          "供應商的網站",
+          "測試用伺服器"
+        ],
+        "answer": "測試用伺服器",
+        "rescue": {
+          "reaction": "Use the system set aside for practice so our real data stays clean.",
+          "options": [
+            "測試用伺服器",
+            "供應商的網站"
+          ],
+          "answer": "測試用伺服器"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "download",
+        "from": "Raj",
+        "setup": "測試系統連上後，Raj 寄來原廠檔案的位置。",
+        "text": "Please ____ the setup file from the manufacturer's support page to your laptop. Save a local copy so we can use it at the loading bay.",
+        "options": [
+          "upload",
+          "download",
+          "delete"
+        ],
+        "answer": "download",
+        "rescue": {
+          "reaction": "Bring the file from the support site onto your own computer.",
+          "options": [
+            "download",
+            "upload"
+          ],
+          "answer": "download"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "backup",
+        "from": "Raj",
+        "setup": "換程式之前，Raj 確認你還保有舊設定。",
+        "text": "Make a ____ of the current settings before changing them. If anything goes wrong, we can restore the settings from that copy.",
+        "options": [
+          "summary",
+          "request",
+          "backup"
+        ],
+        "answer": "backup",
+        "rescue": {
+          "reaction": "Keep a spare copy you can use to get the original settings back.",
+          "options": [
+            "backup",
+            "summary"
+          ],
+          "answer": "backup"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "install",
+        "from": "Raj",
+        "setup": "舊設定存好後，Raj 打來提醒你要用哪台電腦。",
+        "text": "Install the setup package on the laptop at bay two. That's the computer Ben will use with the scanner.",
+        "question": "安裝套件要放在哪台電腦上？",
+        "options": [
+          "Raj 在資訊部門的桌上型電腦",
+          "二號月台的筆電",
+          "前台的公用電腦"
+        ],
+        "answer": "二號月台的筆電",
+        "rescue": {
+          "reaction": "Put the program on the computer that will actually work with Ben's scanner.",
+          "options": [
+            "前台的公用電腦",
+            "二號月台的筆電"
+          ],
+          "answer": "二號月台的筆電"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "update",
+        "from": "Ben",
+        "setup": "Ben 掃完測試標籤，打來說掃描結果和舊紀錄完全一致。",
+        "text": "The scanner works after the update. Can we leave it at bay two for the afternoon team?",
+        "question": "確認更新成功後，Ben 建議怎麼處理掃描器？",
+        "options": [
+          "留在二號月台給下午班",
+          "送回資訊部門換新",
+          "搬到一號月台入庫"
+        ],
+        "answer": "留在二號月台給下午班",
+        "rescue": {
+          "reaction": "The newer version is working, and I want the next shift to use it here.",
+          "options": [
+            "搬到一號月台入庫",
+            "留在二號月台給下午班"
+          ],
+          "answer": "留在二號月台給下午班"
+        }
+      }
+    ],
+    "ending": "二號月台的掃描器傳回第一筆測試資料，Ben 把它交給下午班。"
+  },
+  {
+    "id": "ep24",
+    "title": "Paper at the Pickup Desk",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "outage",
+        "from": "Raj",
+        "setup": "前台的取貨程式載不到訂單，Raj 打來說明影響範圍。",
+        "text": "There's an outage affecting the pickup app, and both counters are unable to load orders. Could you tell Ben to use paper slips for now?",
+        "question": "程式中斷期間，Raj 要 Ben 怎麼登記取貨？",
+        "options": [
+          "暫用紙本單據",
+          "直接在取貨程式上登記",
+          "請客戶改用電子郵件登記"
+        ],
+        "answer": "暫用紙本單據",
+        "rescue": {
+          "reaction": "The online service is down at both desks, so we need a temporary way to keep records.",
+          "options": [
+            "暫用紙本單據",
+            "直接在取貨程式上登記"
+          ],
+          "answer": "暫用紙本單據"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "access",
+        "from": "Ms. Chen",
+        "setup": "改用紙本後，陳經理請你確認值班同事能查到備用名冊。",
+        "text": "Please set both desk clerks' ____ to read-only for the list of today's orders. They need to see the list while the app is down.",
+        "options": [
+          "profile",
+          "status",
+          "access"
+        ],
+        "answer": "access",
+        "rescue": {
+          "reaction": "Let them see the file while keeping their ability to edit it turned off.",
+          "options": [
+            "access",
+            "profile"
+          ],
+          "answer": "access"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "wireless",
+        "from": "Ben",
+        "setup": "Ben 在一樓拿起平板測試，打來回報。",
+        "text": "The wireless connection works in the break room, but the signal drops at the pickup counter. Could you tell Raj where I lose the connection?",
+        "question": "Ben 在哪裡會失去無線連線？",
+        "options": [
+          "二樓會議室",
+          "取貨櫃台",
+          "員工休息室"
+        ],
+        "answer": "取貨櫃台",
+        "rescue": {
+          "reaction": "The tablet connects fine in the staff room and loses its signal where we hand orders to customers.",
+          "options": [
+            "取貨櫃台",
+            "二樓會議室"
+          ],
+          "answer": "取貨櫃台"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "troubleshoot",
+        "from": "Raj",
+        "setup": "程式快恢復時，Raj 請你協助釐清平板另外遇到的問題。",
+        "text": "To ____ the tablet's connection problem, try opening the same page at the counter and in the break room. Tell me where it fails so I can find the cause.",
+        "options": [
+          "troubleshoot",
+          "prevent",
+          "report"
+        ],
+        "answer": "troubleshoot",
+        "rescue": {
+          "reaction": "I need a test that helps us work out what is going wrong.",
+          "options": [
+            "report",
+            "troubleshoot"
+          ],
+          "answer": "troubleshoot"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "security",
+        "from": "Ms. Chen",
+        "setup": "你暫時在櫃台保管填好的取貨單。",
+        "text": "For data ____, keep the completed slips out of public view. They contain names and phone numbers that only staff should see.",
+        "options": [
+          "analysis",
+          "security",
+          "accuracy"
+        ],
+        "answer": "security",
+        "rescue": {
+          "reaction": "Protect the details customers have shared with us.",
+          "options": [
+            "accuracy",
+            "security"
+          ],
+          "answer": "security"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "application",
+        "from": "Raj",
+        "setup": "Raj 完成測試後打來通知你前台可恢復作業。",
+        "text": "The pickup application is back online. Could you enter the orders from the paper slips before you put them away?",
+        "question": "取貨程式恢復後，Raj 請你先做什麼？",
+        "options": [
+          "把紙本單據上的訂單補登到系統",
+          "請顧客重新下單",
+          "直接把紙本單據收進抽屜"
+        ],
+        "answer": "把紙本單據上的訂單補登到系統",
+        "rescue": {
+          "reaction": "The program is ready to use again, and it needs a record of what happened while it was down.",
+          "options": [
+            "請顧客重新下單",
+            "把紙本單據上的訂單補登到系統"
+          ],
+          "answer": "把紙本單據上的訂單補登到系統"
+        }
+      }
+    ],
+    "ending": "取貨程式恢復後，你把停機期間的紙本紀錄補進系統。"
+  },
+  {
+    "id": "ep25",
+    "title": "A Shared Stock List",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "supplier",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你用新網站向紙箱廠補貨。",
+        "text": "Our main ____ has agreed to try the new ordering site. Please ask when they can send the next batch of shipping cartons we buy from them.",
+        "options": [
+          "client",
+          "supplier",
+          "carrier"
+        ],
+        "answer": "supplier",
+        "rescue": {
+          "reaction": "Talk to the business that provides the cartons we use for packing.",
+          "options": [
+            "supplier",
+            "client"
+          ],
+          "answer": "supplier"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "warehouse",
+        "from": "Ben",
+        "setup": "Ben 從兩個倉庫中較忙的那一個打來報數。",
+        "text": "The east warehouse has only twenty cartons left, and the west site has plenty. Can we order fifty for the east site?",
+        "question": "哪個地點需要再訂五十個紙箱？",
+        "options": [
+          "西區倉庫",
+          "供應商的展示間",
+          "東區倉庫"
+        ],
+        "answer": "東區倉庫",
+        "rescue": {
+          "reaction": "Send the cartons to the storage site that's running low.",
+          "options": [
+            "東區倉庫",
+            "西區倉庫"
+          ],
+          "answer": "東區倉庫"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "inventory",
+        "from": "Ben",
+        "setup": "Ben 清點完，請你先把實際數量填回表格。",
+        "text": "Please update the carton ____ to show the twenty boxes we have left. This list should reflect the stock on hand before we place a new order.",
+        "options": [
+          "order",
+          "inventory",
+          "budget"
+        ],
+        "answer": "inventory",
+        "rescue": {
+          "reaction": "Record what we already have in storage.",
+          "options": [
+            "budget",
+            "inventory"
+          ],
+          "answer": "inventory"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "account",
+        "from": "Raj",
+        "setup": "你第一次上網站，Raj 打來介紹公司的登入方式。",
+        "text": "Use the company account when you sign in. That way the carton order appears in Harbor & Pine's order history.",
+        "question": "Raj 建議你用哪個帳戶下單？",
+        "options": [
+          "公司的帳戶",
+          "自己的私人帳戶",
+          "紙箱供應商的帳戶"
+        ],
+        "answer": "公司的帳戶",
+        "rescue": {
+          "reaction": "Sign in under Harbor & Pine so the business can find the order again.",
+          "options": [
+            "紙箱供應商的帳戶",
+            "公司的帳戶"
+          ],
+          "answer": "公司的帳戶"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "encrypt",
+        "from": "Raj",
+        "setup": "Raj 請你先處理即將上傳的明細檔。",
+        "text": "Please ____ the order file using our approved tool. Only the supplier should be able to read the protected copy we send.",
+        "options": [
+          "print",
+          "rename",
+          "encrypt"
+        ],
+        "answer": "encrypt",
+        "rescue": {
+          "reaction": "The file's contents need to be unreadable without the key.",
+          "options": [
+            "rename",
+            "encrypt"
+          ],
+          "answer": "encrypt"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "platform",
+        "from": "Supplier",
+        "setup": "紙箱廠業務在新網站看到通知後打來確認。",
+        "text": "I found your order on the new platform. Could you use the same site for all future carton orders?",
+        "question": "供應商建議以後怎麼下紙箱訂單？",
+        "options": [
+          "都在這個新網站下單",
+          "改用電話逐筆確認",
+          "改把訂單附在電子郵件中"
+        ],
+        "answer": "都在這個新網站下單",
+        "rescue": {
+          "reaction": "I can keep track of the orders when they come in through this one online system.",
+          "options": [
+            "都在這個新網站下單",
+            "改用電話逐筆確認"
+          ],
+          "answer": "都在這個新網站下單"
+        }
+      }
+    ],
+    "ending": "供應商在新平台確認收到缺貨清單，Ben 把原本要寄的附件留在草稿裡。"
+  },
+  {
+    "id": "ep26",
+    "title": "Three Stops for One Truck",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "delivery",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士打來修改廚具的收貨時間。",
+        "text": "Could we move the delivery to Thursday morning? The shop will have enough people to unload the kitchenware then.",
+        "question": "Ortiz 女士想把收貨改到何時？",
+        "options": [
+          "週五上午",
+          "週四上午",
+          "週四下午"
+        ],
+        "answer": "週四上午",
+        "rescue": {
+          "reaction": "We'll have people available to receive the boxes early on Thursday.",
+          "options": [
+            "週四上午",
+            "週五上午"
+          ],
+          "answer": "週四上午"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "distribution",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你整理這車廚具到三間門市的分配方式。",
+        "text": "Please prepare a ____ plan for the kitchenware. Show how many cartons go to each of the three stores.",
+        "options": [
+          "distribution",
+          "pricing",
+          "production"
+        ],
+        "answer": "distribution",
+        "rescue": {
+          "reaction": "Work out where the finished goods go and how many each shop receives.",
+          "options": [
+            "production",
+            "distribution"
+          ],
+          "answer": "distribution"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "freight",
+        "from": "Linda",
+        "setup": "Linda 打來比較整車運送和分批寄送的費用。",
+        "text": "The freight quote is lower if we put all three store orders on one truck. Can you ask whether it covers all three stops?",
+        "question": "Linda 請你向運送公司確認什麼？",
+        "options": [
+          "整車貨物是否要加買同一份保險",
+          "一車跑三站是否全包含在報價裡",
+          "三間門市是否都能自行付貨款"
+        ],
+        "answer": "一車跑三站是否全包含在報價裡",
+        "rescue": {
+          "reaction": "I'm looking at the cost of moving the goods on one truck, including each place it has to stop.",
+          "options": [
+            "三間門市是否都能自行付貨款",
+            "一車跑三站是否全包含在報價裡"
+          ],
+          "answer": "一車跑三站是否全包含在報價裡"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "carrier",
+        "from": "Ms. Chen",
+        "setup": "收到報價後，陳經理請你找能照時段送貨的公司。",
+        "text": "Choose a ____ that can transport the cartons to all three stores on Thursday morning. The company will have to provide its own truck and driver.",
+        "options": [
+          "carrier",
+          "insurer",
+          "broker"
+        ],
+        "answer": "carrier",
+        "rescue": {
+          "reaction": "We need a business that can take the boxes from our warehouse to the stores.",
+          "options": [
+            "insurer",
+            "carrier"
+          ],
+          "answer": "carrier"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "dispatch",
+        "from": "Ben",
+        "setup": "門市順序排好後，Ben 請你更新發車時間。",
+        "text": "Please ____ the loaded truck at 7 a.m. so it leaves the warehouse in time for the first stop.",
+        "options": [
+          "inspect",
+          "unload",
+          "dispatch"
+        ],
+        "answer": "dispatch",
+        "rescue": {
+          "reaction": "We need the truck on the road at seven.",
+          "options": [
+            "dispatch",
+            "unload"
+          ],
+          "answer": "dispatch"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "cargo",
+        "from": "Ben",
+        "setup": "發車前 Ben 打來確認貨物在車上的順序。",
+        "text": "I've put the first store's cargo nearest the rear door so the driver can unload it first. Can you make sure the west store is still the first stop?",
+        "question": "Ben 把哪間門市的貨物放在車門旁？",
+        "options": [
+          "配送表上的最後一間門市",
+          "配送表上的第一間門市",
+          "臨時加進配送表的門市"
+        ],
+        "answer": "配送表上的第一間門市",
+        "rescue": {
+          "reaction": "The boxes near the door are for the shop where the truck stops first.",
+          "options": [
+            "配送表上的第一間門市",
+            "配送表上的最後一間門市"
+          ],
+          "answer": "配送表上的第一間門市"
+        }
+      }
+    ],
+    "ending": "Ortiz 女士拿到新的收貨時間，你把三間門市的配送表交給司機。"
+  },
+  {
+    "id": "ep27",
+    "title": "Waiting at the Gate",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "tracking",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士看到家具貨櫃靠港的通知後打給你。",
+        "text": "The tracking page says the container reached the port this morning. Could you check when we can actually collect it?",
+        "question": "Ortiz 女士已知道貨櫃抵港，接下來想確認什麼？",
+        "options": [
+          "船何時從原港出發",
+          "何時能到港口提領貨櫃",
+          "貨櫃裡有幾件家具"
+        ],
+        "answer": "何時能到港口提領貨櫃",
+        "rescue": {
+          "reaction": "The online status shows it's here, and I need a time when we can pick it up.",
+          "options": [
+            "貨櫃裡有幾件家具",
+            "何時能到港口提領貨櫃"
+          ],
+          "answer": "何時能到港口提領貨櫃"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "clearance",
+        "from": "Port agent",
+        "setup": "港口窗口回信說目前還不能派車。",
+        "text": "The inspection is complete and all charges are paid. Customs ____ is still pending, so wait for the release notice before sending a truck.",
+        "options": [
+          "clearance",
+          "inspection",
+          "payment"
+        ],
+        "answer": "clearance",
+        "rescue": {
+          "reaction": "We're waiting for permission to take the goods out of the port.",
+          "options": [
+            "payment",
+            "clearance"
+          ],
+          "answer": "clearance"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "container",
+        "from": "Ben",
+        "setup": "Ben 請你把要提領的貨櫃編號寫進派車單。",
+        "text": "Please include the number printed on the side of the shipping ____. It's the large metal box that holds all our furniture cartons.",
+        "options": [
+          "forklift",
+          "truck",
+          "container"
+        ],
+        "answer": "container",
+        "rescue": {
+          "reaction": "Use the number on the metal unit the goods were packed inside for the sea journey.",
+          "options": [
+            "truck",
+            "container"
+          ],
+          "answer": "container"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "route",
+        "from": "Ben",
+        "setup": "港口通知其中一條道路施工，Ben 來電改導航。",
+        "text": "The usual route is closed for repairs, so tell the driver to use Harbor Road. It leads to the north gate.",
+        "question": "Ben 建議司機怎麼到港口？",
+        "options": [
+          "走港灣路前往北側入口",
+          "走原路前往南側入口",
+          "走港灣路前往西側入口"
+        ],
+        "answer": "走港灣路前往北側入口",
+        "rescue": {
+          "reaction": "The road we normally take is closed, but there is another way to the north entrance.",
+          "options": [
+            "走港灣路前往北側入口",
+            "走原路前往南側入口"
+          ],
+          "answer": "走港灣路前往北側入口"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "packaging",
+        "from": "Ms. Chen",
+        "setup": "等候提領時，陳經理請你確認木製桌面受到保護。",
+        "text": "Please check the ____ around the tabletops when they get here. The foam and cardboard should still cover all four corners.",
+        "options": [
+          "printing",
+          "labeling",
+          "packaging"
+        ],
+        "answer": "packaging",
+        "rescue": {
+          "reaction": "Look at the materials protecting the wood from bumps.",
+          "options": [
+            "packaging",
+            "printing"
+          ],
+          "answer": "packaging"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "forklift",
+        "from": "Ben",
+        "setup": "可提領的通知到了，Ben 打來確認收貨端的卸貨工具。",
+        "text": "We'll need a forklift to lift the heavy cases off the truck. Could you reserve one at the unloading bay for two o'clock?",
+        "question": "Ben 請你預約什麼設備？",
+        "options": [
+          "用來固定紙箱的打包機",
+          "用來卸重箱的堆高機",
+          "用來載家具的貨車"
+        ],
+        "answer": "用來卸重箱的堆高機",
+        "rescue": {
+          "reaction": "Book the machine that can lift the cases from the truck to the floor.",
+          "options": [
+            "用來卸重箱的堆高機",
+            "用來固定紙箱的打包機"
+          ],
+          "answer": "用來卸重箱的堆高機"
+        }
+      }
+    ],
+    "ending": "貨櫃可以提領後，Ben 讓預約好的車輛開往北側入口。"
+  },
+  {
+    "id": "ep28",
+    "title": "One Pallet Short",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "import",
+        "from": "Ben",
+        "setup": "Ben 請你替海外送來的書架找卸貨位置。",
+        "text": "The shelves arrived from our overseas supplier this morning. Enter them in the ____ log for goods brought in from abroad.",
+        "options": [
+          "returns",
+          "import",
+          "export"
+        ],
+        "answer": "import",
+        "rescue": {
+          "reaction": "This is an incoming shipment from another country.",
+          "options": [
+            "export",
+            "import"
+          ],
+          "answer": "import"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "manifest",
+        "from": "Ben",
+        "setup": "Ben 拿著貨物清單從月台打來比對實物。",
+        "text": "The cargo manifest lists six pallets of shelves, but I can see only five on the truck. Could you ask the driver if one was left behind?",
+        "question": "貨物清單原本列了幾板書架？",
+        "options": [
+          "六板",
+          "一板",
+          "五板"
+        ],
+        "answer": "六板",
+        "rescue": {
+          "reaction": "The load was supposed to have one more pallet than the five we can count.",
+          "options": [
+            "一板",
+            "六板"
+          ],
+          "answer": "六板"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "shortage",
+        "from": "Linda",
+        "setup": "司機確認今天只載來五板後，Linda 請你留下紀錄。",
+        "text": "Report a ____ of one pallet on the receiving form. We ordered six and received five.",
+        "options": [
+          "surplus",
+          "return",
+          "shortage"
+        ],
+        "answer": "shortage",
+        "rescue": {
+          "reaction": "The count is one less than the quantity we were supposed to receive.",
+          "options": [
+            "shortage",
+            "return"
+          ],
+          "answer": "shortage"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "pallet",
+        "from": "Ben",
+        "setup": "Ben 把先到的書架移進倉庫後，打來指出一板外膜破了。",
+        "text": "One pallet has torn wrapping, so leave that one by the door until I check the cartons. The rest can go straight to the shelves.",
+        "question": "外膜破掉的這板貨要先放哪裡？",
+        "options": [
+          "倉庫貨架上",
+          "倉庫門旁",
+          "卡車上"
+        ],
+        "answer": "倉庫門旁",
+        "rescue": {
+          "reaction": "Keep the damaged load close to the entrance so I can look at it first.",
+          "options": [
+            "倉庫門旁",
+            "倉庫貨架上"
+          ],
+          "answer": "倉庫門旁"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "export",
+        "from": "Ms. Chen",
+        "setup": "陳經理看到另一批外銷商品也放在附近，打來提醒你分開。",
+        "text": "The boxes marked for export are going to a buyer overseas tomorrow. Could you keep the incoming shelves away from that row?",
+        "question": "哪一批箱子要另外留給明天的海外買家？",
+        "options": [
+          "今天到貨的五板書架",
+          "外膜破損的那板書架",
+          "標有外銷用途的那批"
+        ],
+        "answer": "標有外銷用途的那批",
+        "rescue": {
+          "reaction": "Leave the goods headed out of the country together in their own row.",
+          "options": [
+            "標有外銷用途的那批",
+            "今天到貨的五板書架"
+          ],
+          "answer": "標有外銷用途的那批"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "storage",
+        "from": "Ben",
+        "setup": "檢查完書架，Ben 寄來短期暫放的位置。",
+        "text": "Use bay three for temporary ____ until the missing pallet arrives. There's room to keep all six loads there for the rest of the week.",
+        "options": [
+          "assembly",
+          "storage",
+          "delivery"
+        ],
+        "answer": "storage",
+        "rescue": {
+          "reaction": "We just need somewhere to hold the goods until the whole shipment is here.",
+          "options": [
+            "delivery",
+            "storage"
+          ],
+          "answer": "storage"
+        }
+      }
+    ],
+    "ending": "你把少掉的一板登進到貨紀錄，剩下的進口書架有了暫放區。"
+  },
+  {
+    "id": "ep29",
+    "title": "The Line Moves Upstairs",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "renovation",
+        "from": "Ms. Chen",
+        "setup": "陳經理打來說樓下工坊得暫停使用兩天。",
+        "text": "The floor renovation starts Thursday, and the workers need the whole room. Could you plan to move the assembly tables out on Wednesday?",
+        "question": "組裝桌最晚哪天要搬離樓下工坊？",
+        "options": [
+          "週五",
+          "週四",
+          "週三"
+        ],
+        "answer": "週三",
+        "rescue": {
+          "reaction": "The crew will start working on the floor Thursday, so they need it cleared the day before.",
+          "options": [
+            "週四",
+            "週三"
+          ],
+          "answer": "週三"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "factory",
+        "from": "Ben",
+        "setup": "Ben 請你從製造商那邊調一台備用的封箱機。",
+        "text": "The spare carton sealer is at the ____ where our boxes are made. Ask their loading team to put it on our next truck.",
+        "options": [
+          "factory",
+          "headquarters",
+          "showroom"
+        ],
+        "answer": "factory",
+        "rescue": {
+          "reaction": "Collect it from the site where they actually make the boxes.",
+          "options": [
+            "factory",
+            "headquarters"
+          ],
+          "answer": "factory"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "assembly",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你在樓上側間劃出組裝展示架的位置。",
+        "text": "We need a bench for the ____ of display racks. Staff should have space to join all the parts before packing each rack.",
+        "options": [
+          "inspection",
+          "storage",
+          "assembly"
+        ],
+        "answer": "assembly",
+        "rescue": {
+          "reaction": "This is where the team will put the separate pieces together.",
+          "options": [
+            "assembly",
+            "inspection"
+          ],
+          "answer": "assembly"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "machine",
+        "from": "Ben",
+        "setup": "備用封箱機送到後，Ben 來電提醒你先做試車。",
+        "text": "The carton-sealing machine is upstairs now. Could you test it with an empty box before we run the day's orders through it?",
+        "question": "Ben 建議用什麼測試封箱機？",
+        "options": [
+          "一組展示架零件",
+          "一個空紙箱",
+          "第一筆訂單的商品"
+        ],
+        "answer": "一個空紙箱",
+        "rescue": {
+          "reaction": "Run a practice carton through while there's nothing inside it.",
+          "options": [
+            "一個空紙箱",
+            "一組展示架零件"
+          ],
+          "answer": "一個空紙箱"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "production",
+        "from": "Ms. Chen",
+        "setup": "試封成功後，陳經理要你估算這兩天能做多少架子。",
+        "text": "Please update the ____ schedule for the display racks. We aim to make thirty on Thursday and forty on Friday in the temporary work area.",
+        "options": [
+          "production",
+          "payment",
+          "delivery"
+        ],
+        "answer": "production",
+        "rescue": {
+          "reaction": "We're planning how many racks to make on each day.",
+          "options": [
+            "delivery",
+            "production"
+          ],
+          "answer": "production"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "machinery",
+        "from": "Ben",
+        "setup": "工務人員快到了，Ben 打來確認設備搬運的優先順序。",
+        "text": "The heavy machinery is the last thing left downstairs. Could you ask the moving crew to take the big press up first?",
+        "question": "搬運人員要先搬哪項設備？",
+        "options": [
+          "組裝桌",
+          "大型壓床",
+          "備用封箱機"
+        ],
+        "answer": "大型壓床",
+        "rescue": {
+          "reaction": "Start with the large piece of equipment used to press the parts into shape.",
+          "options": [
+            "備用封箱機",
+            "大型壓床"
+          ],
+          "answer": "大型壓床"
+        }
+      }
+    ],
+    "ending": "組裝桌和封箱機都移到樓上的側間，樓下施工的兩天仍能出貨。"
+  },
+  {
+    "id": "ep30",
+    "title": "A Second Look at the Clips",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "quality",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士寄信轉來門市對展示架夾扣的要求。",
+        "text": "Please check the ____ of the clips before we order more. We want to know how well they're made and whether they hold the shelves firmly.",
+        "options": [
+          "price",
+          "availability",
+          "quality"
+        ],
+        "answer": "quality",
+        "rescue": {
+          "reaction": "I'm asking how well the clips will perform under normal use.",
+          "options": [
+            "quality",
+            "availability"
+          ],
+          "answer": "quality"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "inspection",
+        "from": "Ben",
+        "setup": "Ben 試著裝上一個夾扣後，打來說明廠內檢查怎麼抽樣。",
+        "text": "For the inspection, we need five clips from each carton. Can you label the samples with the numbers on the boxes?",
+        "question": "每箱要取幾個夾扣來檢查？",
+        "options": [
+          "一個",
+          "五個",
+          "十個"
+        ],
+        "answer": "五個",
+        "rescue": {
+          "reaction": "Take the same number from each box. Ten cartons would give us fifty samples.",
+          "options": [
+            "五個",
+            "一個"
+          ],
+          "answer": "五個"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "defect",
+        "from": "Ms. Chen",
+        "setup": "你試裝時發現其中一批夾扣有裂痕。",
+        "text": "Please record the crack as a manufacturing ____. These clips can't hold a shelf securely and should be set aside.",
+        "options": [
+          "adjustment",
+          "improvement",
+          "defect"
+        ],
+        "answer": "defect",
+        "rescue": {
+          "reaction": "The crack is a fault that makes the clip unfit for use.",
+          "options": [
+            "defect",
+            "adjustment"
+          ],
+          "answer": "defect"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "material",
+        "from": "Supplier",
+        "setup": "工廠承辦人看完照片後打來提議重做。",
+        "text": "We can use a thicker material for the replacement clips. Could you send a photo showing where the current ones cracked?",
+        "question": "工廠請你拍下什麼？",
+        "options": [
+          "紙箱上的出貨標籤",
+          "原有夾扣裂開的位置",
+          "展示架安裝完成的樣子"
+        ],
+        "answer": "原有夾扣裂開的位置",
+        "rescue": {
+          "reaction": "I need to see which part failed before the factory changes what the clip is made of.",
+          "options": [
+            "展示架安裝完成的樣子",
+            "原有夾扣裂開的位置"
+          ],
+          "answer": "原有夾扣裂開的位置"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "capacity",
+        "from": "Supplier",
+        "setup": "工廠估算改材料後可動用的設備，打來說明上限。",
+        "text": "Our capacity for the thicker clips is two hundred a day on one line. We can start with a small batch this afternoon if you want samples.",
+        "question": "使用一條產線時，每天最多能做多少個較厚的夾扣？",
+        "options": [
+          "兩百個",
+          "一百個",
+          "四百個"
+        ],
+        "answer": "兩百個",
+        "rescue": {
+          "reaction": "That one line can make up to two hundred in a full day.",
+          "options": [
+            "四百個",
+            "兩百個"
+          ],
+          "answer": "兩百個"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "output",
+        "from": "Ms. Chen",
+        "setup": "下午第一批試做結束後，陳經理請你核對結果。",
+        "text": "Record today's actual ____ of replacement clips as sixty units. That's how many the line finished, according to the production log.",
+        "options": [
+          "quota",
+          "capacity",
+          "output"
+        ],
+        "answer": "output",
+        "rescue": {
+          "reaction": "Report what the line actually made today.",
+          "options": [
+            "capacity",
+            "output"
+          ],
+          "answer": "output"
+        }
+      }
+    ],
+    "ending": "工廠改用較厚的材料重做夾扣，你把合格的樣品照片寄給 Ortiz 女士。"
+  },
+  {
+    "id": "ep31",
+    "title": "Labels Without Repeating",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "process",
+        "from": "Ben",
+        "setup": "Ben 在標籤桌前打來，請你看看哪一步老是排隊。",
+        "text": "The labeling process slows down when we type each item code by hand. Could you watch that step for ten minutes and count the boxes waiting?",
+        "question": "Ben 請你數什麼？",
+        "options": [
+          "等車載走的空棧板",
+          "已經貼好標籤的箱子",
+          "等著輸入品號的箱子"
+        ],
+        "answer": "等著輸入品號的箱子",
+        "rescue": {
+          "reaction": "Watch the boxes that pile up while we type their item codes.",
+          "options": [
+            "等著輸入品號的箱子",
+            "等車載走的空棧板"
+          ],
+          "answer": "等著輸入品號的箱子"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "automate",
+        "from": "Ms. Chen",
+        "setup": "陳經理看到你記下的排隊數量後回信。",
+        "text": "Can we ____ label printing so it starts as soon as a barcode is scanned? That would remove the need to type each item code.",
+        "options": [
+          "schedule",
+          "automate",
+          "review"
+        ],
+        "answer": "automate",
+        "rescue": {
+          "reaction": "We want the scanner to trigger printing without someone typing the code.",
+          "options": [
+            "automate",
+            "schedule"
+          ],
+          "answer": "automate"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "facility",
+        "from": "Ben",
+        "setup": "Ben 打電話來說西邊廠區有一台可借的貼標機。",
+        "text": "The west facility has a spare label printer next to its packing area. Could you ask someone there to put it on the afternoon van?",
+        "question": "備用貼標機目前放在哪裡？",
+        "options": [
+          "西邊廠區的包裝區旁",
+          "公司總部的大廳",
+          "東邊廠區的收貨口"
+        ],
+        "answer": "西邊廠區的包裝區旁",
+        "rescue": {
+          "reaction": "It's at the site on the west side, by the place where they pack orders.",
+          "options": [
+            "東邊廠區的收貨口",
+            "西邊廠區的包裝區旁"
+          ],
+          "answer": "西邊廠區的包裝區旁"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "component",
+        "from": "Raj",
+        "setup": "貼標機送到後，Raj 發現要換一個進紙零件。",
+        "text": "The feed roller is the only ____ we need to replace. It pulls the labels through the printer.",
+        "options": [
+          "accessory",
+          "component",
+          "supply"
+        ],
+        "answer": "component",
+        "rescue": {
+          "reaction": "It's one part built into the printer that it needs in order to move the labels.",
+          "options": [
+            "supply",
+            "component"
+          ],
+          "answer": "component"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "technician",
+        "from": "Raj",
+        "setup": "你從備品盒找出滾輪後，Raj 打來安排更換。",
+        "text": "A technician will come at three to fit the new roller. Could you leave the replacement and the printer together on the workbench?",
+        "question": "技術員到場前，你要在哪裡放好滾輪和印表機？",
+        "options": [
+          "工作檯上",
+          "倉庫入口旁",
+          "貨車裡"
+        ],
+        "answer": "工作檯上",
+        "rescue": {
+          "reaction": "Put both items where our repair worker will have space to fit the part.",
+          "options": [
+            "倉庫入口旁",
+            "工作檯上"
+          ],
+          "answer": "工作檯上"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "maintenance",
+        "from": "Ben",
+        "setup": "測試通過後，Ben 提醒你替兩班人員留下一份紀錄。",
+        "text": "Add the printer to our weekly ____ schedule. Cleaning the rollers every Friday should keep the labels feeding smoothly.",
+        "options": [
+          "delivery",
+          "production",
+          "maintenance"
+        ],
+        "answer": "maintenance",
+        "rescue": {
+          "reaction": "Schedule regular care so the printer stays in good working order.",
+          "options": [
+            "maintenance",
+            "production"
+          ],
+          "answer": "maintenance"
+        }
+      }
+    ],
+    "ending": "貼標機通過測試後，你把操作說明留在托盤旁，讓晚班接著用。"
+  },
+  {
+    "id": "ep32",
+    "title": "The Rack That Folds Flat",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "prototype",
+        "from": "Ben",
+        "setup": "Ben 從工坊打來，說第一座折疊展示架做好了。",
+        "text": "The prototype folds flat, but the feet still stick out on both sides. Could you send a photo to the design team before they make the next version?",
+        "question": "Ben 要把照片寄給誰？",
+        "options": [
+          "門市採購人員",
+          "印刷廠",
+          "設計團隊"
+        ],
+        "answer": "設計團隊",
+        "rescue": {
+          "reaction": "The first model still needs changes, and the people making the next design should see where.",
+          "options": [
+            "設計團隊",
+            "門市採購人員"
+          ],
+          "answer": "設計團隊"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "safety",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你先完成展示架的穩固性檢查。",
+        "text": "For customer ____, check that the legs lock in place before anyone uses the rack. Loose legs could cause it to fall.",
+        "options": [
+          "comfort",
+          "safety",
+          "convenience"
+        ],
+        "answer": "safety",
+        "rescue": {
+          "reaction": "We need to make sure no one gets hurt while using the rack.",
+          "options": [
+            "convenience",
+            "safety"
+          ],
+          "answer": "safety"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "specification",
+        "from": "Ben",
+        "setup": "工坊改過架腳的位置後，Ben 打來確認產品資料。",
+        "text": "The new specification says the rack is eighty centimeters wide. Could you update the product sheet, which still says ninety?",
+        "question": "產品資料上的寬度應改成多少？",
+        "options": [
+          "八十公分",
+          "九十公分",
+          "七十公分"
+        ],
+        "answer": "八十公分",
+        "rescue": {
+          "reaction": "Use the updated measurement, which is ten centimeters less than the old one.",
+          "options": [
+            "七十公分",
+            "八十公分"
+          ],
+          "answer": "八十公分"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "brand",
+        "from": "Ms. Chen",
+        "setup": "陳經理把確認過的圖稿寄給你。",
+        "text": "Use Harbor & Pine as the ____ name on the rack display. That's the name shoppers will see on the package and remember in the store.",
+        "options": [
+          "client",
+          "model",
+          "brand"
+        ],
+        "answer": "brand",
+        "rescue": {
+          "reaction": "Use the name we sell the rack under, across all the materials shoppers see.",
+          "options": [
+            "model",
+            "brand"
+          ],
+          "answer": "brand"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "campaign",
+        "from": "Ms. Chen",
+        "setup": "圖稿定案後，陳經理把週末展示納入行銷安排。",
+        "text": "The spring marketing ____ will include store demonstrations and a series of online ads. Please reserve the first demonstration slot with Ms. Ortiz.",
+        "options": [
+          "campaign",
+          "survey",
+          "budget"
+        ],
+        "answer": "campaign",
+        "rescue": {
+          "reaction": "These are parts of one planned effort to get people interested in the rack.",
+          "options": [
+            "campaign",
+            "survey"
+          ],
+          "answer": "campaign"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "advertise",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士來電說明門市要從哪個管道公布展示活動。",
+        "text": "We'll advertise the rack in our Friday newsletter. Could you send me a photo of it folded so readers can see how little space it takes?",
+        "question": "Ortiz 女士希望電子報使用哪張照片？",
+        "options": [
+          "展示架包裝箱的照片",
+          "展示架裝滿商品的照片",
+          "展示架折起來的照片"
+        ],
+        "answer": "展示架折起來的照片",
+        "rescue": {
+          "reaction": "Show readers how compact the rack is when it's put away.",
+          "options": [
+            "展示架折起來的照片",
+            "展示架包裝箱的照片"
+          ],
+          "answer": "展示架折起來的照片"
+        }
+      }
+    ],
+    "ending": "你把折疊架的正確尺寸交給行銷同事，Ortiz 女士也收到了展示安排。"
+  },
+  {
+    "id": "ep33",
+    "title": "Room for One More Bag",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "survey",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你比對兩款購物袋的試用結果。",
+        "text": "Please summarize the results of our customer ____. We asked fifty people the same questions about the bags they used.",
+        "options": [
+          "survey",
+          "review",
+          "complaint"
+        ],
+        "answer": "survey",
+        "rescue": {
+          "reaction": "Use the answers we collected through the questionnaire.",
+          "options": [
+            "complaint",
+            "survey"
+          ],
+          "answer": "survey"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "consumer",
+        "from": "Ben",
+        "setup": "Ben 從門市打來，說昨天有位買家留下實用意見。",
+        "text": "A consumer who takes the bus said the light bag was easier to carry. Could you add her comment to your notes?",
+        "question": "這位買家喜歡輕便款的原因是什麼？",
+        "options": [
+          "提袋比較容易清洗",
+          "搭公車時比較好提",
+          "做週末採買時容量比較大"
+        ],
+        "answer": "搭公車時比較好提",
+        "rescue": {
+          "reaction": "She has to carry her shopping on the bus, and the lighter bag gave her less weight to handle.",
+          "options": [
+            "做週末採買時容量比較大",
+            "搭公車時比較好提"
+          ],
+          "answer": "搭公車時比較好提"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "segment",
+        "from": "Ms. Chen",
+        "setup": "陳經理看完訪談摘要後，請你把不同購物習慣分組。",
+        "text": "For the first trial, focus on one customer ____. Start with weekday shoppers who carry their groceries home on public transport.",
+        "options": [
+          "segment",
+          "account",
+          "region"
+        ],
+        "answer": "segment",
+        "rescue": {
+          "reaction": "These customers form one group because they shop and travel in a similar way.",
+          "options": [
+            "account",
+            "segment"
+          ],
+          "answer": "segment"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "launch",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士打來確認哪款購物袋先上架。",
+        "text": "Let's launch the light bag on Friday and bring out the larger one next month. Can you get twenty light bags to my shop by Thursday afternoon?",
+        "question": "Ortiz 女士週四下午前需要什麼？",
+        "options": [
+          "二十個大款購物袋",
+          "兩款各二十個購物袋",
+          "二十個輕便款購物袋"
+        ],
+        "answer": "二十個輕便款購物袋",
+        "rescue": {
+          "reaction": "She needs enough of the lighter model for its first day on sale.",
+          "options": [
+            "二十個輕便款購物袋",
+            "兩款各二十個購物袋"
+          ],
+          "answer": "二十個輕便款購物袋"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "publicity",
+        "from": "Ben",
+        "setup": "Ben 在整理發表照片時接到地方報紙的電話。",
+        "text": "The local paper offered us some free publicity for the launch. They need a photo of the bag by noon for their Friday article.",
+        "question": "地方報紙需要你中午前提供什麼？",
+        "options": [
+          "週五活動的預算表",
+          "購物袋的照片",
+          "大款購物袋的訂單"
+        ],
+        "answer": "購物袋的照片",
+        "rescue": {
+          "reaction": "They'll help people hear about the new bag by featuring it with a picture.",
+          "options": [
+            "購物袋的照片",
+            "週五活動的預算表"
+          ],
+          "answer": "購物袋的照片"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "audience",
+        "from": "Ms. Chen",
+        "setup": "照片送出後，陳經理請你把發表稿再縮短一些。",
+        "text": "The announcement should suit the ____ we're trying to reach. Most of these readers take the bus and shop on their way home.",
+        "options": [
+          "committee",
+          "staff",
+          "audience"
+        ],
+        "answer": "audience",
+        "rescue": {
+          "reaction": "Picture the people who will read the announcement on their trip home.",
+          "options": [
+            "audience",
+            "committee"
+          ],
+          "answer": "audience"
+        }
+      }
+    ],
+    "ending": "門市同意先試賣輕便款，你把公車通勤時用得到的細節寫進發表稿。"
+  },
+  {
+    "id": "ep34",
+    "title": "Two Words on the Brochure",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "feedback",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士打來談她試讀園藝展文宣的感想。",
+        "text": "My feedback on the draft is that the large print makes it look as though the plants come with the pots. Could you revise that line before we print?",
+        "question": "Ortiz 女士希望你改哪裡？",
+        "options": [
+          "容易讓人以為花盆附植物的那一行",
+          "展示花盆的照片",
+          "園藝展的日期"
+        ],
+        "answer": "容易讓人以為花盆附植物的那一行",
+        "rescue": {
+          "reaction": "The picture is fine, but readers could get the wrong idea about what they're buying from the wording.",
+          "options": [
+            "園藝展的日期",
+            "容易讓人以為花盆附植物的那一行"
+          ],
+          "answer": "容易讓人以為花盆附植物的那一行"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "brochure",
+        "from": "Ben",
+        "setup": "Ben 寫信確認要送哪種宣傳品去印。",
+        "text": "Please send the four-page ____ to the printer. Visitors will take this small booklet home to read about the pots.",
+        "options": [
+          "receipt",
+          "poster",
+          "brochure"
+        ],
+        "answer": "brochure",
+        "rescue": {
+          "reaction": "It's the small set of printed pages visitors can take away.",
+          "options": [
+            "poster",
+            "brochure"
+          ],
+          "answer": "brochure"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "sponsor",
+        "from": "Ms. Chen",
+        "setup": "陳經理打來交代園藝展贊助商的露出位置。",
+        "text": "The garden center will sponsor the demonstration by paying for the booth. Could you put its logo on the back page?",
+        "question": "園藝中心將負擔什麼費用？",
+        "options": [
+          "攤位費",
+          "花盆的運費",
+          "新品開發費"
+        ],
+        "answer": "攤位費",
+        "rescue": {
+          "reaction": "They're supporting the event by covering the cost of the space.",
+          "options": [
+            "攤位費",
+            "花盆的運費"
+          ],
+          "answer": "攤位費"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "awareness",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你確認新稿要達到的宣傳目標。",
+        "text": "The purpose of this fair is to raise ____ of our new pots. Most visitors haven't heard of them yet.",
+        "options": [
+          "stock",
+          "production",
+          "awareness"
+        ],
+        "answer": "awareness",
+        "rescue": {
+          "reaction": "We'd like more people to know the pots exist.",
+          "options": [
+            "awareness",
+            "stock"
+          ],
+          "answer": "awareness"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "slogan",
+        "from": "Ben",
+        "setup": "Ben 提出一句可以取代舊文案的短句。",
+        "text": "Use “Grow Anywhere” as the new ____ on the cover. It's the short phrase we want people to remember after the fair.",
+        "options": [
+          "address",
+          "slogan",
+          "description"
+        ],
+        "answer": "slogan",
+        "rescue": {
+          "reaction": "We need a few memorable words that people can associate with the pots.",
+          "options": [
+            "slogan",
+            "address"
+          ],
+          "answer": "slogan"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "endorse",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士再打來，說一位在地園藝講師答應試用花盆。",
+        "text": "The gardening teacher has agreed to endorse the pots after trying them. Could you check whether we may quote her recommendation in the final booklet?",
+        "question": "你應該先確認什麼？",
+        "options": [
+          "能否在小冊子引用講師的推薦",
+          "能否請講師負擔印刷費",
+          "能否引用講師的課程收費"
+        ],
+        "answer": "能否在小冊子引用講師的推薦",
+        "rescue": {
+          "reaction": "She's willing to tell people she recommends the pots, and we need permission to print her words.",
+          "options": [
+            "能否引用講師的課程收費",
+            "能否在小冊子引用講師的推薦"
+          ],
+          "answer": "能否在小冊子引用講師的推薦"
+        }
+      }
+    ],
+    "ending": "你換掉容易看錯的標語，印刷廠用新稿趕上週末園藝展。"
+  },
+  {
+    "id": "ep35",
+    "title": "At Eye Level",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "trend",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你查看三個月的補充包銷量。",
+        "text": "Sales of refill packs rose every month this quarter. Please mention that upward ____ in the store report.",
+        "options": [
+          "trend",
+          "limit",
+          "target"
+        ],
+        "answer": "trend",
+        "rescue": {
+          "reaction": "The numbers show a steady direction across several months.",
+          "options": [
+            "limit",
+            "trend"
+          ],
+          "answer": "trend"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "demographic",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士打來，想從門市資料找出主要買家。",
+        "text": "Our strongest demographic for refill packs is shoppers aged twenty-five to thirty-four. Could you check whether the same age group leads at the other store?",
+        "question": "Ortiz 女士要在另一間門市核對哪個年齡層？",
+        "options": [
+          "十八到二十四歲",
+          "三十五到四十四歲",
+          "二十五到三十四歲"
+        ],
+        "answer": "二十五到三十四歲",
+        "rescue": {
+          "reaction": "See if the group a few years either side of thirty buys the most refill packs there too.",
+          "options": [
+            "二十五到三十四歲",
+            "三十五到四十四歲"
+          ],
+          "answer": "二十五到三十四歲"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "appeal",
+        "from": "Ben",
+        "setup": "Ben 找到顧客為何願意回來買補充包的留言。",
+        "text": "The main ____ of the refill packs is that they cost less than a new bottle. Shoppers often say that's what makes them choose the packs.",
+        "options": [
+          "drawback",
+          "appeal",
+          "expense"
+        ],
+        "answer": "appeal",
+        "rescue": {
+          "reaction": "Think about the feature that makes the packs attractive to shoppers.",
+          "options": [
+            "appeal",
+            "drawback"
+          ],
+          "answer": "appeal"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "display",
+        "from": "Ms. Ortiz",
+        "setup": "你整理好價格牌後，Ortiz 女士來電調整陳列。",
+        "text": "Can you move the refill packs to the display by the checkout? Put them at eye level so shoppers can see them in line.",
+        "question": "補充包在結帳區要放在哪個高度？",
+        "options": [
+          "接近地面",
+          "高於顧客頭頂",
+          "與視線同高"
+        ],
+        "answer": "與視線同高",
+        "rescue": {
+          "reaction": "Customers should be able to look straight ahead and see them.",
+          "options": [
+            "與視線同高",
+            "接近地面"
+          ],
+          "answer": "與視線同高"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "loyalty",
+        "from": "Ms. Chen",
+        "setup": "陳經理打來確認優惠券要發給哪些客人。",
+        "text": "I'd like to reward customer loyalty with a coupon for anyone buying a second refill pack. Could you tell the cashier how to recognize repeat purchases?",
+        "question": "哪一種顧客可以領優惠券？",
+        "options": [
+          "第一次購買補充包的人",
+          "第二次購買補充包的人",
+          "只買一瓶新品的人"
+        ],
+        "answer": "第二次購買補充包的人",
+        "rescue": {
+          "reaction": "The offer is for customers who come back and buy another refill.",
+          "options": [
+            "只買一瓶新品的人",
+            "第二次購買補充包的人"
+          ],
+          "answer": "第二次購買補充包的人"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "distribute",
+        "from": "Ms. Chen",
+        "setup": "印好的優惠券送到公司後，陳經理請你分給門市。",
+        "text": "Please ____ fifty coupons among the three stores. Give the largest store twenty and split the rest evenly between the two smaller stores.",
+        "options": [
+          "distribute",
+          "collect",
+          "redeem"
+        ],
+        "answer": "distribute",
+        "rescue": {
+          "reaction": "Share the coupons out so each store has some to hand to its own shoppers.",
+          "options": [
+            "redeem",
+            "distribute"
+          ],
+          "answer": "distribute"
+        }
+      }
+    ],
+    "ending": "你把補充包移到視線高度，結帳櫃台也拿到了給回購客的優惠券。"
+  },
+  {
+    "id": "ep36",
+    "title": "A Meeting Before Noon",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "appointment",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士打來說原本下午的包裝會議可能趕不上。",
+        "text": "I have an appointment with a store owner at two that I can't move. Is there any chance we could look at the new packaging in the morning?",
+        "question": "Ortiz 女士想把包裝會議改到哪個時段？",
+        "options": [
+          "上午",
+          "下午兩點",
+          "傍晚"
+        ],
+        "answer": "上午",
+        "rescue": {
+          "reaction": "My afternoon is booked, and I'd still like to see the packaging before lunch.",
+          "options": [
+            "上午",
+            "下午兩點"
+          ],
+          "answer": "上午"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "reschedule",
+        "from": "Ms. Chen",
+        "setup": "你轉達客戶的時間限制後，陳經理查了自己的行事曆。",
+        "text": "Please ____ today's meeting. Move it from 2 p.m. to 10 a.m. and use the small room beside reception.",
+        "options": [
+          "shorten",
+          "cancel",
+          "reschedule"
+        ],
+        "answer": "reschedule",
+        "rescue": {
+          "reaction": "Keep the same meeting and move it to the open morning slot.",
+          "options": [
+            "reschedule",
+            "shorten"
+          ],
+          "answer": "reschedule"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "colleague",
+        "from": "Ben",
+        "setup": "Ben 說自己得先送貨，打來找人幫忙搬樣品。",
+        "text": "Could you ask my colleague Nora to bring the sample boxes? We work at the same packing desk, so she knows where I put them.",
+        "question": "Ben 請你找誰拿樣品箱？",
+        "options": [
+          "早上來收件的司機",
+          "他在包裝區的同事 Nora",
+          "Ortiz 女士門市的店長"
+        ],
+        "answer": "他在包裝區的同事 Nora",
+        "rescue": {
+          "reaction": "Ask the person who works alongside me at the packing desk.",
+          "options": [
+            "他在包裝區的同事 Nora",
+            "早上來收件的司機"
+          ],
+          "answer": "他在包裝區的同事 Nora"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "agenda",
+        "from": "Ms. Chen",
+        "setup": "樣品有人送了，陳經理請你確認上午要談的內容。",
+        "text": "Please send the ____ before ten so everyone knows the order of discussion. Put package sizes first and print costs second.",
+        "options": [
+          "agenda",
+          "contract",
+          "minutes"
+        ],
+        "answer": "agenda",
+        "rescue": {
+          "reaction": "We're setting the order of topics for a meeting that hasn't started.",
+          "options": [
+            "minutes",
+            "agenda"
+          ],
+          "answer": "agenda"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "supervisor",
+        "from": "Ben",
+        "setup": "Nora 得暫時離開包裝區，Ben 打來問誰能同意調班。",
+        "text": "She needs her supervisor's approval to leave the packing desk at ten. Could you check with Sam, the person who manages her shift?",
+        "question": "誰可以同意 Nora 暫時離開包裝區？",
+        "options": [
+          "排定會議室的櫃台人員",
+          "管理 Nora 班別的 Sam",
+          "負責看樣品的 Ortiz 女士"
+        ],
+        "answer": "管理 Nora 班別的 Sam",
+        "rescue": {
+          "reaction": "Ask the person in charge of her work schedule.",
+          "options": [
+            "負責看樣品的 Ortiz 女士",
+            "管理 Nora 班別的 Sam"
+          ],
+          "answer": "管理 Nora 班別的 Sam"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "prompt",
+        "from": "Ms. Ortiz",
+        "setup": "你寄出新的時間和議程，Ortiz 女士馬上回信。",
+        "text": "Thank you for your ____ reply. You wrote back within five minutes, which gave me time to change my plans and confirm the morning slot.",
+        "options": [
+          "prompt",
+          "formal",
+          "detailed"
+        ],
+        "answer": "prompt",
+        "rescue": {
+          "reaction": "What helped was how quickly your message arrived.",
+          "options": [
+            "formal",
+            "prompt"
+          ],
+          "answer": "prompt"
+        }
+      }
+    ],
+    "ending": "Ortiz 女士確認新的會議時間，Nora 把包裝樣品搬進小會議室。"
+  },
+  {
+    "id": "ep37",
+    "title": "Room for the Conference",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "conference",
+        "from": "Ms. Chen",
+        "setup": "公司要邀請各地的供應商參加一天的交流活動，陳經理請你協助。",
+        "text": "We're hosting a one-day ____ for suppliers to discuss shipping costs. Please book rooms for the morning talks and afternoon workshops.",
+        "options": [
+          "interview",
+          "conference",
+          "reception"
+        ],
+        "answer": "conference",
+        "rescue": {
+          "reaction": "We need rooms for a full day of talks and group discussion.",
+          "options": [
+            "conference",
+            "interview"
+          ],
+          "answer": "conference"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "department",
+        "from": "Ben",
+        "setup": "Ben 查到研討會要借的會議室原本有人使用。",
+        "text": "The sales department booked the big room for calls that day. Could you ask that team if they can work somewhere else?",
+        "question": "原本是誰預約大會議室？",
+        "options": [
+          "資訊部門",
+          "外地供應商",
+          "業務部門"
+        ],
+        "answer": "業務部門",
+        "rescue": {
+          "reaction": "The group that handles sales had already reserved the room.",
+          "options": [
+            "業務部門",
+            "資訊部門"
+          ],
+          "answer": "業務部門"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "workspace",
+        "from": "Raj",
+        "setup": "Raj 在三樓找到可以讓業務同事暫時工作的地方。",
+        "text": "Room 301 can serve as a temporary ____. It has four desks, network connections, and enough room for the sales team to take calls.",
+        "options": [
+          "showroom",
+          "workspace",
+          "warehouse"
+        ],
+        "answer": "workspace",
+        "rescue": {
+          "reaction": "This is a place where staff can sit down and do their calls and other daily work.",
+          "options": [
+            "warehouse",
+            "workspace"
+          ],
+          "answer": "workspace"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "deadline",
+        "from": "Ms. Chen",
+        "setup": "陳經理來電交代要在哪個時間前把場地空出來。",
+        "text": "The deadline for clearing the big room is Thursday at five. The supplier team will set up the tables early Friday morning.",
+        "question": "最晚什麼時候要清空大會議室？",
+        "options": [
+          "週四下午五點",
+          "週五一早",
+          "週五下午五點"
+        ],
+        "answer": "週四下午五點",
+        "rescue": {
+          "reaction": "Have the room empty by the end of Thursday so setup can start first thing Friday.",
+          "options": [
+            "週五下午五點",
+            "週四下午五點"
+          ],
+          "answer": "週四下午五點"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "memo",
+        "from": "Ms. Chen",
+        "setup": "業務同事同意移到三樓，陳經理請你寄內部通知。",
+        "text": "Please send a short ____ to all staff about the temporary room change. It should state where the sales team will work on Friday.",
+        "options": [
+          "quote",
+          "contract",
+          "memo"
+        ],
+        "answer": "memo",
+        "rescue": {
+          "reaction": "We need a brief internal note that gives staff the new room number.",
+          "options": [
+            "contract",
+            "memo"
+          ],
+          "answer": "memo"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "notify",
+        "from": "Ben",
+        "setup": "Ben 發現週五有幾位同事會直接到新場地報到。",
+        "text": "Could you notify the Friday staff personally as well? A few of them won't be in the office to see the notice on the door.",
+        "question": "Ben 請你另外親自通知誰？",
+        "options": [
+          "週五值班的人員",
+          "參加研討會的供應商",
+          "負責擺桌椅的外包人員"
+        ],
+        "answer": "週五值班的人員",
+        "rescue": {
+          "reaction": "Make sure the people working that shift hear from you, even if they miss the sign.",
+          "options": [
+            "週五值班的人員",
+            "參加研討會的供應商"
+          ],
+          "answer": "週五值班的人員"
+        }
+      }
+    ],
+    "ending": "你把臨時工作區的門牌貼好，準時把共用空間留給研討會。"
+  },
+  {
+    "id": "ep38",
+    "title": "The Scale at Packing Station Two",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "equipment",
+        "from": "Ben",
+        "setup": "包裝區的秤讀數一直跳，Ben 打來請你找替用的。",
+        "text": "The spare equipment is in the west storeroom. Could you bring the smaller scale to packing station two?",
+        "question": "Ben 希望你從西側儲藏室帶回什麼？",
+        "options": [
+          "備用標籤機",
+          "較小的秤",
+          "較大的秤"
+        ],
+        "answer": "較小的秤",
+        "rescue": {
+          "reaction": "Bring the compact machine we use to weigh the boxes.",
+          "options": [
+            "較小的秤",
+            "備用標籤機"
+          ],
+          "answer": "較小的秤"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "request",
+        "from": "Ben",
+        "setup": "你把備用秤送到包裝區，Ben 又寄信請工務組協助安裝。",
+        "text": "I've attached a maintenance ____ for the replacement scale. It asks the service desk to send someone to set the scale up.",
+        "options": [
+          "request",
+          "report",
+          "receipt"
+        ],
+        "answer": "request",
+        "rescue": {
+          "reaction": "I'm asking someone to come and do a specific job for us.",
+          "options": [
+            "receipt",
+            "request"
+          ],
+          "answer": "request"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "procedure",
+        "from": "Raj",
+        "setup": "工務組收到來信後，Raj 來電提醒你安裝前的步驟。",
+        "text": "The setup procedure starts with checking the new scale against a known weight. Could you bring the test weight from the supply cabinet?",
+        "question": "安裝開始前，Raj 請你從櫃子拿什麼？",
+        "options": [
+          "新的電源線",
+          "測試用的砝碼",
+          "一疊空白秤重標籤"
+        ],
+        "answer": "測試用的砝碼",
+        "rescue": {
+          "reaction": "We need something whose weight is already known so we can check the reading.",
+          "options": [
+            "一疊空白秤重標籤",
+            "測試用的砝碼"
+          ],
+          "answer": "測試用的砝碼"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "postpone",
+        "from": "Ms. Chen",
+        "setup": "包裝區臨時接到急單，陳經理請你挪開安裝時段。",
+        "text": "Please ____ the installation. The original time overlaps with the two o'clock pickup, so move the work to later this afternoon.",
+        "options": [
+          "postpone",
+          "extend",
+          "cancel"
+        ],
+        "answer": "postpone",
+        "rescue": {
+          "reaction": "We'll do the work later, once the rush order has left the packing area.",
+          "options": [
+            "extend",
+            "postpone"
+          ],
+          "answer": "postpone"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "remind",
+        "from": "Ben",
+        "setup": "急單快出完時，Ben 打來請你留個口信。",
+        "text": "Can you remind the afternoon team to keep station two clear after pickup? I told them this morning, but they have a lot going on.",
+        "question": "Ben 要你再提醒下午班哪件事？",
+        "options": [
+          "貨物取走前把樣品搬到二號站",
+          "下班前把二號站的秤搬回倉庫",
+          "貨物取走後把二號包裝站空出來"
+        ],
+        "answer": "貨物取走後把二號包裝站空出來",
+        "rescue": {
+          "reaction": "They've heard it already, but they'll need to leave room for the new scale.",
+          "options": [
+            "貨物取走後把二號包裝站空出來",
+            "下班前把二號站的秤搬回倉庫"
+          ],
+          "answer": "貨物取走後把二號包裝站空出來"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "approve",
+        "from": "Ms. Chen",
+        "setup": "備用秤的讀數核對完畢，陳經理回信確認時段。",
+        "text": "I ____ the new installation time. You have my permission to proceed at 3 p.m. today.",
+        "options": [
+          "question",
+          "approve",
+          "reject"
+        ],
+        "answer": "approve",
+        "rescue": {
+          "reaction": "You have the go-ahead to book the work for three.",
+          "options": [
+            "approve",
+            "question"
+          ],
+          "answer": "approve"
+        }
+      }
+    ],
+    "ending": "備用秤通過檢查後，你把新的安裝時段寄給包裝組。"
+  },
+  {
+    "id": "ep39",
+    "title": "The Case for the Trade Show",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "itinerary",
+        "from": "Ms. Chen",
+        "setup": "陳經理請你替下週的展覽把交通和會面排在同一張表上。",
+        "text": "Please update the travel ____ with the bus times and both buyer meetings. I want the trip listed in order from the first ride to the last appointment.",
+        "options": [
+          "reservation",
+          "itinerary",
+          "invoice"
+        ],
+        "answer": "itinerary",
+        "rescue": {
+          "reaction": "The document should show the whole trip, stop by stop.",
+          "options": [
+            "invoice",
+            "itinerary"
+          ],
+          "answer": "itinerary"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "reservation",
+        "from": "Ben",
+        "setup": "Ben 找到訂房紀錄，來電問能否提早入住。",
+        "text": "The hotel found our reservation under Harbor & Pine Trading. Could you ask if we can check in before our first meeting on Monday?",
+        "question": "Ben 想向旅館確認什麼？",
+        "options": [
+          "週一第一場會議前能否入住",
+          "能否改用 Ben 的名字訂房",
+          "週一開會時能否取消房間"
+        ],
+        "answer": "週一第一場會議前能否入住",
+        "rescue": {
+          "reaction": "Our room is already booked, but we'd like to get into it earlier.",
+          "options": [
+            "週一開會時能否取消房間",
+            "週一第一場會議前能否入住"
+          ],
+          "answer": "週一第一場會議前能否入住"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "commute",
+        "from": "Ben",
+        "setup": "Ben 看完地圖，打電話談每天從旅館到展場的交通。",
+        "text": "The commute from the hotel to the exhibition hall is fifteen minutes by bus. Could you check when the first bus runs each morning?",
+        "question": "Ben 想查每天早上哪項資訊？",
+        "options": [
+          "旅館早餐的供應時間",
+          "展場到車站的末班接駁時間",
+          "旅館到展場的首班公車時間"
+        ],
+        "answer": "旅館到展場的首班公車時間",
+        "rescue": {
+          "reaction": "We know how long the ride to work takes, and now we need the earliest time we can go.",
+          "options": [
+            "展場到車站的末班接駁時間",
+            "旅館到展場的首班公車時間"
+          ],
+          "answer": "旅館到展場的首班公車時間"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "stationery",
+        "from": "Ms. Chen",
+        "setup": "出發前，陳經理翻了一下展覽用的樣品箱。",
+        "text": "Please pack some ____ for the buyer meetings, including letter paper, envelopes, and pens. There's room next to the folders.",
+        "options": [
+          "stationery",
+          "equipment",
+          "merchandise"
+        ],
+        "answer": "stationery",
+        "rescue": {
+          "reaction": "Bring the office supplies we'll use to write notes and prepare letters.",
+          "options": [
+            "stationery",
+            "equipment"
+          ],
+          "answer": "stationery"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "photocopy",
+        "from": "Ben",
+        "setup": "Ben 發現樣品箱裡只有一張展位配置圖。",
+        "text": "Please ____ the booth plan twice so we have two paper copies to hand out. Keep the original in the binder.",
+        "options": [
+          "revise",
+          "scan",
+          "photocopy"
+        ],
+        "answer": "photocopy",
+        "rescue": {
+          "reaction": "Use the copier to make paper duplicates of the plan.",
+          "options": [
+            "photocopy",
+            "revise"
+          ],
+          "answer": "photocopy"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "departure",
+        "from": "Ms. Chen",
+        "setup": "你拿著補印的配置圖回座位時，陳經理打來確認搭車時間。",
+        "text": "Our departure is at eight, and the driver will be at reception fifteen minutes earlier. Could you bring the sample case down by then?",
+        "question": "最晚幾點要把樣品箱帶到接待處？",
+        "options": [
+          "上午八點十五分",
+          "上午七點四十五分",
+          "上午八點整"
+        ],
+        "answer": "上午七點四十五分",
+        "rescue": {
+          "reaction": "Have the case downstairs when the driver arrives, a quarter of an hour before we leave at eight.",
+          "options": [
+            "上午七點四十五分",
+            "上午八點十五分"
+          ],
+          "answer": "上午七點四十五分"
+        }
+      }
+    ],
+    "ending": "你把補印的資料放進樣品箱，趕上前往展場的車。"
+  },
+  {
+    "id": "ep40",
+    "title": "A Room Near the Showroom",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "destination",
+        "from": "Ms. Chen",
+        "setup": "Ortiz 女士要飛來看樣品，陳經理先請你確認她會在哪裡落地。",
+        "text": "Please confirm the final ____ on Ms. Ortiz's ticket before you reserve a car. She changes planes in Osaka and ends her trip in Taipei.",
+        "options": [
+          "departure",
+          "destination",
+          "connection"
+        ],
+        "answer": "destination",
+        "rescue": {
+          "reaction": "The driver needs to know the city where her trip ends.",
+          "options": [
+            "connection",
+            "destination"
+          ],
+          "answer": "destination"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "passport",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士打來問公司邀請函上的拼字要怎麼寫。",
+        "text": "Could you spell my name on the visit letter exactly as it appears on my passport? I'll email you the correct spelling.",
+        "question": "Ortiz 女士希望邀請函上的姓名如何拼寫？",
+        "options": [
+          "跟護照上的拼字完全相同",
+          "照旅館預訂資料上的簡稱",
+          "改用平常同事叫她的名字"
+        ],
+        "answer": "跟護照上的拼字完全相同",
+        "rescue": {
+          "reaction": "Use the name as printed on my official travel document.",
+          "options": [
+            "照旅館預訂資料上的簡稱",
+            "跟護照上的拼字完全相同"
+          ],
+          "answer": "跟護照上的拼字完全相同"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "accommodation",
+        "from": "Ben",
+        "setup": "Ben 請你在展示間附近找可以住兩晚的地方。",
+        "text": "Please arrange ____ for Ms. Ortiz for two nights. The hotel across from our showroom has a room available.",
+        "options": [
+          "transportation",
+          "catering",
+          "accommodation"
+        ],
+        "answer": "accommodation",
+        "rescue": {
+          "reaction": "She needs somewhere to stay overnight during the visit.",
+          "options": [
+            "accommodation",
+            "catering"
+          ],
+          "answer": "accommodation"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "boarding",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士在轉機途中來電告知飛機的登機進度。",
+        "text": "Boarding for the Taipei flight won't begin for another hour. Could you tell your driver that our pickup will be later?",
+        "question": "Ortiz 女士請你轉告司機什麼？",
+        "options": [
+          "改到轉機城市接人",
+          "機場接人的時間會延後",
+          "要在一小時內把樣品送到旅館"
+        ],
+        "answer": "機場接人的時間會延後",
+        "rescue": {
+          "reaction": "We're still waiting to get on the plane, so the car can come later than planned.",
+          "options": [
+            "機場接人的時間會延後",
+            "改到轉機城市接人"
+          ],
+          "answer": "機場接人的時間會延後"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "arrival",
+        "from": "Ms. Chen",
+        "setup": "你查到航空公司更新的時刻，陳經理請你通知司機。",
+        "text": "The airline has moved the estimated ____ to 6:40 p.m. Tell the driver we'll meet Ms. Ortiz after the plane lands.",
+        "options": [
+          "departure",
+          "boarding",
+          "arrival"
+        ],
+        "answer": "arrival",
+        "rescue": {
+          "reaction": "Use the time the plane is expected to reach Taipei.",
+          "options": [
+            "arrival",
+            "departure"
+          ],
+          "answer": "arrival"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "baggage",
+        "from": "Ms. Ortiz",
+        "setup": "飛機落地後，Ortiz 女士打來說她還要領一個箱子。",
+        "text": "I'm waiting for my baggage to reach the belt. Could you ask the driver to meet me outside once I have my case?",
+        "question": "Ortiz 女士預計何時到外面找司機？",
+        "options": [
+          "箱子送到旅館後",
+          "拿到托運的箱子後",
+          "打電話給航空公司之前"
+        ],
+        "answer": "拿到托運的箱子後",
+        "rescue": {
+          "reaction": "I still have to collect the case that traveled in the hold before I can go outside.",
+          "options": [
+            "打電話給航空公司之前",
+            "拿到托運的箱子後"
+          ],
+          "answer": "拿到托運的箱子後"
+        }
+      }
+    ],
+    "ending": "你改約了接機時間，Ortiz 女士抵達後可以先到旅館放行李。"
+  },
+  {
+    "id": "ep41",
+    "title": "The Bus That Skips Downtown",
+    "scenes": [
+      {
+        "kind": "call",
+        "word": "delay",
+        "from": "Ben",
+        "setup": "出差抵達車站後，Ben 打來說原定的車沒辦法準時發。",
+        "text": "There's a forty-minute delay on the train to the exhibition hall. Could you find us a way to get there before the nine o'clock meeting?",
+        "question": "Ben 希望你找什麼？",
+        "options": [
+          "展場附近過夜的旅館",
+          "能退回展場入場費的窗口",
+          "九點前能抵達展場的交通方式"
+        ],
+        "answer": "九點前能抵達展場的交通方式",
+        "rescue": {
+          "reaction": "The train will leave too late for us to make the meeting if we wait for it.",
+          "options": [
+            "能退回展場入場費的窗口",
+            "九點前能抵達展場的交通方式"
+          ],
+          "answer": "九點前能抵達展場的交通方式"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "terminal",
+        "from": "Ms. Chen",
+        "setup": "陳經理查到車站旁有兩座巴士大樓，寄信告訴你去哪一座。",
+        "text": "Go to the east bus ____ beside the station. That's the building where the airport and exhibition buses start and end their routes.",
+        "options": [
+          "terminal",
+          "lane",
+          "garage"
+        ],
+        "answer": "terminal",
+        "rescue": {
+          "reaction": "Head to the passenger building where those bus services begin.",
+          "options": [
+            "terminal",
+            "lane"
+          ],
+          "answer": "terminal"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "fare",
+        "from": "Station attendant",
+        "setup": "站務人員打來回覆你稍早詢問的巴士費用。",
+        "text": "The bus fare is eight dollars if you pay by card. It's ten if you buy a paper ticket at the counter.",
+        "question": "刷卡搭巴士要付多少錢？",
+        "options": [
+          "十八元",
+          "十元",
+          "八元"
+        ],
+        "answer": "八元",
+        "rescue": {
+          "reaction": "Paying by card costs two dollars less than buying a ticket at the counter.",
+          "options": [
+            "八元",
+            "十八元"
+          ],
+          "answer": "八元"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "transfer",
+        "from": "Ben",
+        "setup": "Ben 看完路線圖，寄來市區公車的轉乘方式。",
+        "text": "If we take the city bus, we'll have to ____ to another bus at Central Square. Please check how long we'd have to wait there.",
+        "options": [
+          "drive",
+          "transfer",
+          "return"
+        ],
+        "answer": "transfer",
+        "rescue": {
+          "reaction": "We'd have to get off one bus and board a different one.",
+          "options": [
+            "transfer",
+            "drive"
+          ],
+          "answer": "transfer"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "tourist",
+        "from": "Ben",
+        "setup": "Ben 發現有班遊覽巴士也經過廣場。",
+        "text": "The sightseeing route is designed for a ____ who wants to visit the old town and its museums. It doesn't go near the exhibition hall.",
+        "options": [
+          "tourist",
+          "driver",
+          "commuter"
+        ],
+        "answer": "tourist",
+        "rescue": {
+          "reaction": "It serves visitors who are here to see the sights.",
+          "options": [
+            "commuter",
+            "tourist"
+          ],
+          "answer": "tourist"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "shuttle",
+        "from": "Station attendant",
+        "setup": "站務人員再來電說展場的專車剛進站。",
+        "text": "The exhibition shuttle leaves from bay six in ten minutes. It goes straight to the hall, so you won't have to change buses.",
+        "question": "要在哪裡搭直達展場的接駁車？",
+        "options": [
+          "中央廣場",
+          "六號月台",
+          "東站售票窗口"
+        ],
+        "answer": "六號月台",
+        "rescue": {
+          "reaction": "Go to the numbered bay where the direct bus is about to leave.",
+          "options": [
+            "東站售票窗口",
+            "六號月台"
+          ],
+          "answer": "六號月台"
+        }
+      }
+    ],
+    "ending": "你帶著樣品和 Ben 搭上直達接駁車，比預約時間早到展場。"
+  },
+  {
+    "id": "ep42",
+    "title": "The Demo Stays Here",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "guide",
+        "from": "Ms. Chen",
+        "setup": "你準備到外地做商品展示，陳經理先寄了會場資料。",
+        "text": "Save the visitor ____ for the exhibition center. This booklet explains how to find the meeting rooms and where to collect your badge.",
+        "options": [
+          "schedule",
+          "invoice",
+          "guide"
+        ],
+        "answer": "guide",
+        "rescue": {
+          "reaction": "It's the booklet that helps you find your way around the building.",
+          "options": [
+            "guide",
+            "invoice"
+          ],
+          "answer": "guide"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "luggage",
+        "from": "Ben",
+        "setup": "Ben 打來確認展示樣品能不能放進行李箱。",
+        "text": "There's room in my luggage for the small display model. Could you leave the larger model in the showroom for our local customers?",
+        "question": "Ben 請你把哪件樣品留在展示間？",
+        "options": [
+          "較小的展示模型",
+          "較大的展示模型",
+          "兩件展示模型"
+        ],
+        "answer": "較大的展示模型",
+        "rescue": {
+          "reaction": "Only the smaller model fits in the bags I'm taking with me.",
+          "options": [
+            "較大的展示模型",
+            "較小的展示模型"
+          ],
+          "answer": "較大的展示模型"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "flight",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士得知會議室臨時關閉，在你到機場前打來。",
+        "text": "I heard you're on the evening flight, but a water leak has closed our meeting room. Could we do the demonstration by video instead?",
+        "question": "因會議室無法使用，Ortiz 女士想怎麼看展示？",
+        "options": [
+          "搭晚班飛機過來觀看",
+          "在原會議室等修好再看",
+          "改用視訊觀看"
+        ],
+        "answer": "改用視訊觀看",
+        "rescue": {
+          "reaction": "You could show me the model on camera while we stay in our own offices.",
+          "options": [
+            "改用視訊觀看",
+            "搭晚班飛機過來觀看"
+          ],
+          "answer": "改用視訊觀看"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "agency",
+        "from": "Ms. Chen",
+        "setup": "線上展示時間敲定後，陳經理請你找原本訂票的人。",
+        "text": "Please call the travel ____ that booked our plane tickets and rooms. Ask the staff there to check the cancellation terms for both.",
+        "options": [
+          "association",
+          "agency",
+          "insurer"
+        ],
+        "answer": "agency",
+        "rescue": {
+          "reaction": "Contact the outside business that arranged the trip for us.",
+          "options": [
+            "insurer",
+            "agency"
+          ],
+          "answer": "agency"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "hotel",
+        "from": "Ben",
+        "setup": "差旅承辦人寄來資料後，Ben 找到訂房資料。",
+        "text": "Our ____ will release both guest rooms at no charge if we reply by noon. Please send the confirmation to the front desk.",
+        "options": [
+          "hotel",
+          "carrier",
+          "office"
+        ],
+        "answer": "hotel",
+        "rescue": {
+          "reaction": "Get back to the place where we planned to stay overnight.",
+          "options": [
+            "office",
+            "hotel"
+          ],
+          "answer": "hotel"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "cancel",
+        "from": "Travel agent",
+        "setup": "差旅承辦人打來請你確認是否還需要機票。",
+        "text": "I've released the rooms and can still cancel the plane tickets for a refund. Shall I go ahead and remove both seats from the flight?",
+        "question": "差旅承辦人還想確認你是否同意做什麼？",
+        "options": [
+          "重新訂兩間客房",
+          "保留兩個座位但更改日期",
+          "取消兩張機票並申請退款"
+        ],
+        "answer": "取消兩張機票並申請退款",
+        "rescue": {
+          "reaction": "The rooms are already released, and I can return the airfare if you no longer need either seat.",
+          "options": [
+            "保留兩個座位但更改日期",
+            "取消兩張機票並申請退款"
+          ],
+          "answer": "取消兩張機票並申請退款"
+        }
+      }
+    ],
+    "ending": "你退掉差旅訂位後把樣品搬到鏡頭前，Ortiz 女士在線上看完了展示。"
+  }
+]

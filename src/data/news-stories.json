@@ -1,0 +1,202 @@
+[
+  {
+    "id": "news-20261120-1",
+    "title": "A Quote for the Shared Kitchen",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "independent",
+        "from": "Ms. Chen",
+        "setup": "陳主管請你替 Ortiz 女士的共用外送廚房找麵包供應商。",
+        "text": "Ms. Ortiz needs bread for a pilot kitchen that fills orders for several restaurants. Please list Green Street Bakery as an ____ supplier because it operates without a parent company.",
+        "options": [
+          "established",
+          "independent",
+          "approved"
+        ],
+        "answer": "independent",
+        "rescue": {
+          "reaction": "The bakery owner runs the business without direction from a larger company.",
+          "options": [
+            "established",
+            "independent"
+          ],
+          "answer": "independent"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "labor",
+        "from": "Ben",
+        "setup": "麵包和紙箱的價格都已確認，Ben 打來補問包裝成本。",
+        "text": "Can you find out how many hours our packing team will need each week? I have the price of the boxes, and I need to add the labor cost to the quote.",
+        "question": "Ben 請你確認哪項資訊？",
+        "options": [
+          "每箱麵包的進貨價格",
+          "每週需要多少紙箱",
+          "包裝人員每週需要多少工時"
+        ],
+        "answer": "包裝人員每週需要多少工時",
+        "rescue": {
+          "reaction": "I need to know how much time the team will spend putting the orders into boxes.",
+          "options": [
+            "包裝人員每週需要多少工時",
+            "每週需要多少紙箱"
+          ],
+          "answer": "包裝人員每週需要多少工時"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "potential",
+        "from": "Linda",
+        "setup": "Linda 算完人工成本，準備寄出試營運的報價。",
+        "text": "The first order will be small, but the pilot has the ____ to bring in repeat orders if customers like the new menu.",
+        "options": [
+          "budget",
+          "authority",
+          "potential"
+        ],
+        "answer": "potential",
+        "rescue": {
+          "reaction": "If people enjoy the menu, they may come back and order it again.",
+          "options": [
+            "potential",
+            "budget"
+          ],
+          "answer": "potential"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "delivery",
+        "from": "Ms. Ortiz",
+        "setup": "Ortiz 女士看過報價後打來確認第一批麵包的到貨時間。",
+        "text": "The quote works for us. Can you move the first delivery from Thursday to Friday so our chef can be there?",
+        "question": "Ortiz 女士希望怎麼調整？",
+        "options": [
+          "把首次送貨改到週五",
+          "把報價有效期延到週五",
+          "把首次送貨提前到週四"
+        ],
+        "answer": "把首次送貨改到週五",
+        "rescue": {
+          "reaction": "Our chef can only be at the kitchen to receive the bread the day after Thursday.",
+          "options": [
+            "把首次送貨提前到週四",
+            "把首次送貨改到週五"
+          ],
+          "answer": "把首次送貨改到週五"
+        }
+      }
+    ],
+    "ending": "你重新確認送貨日期，讓廚師週五能親自驗收第一批麵包。",
+    "news": {
+      "id": "news-20261120-1",
+      "source": "CNN",
+      "url": "https://www.cnn.com/2026/11/20/business/wonder-food-delivery-marc-lore",
+      "headline": "Is Wonder the dinner company for our anti-social times?",
+      "date": "2026-11-20"
+    }
+  },
+  {
+    "id": "news-20261117-2",
+    "title": "Racks for the Training Lab",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "partner",
+        "from": "Ms. Chen",
+        "setup": "陳主管請你安排一批機架，供資料中心的短期職訓課程使用。",
+        "text": "The college will provide the classroom, and Brightline will teach the course using our equipment. Please list Brightline as our training ____ in the project brief.",
+        "options": [
+          "partner",
+          "customer",
+          "competitor"
+        ],
+        "answer": "partner",
+        "rescue": {
+          "reaction": "We supply the racks and they teach the class, so both teams are helping run the course.",
+          "options": [
+            "customer",
+            "partner"
+          ],
+          "answer": "partner"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "qualified",
+        "from": "Raj",
+        "setup": "Raj 打來安排上課前的機架檢查。",
+        "text": "We need someone qualified to check the training racks before the class starts. Can you ask Brightline which of its technicians is approved to do that work?",
+        "question": "Raj 請你向 Brightline 確認什麼？",
+        "options": [
+          "哪位講師負責第一堂課",
+          "哪位技師具備檢查機架的資格",
+          "哪位學員可以協助收貨"
+        ],
+        "answer": "哪位技師具備檢查機架的資格",
+        "rescue": {
+          "reaction": "Anyone can help with the boxes, but checking the racks takes specific training.",
+          "options": [
+            "哪位技師具備檢查機架的資格",
+            "哪位學員可以協助收貨"
+          ],
+          "answer": "哪位技師具備檢查機架的資格"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "schedule",
+        "from": "Linda",
+        "setup": "Brightline 確認技師人選後，Linda 請你更新開課文件。",
+        "text": "Please update the ____ to show the rack check on Tuesday and the first class on Wednesday.",
+        "options": [
+          "invoice",
+          "schedule",
+          "inventory"
+        ],
+        "answer": "schedule",
+        "rescue": {
+          "reaction": "Both teams need to know which day each activity will take place.",
+          "options": [
+            "invoice",
+            "schedule"
+          ],
+          "answer": "schedule"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "carrier",
+        "from": "Ms. Ortiz",
+        "setup": "機架預計週一送達，Ortiz 女士打來交代收貨地點。",
+        "text": "The training room will be locked on Monday morning. Could you ask the carrier to leave the racks at the receiving desk?",
+        "question": "Ortiz 女士希望司機把貨送到哪裡？",
+        "options": [
+          "上課的教室",
+          "技師的工作間",
+          "收貨處"
+        ],
+        "answer": "收貨處",
+        "rescue": {
+          "reaction": "The person who signs for deliveries will be at the desk by the loading entrance.",
+          "options": [
+            "收貨處",
+            "上課的教室"
+          ],
+          "answer": "收貨處"
+        }
+      }
+    ],
+    "ending": "你安排週一在收貨處簽收機架，技師週二完成檢查，課程順利在週三開始。",
+    "news": {
+      "id": "news-20261117-2",
+      "source": "CNN",
+      "url": "https://www.cnn.com/2026/11/17/business/data-center-job-training",
+      "headline": "$100,000 pay, very little training: The data center jobs no one knows about",
+      "date": "2026-11-17"
+    }
+  }
+]

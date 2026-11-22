@@ -73,6 +73,30 @@ db.version(4).stores({
   if (updates.length > 0) await table.bulkPut(updates);
 });
 
+// v5: story mode — which episodes are finished (vocab gets non-indexed missCount/lastSeen)
+db.version(5).stores({
+  vocab: '++id, &normalizedWord, word, type, status, timestamp',
+  ttsCache: 'key, timestamp',
+  storyDone: 'id'
+});
+
+export const storyDb = {
+  async doneIds() {
+    return (await db.storyDone.toArray()).map(r => r.id);
+  },
+  async markDone(id) {
+    await db.storyDone.put({ id, at: Date.now() });
+  },
+  async resetDone() {
+    await db.storyDone.clear();
+  },
+  // Apply fn(oldRecord) -> fields to the vocab record for this word, if it exists.
+  async updateWord(word, fn) {
+    const record = await db.vocab.where('normalizedWord').equals(normalizeWord(word)).first();
+    if (record) await db.vocab.update(record.id, fn(record));
+  }
+};
+
 function isConstraintError(error) {
   if (!error) return false;
   if (error.name === 'ConstraintError') return true;
@@ -167,6 +191,28 @@ export const vocabDb = {
       return added > 0;
     }
     return false;
+  },
+
+  // 每次開 App：把還沒匯入過的新聞單字加進單字本。
+  // 匯入過的字記在 localStorage，使用者之後刪掉也不會再加回來。回傳新增數。
+  async importNews(items) {
+    const KEY = 'toeic_master_news_imported';
+    let done;
+    try {
+      done = new Set(JSON.parse(localStorage.getItem(KEY) ?? '[]'));
+    } catch {
+      done = new Set();
+    }
+    const fresh = items.filter(item => !done.has(normalizeWord(item.word)));
+    if (fresh.length === 0) return 0;
+    const { added } = await this.addMany(fresh);
+    fresh.forEach(item => done.add(normalizeWord(item.word)));
+    try {
+      localStorage.setItem(KEY, JSON.stringify([...done]));
+    } catch {
+      // storage blocked: words may be offered again next time, addMany dedups anyway
+    }
+    return added;
   },
 
   // 手動匯入範例單字（按鈕用）
