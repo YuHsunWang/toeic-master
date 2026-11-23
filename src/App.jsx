@@ -18,7 +18,8 @@ import {
   Download,
   Brain,
   ArrowRight,
-  RotateCcw
+  RotateCcw,
+  Trash2
 } from 'lucide-react';
 
 import { vocabDb, ttsCacheDb } from './db.js';
@@ -296,6 +297,19 @@ export default function App() {
 
   const toggleMastery = async (item) => {
     await vocabDb.toggleStatus(item.id, !item.status);
+  };
+
+  // Two taps to delete: the first arms the button for 3 seconds, the second deletes.
+  const [pendingDeleteId, setPendingDeleteId] = useState(null);
+  const deleteWord = async (item) => {
+    if (pendingDeleteId !== item.id) {
+      setPendingDeleteId(item.id);
+      setTimeout(() => setPendingDeleteId(id => (id === item.id ? null : id)), 3000);
+      return;
+    }
+    setPendingDeleteId(null);
+    await vocabDb.remove(item.id);
+    flashMessage(`Deleted "${item.word}".`);
   };
 
 
@@ -951,16 +965,31 @@ export default function App() {
                   <TypeBadge type={item.type} />
                 </div>
               </div>
-              <button
-                onClick={() => toggleMastery(item)}
-                className={`mt-4 p-4 rounded-2xl transition-all ${
-                  item.status
-                    ? 'bg-[var(--primary)] text-[var(--primary-text)]  scale-110'
-                    : 'bg-[var(--surface)] text-[var(--muted)] hover:text-[var(--accent)] hover:bg-[var(--surface)]'
-                }`}
-              >
-                <CheckCircle2 className="w-7 h-7" />
-              </button>
+              <div className="mt-4 flex flex-col items-center gap-2">
+                <button
+                  onClick={() => toggleMastery(item)}
+                  aria-label={item.status ? `Mark ${item.word} as learning` : `Mark ${item.word} as mastered`}
+                  className={`p-4 rounded-2xl transition-all ${
+                    item.status
+                      ? 'bg-[var(--primary)] text-[var(--primary-text)]  scale-110'
+                      : 'bg-[var(--surface)] text-[var(--muted)] hover:text-[var(--accent)] hover:bg-[var(--surface)]'
+                  }`}
+                >
+                  <CheckCircle2 className="w-7 h-7" />
+                </button>
+                <button
+                  onClick={() => deleteWord(item)}
+                  aria-label={pendingDeleteId === item.id ? `Tap again to delete ${item.word}` : `Delete ${item.word}`}
+                  className={`px-3 py-2 rounded-xl text-[10px] font-black uppercase flex items-center gap-1 transition-all ${
+                    pendingDeleteId === item.id
+                      ? 'bg-[var(--danger)] text-white'
+                      : 'text-[var(--muted)] hover:text-[var(--danger)]'
+                  }`}
+                >
+                  <Trash2 className="w-4 h-4" />
+                  {pendingDeleteId === item.id && 'Sure?'}
+                </button>
+              </div>
             </div>
 
             <div className="space-y-6">
