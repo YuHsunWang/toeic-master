@@ -100,5 +100,39 @@
       }
     ],
     "news": "news-20261117-2"
+  },
+  {
+    "word": "realistic",
+    "ipa": "/ˌriːəˈlɪstɪk/",
+    "pos": "adj.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 3,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "Similar to what takes place in actual situations.",
+        "zh": "符合實際情況的；逼真的",
+        "example": "The trainer made the exercise realistic by using an order form from our warehouse."
+      }
+    ],
+    "news": "news-20261113-3"
+  },
+  {
+    "word": "measure",
+    "ipa": "/ˈmeʒər/",
+    "pos": "v.",
+    "category": "Office/Workplace",
+    "type": "Both",
+    "freqListening": 4,
+    "freqReading": 4,
+    "senses": [
+      {
+        "en": "To find out the size, amount, or degree of something.",
+        "zh": "測量；衡量",
+        "example": "We measure customer wait times every week."
+      }
+    ],
+    "news": "news-20261113-3"
   }
 ]

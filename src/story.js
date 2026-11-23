@@ -16,9 +16,20 @@ function choiceSet(options, answer, size) {
   return clean.includes(str(answer));
 }
 
+// Words and marks that make English read as machine-written. The player learns from these
+// lines, so they must not pick up AI style. Plan words are exempt (a scene may test "ensure").
+const AI_TELLS = /\b(delve|delves|seamless|seamlessly|leverage|leveraging|robust|streamline|streamlined|pivotal|foster|tapestry|furthermore|moreover|additionally|utilize|utilizing|facilitate|meticulous|meticulously|elevate|game-changer|landscape|realm|embark)\b|—/gi;
+
+export function aiTells(text, word) {
+  const w = normalizeWord(word);
+  return (text.match(AI_TELLS) ?? []).filter(t => !w || !t.toLowerCase().startsWith(w));
+}
+
 // Returns a list of problems; empty list = scene is usable.
 export function sceneProblems(scene, word) {
   const p = [];
+  const tells = [scene?.text, scene?.rescue?.reaction].flatMap(t => (typeof t === 'string' ? aiTells(t, word) : []));
+  if (tells.length) p.push(`AI-style wording: ${[...new Set(tells)].join(', ')}`);
   if (!SCENE_KINDS.has(scene?.kind)) p.push('bad kind');
   if (!str(scene?.text)) p.push('no text');
   if (!str(scene?.setup)) p.push('no setup');

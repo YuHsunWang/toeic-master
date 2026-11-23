@@ -96,7 +96,8 @@
       "source": "CNN",
       "url": "https://www.cnn.com/2026/11/20/business/wonder-food-delivery-marc-lore",
       "headline": "Is Wonder the dinner company for our anti-social times?",
-      "date": "2026-11-20"
+      "date": "2026-11-20",
+      "summary": "Wonder 以共用廚房製作不同品牌的餐點，讓顧客在同一筆訂單裡選擇多種料理。這種做法讓餐飲業者有機會用較低的場地和人事成本試推新品牌，也引發外界對餐飲標準化和社區餐廳逐漸失去特色的擔憂。"
     }
   },
   {
@@ -196,7 +197,109 @@
       "source": "CNN",
       "url": "https://www.cnn.com/2026/11/17/business/data-center-job-training",
       "headline": "$100,000 pay, very little training: The data center jobs no one knows about",
-      "date": "2026-11-17"
+      "date": "2026-11-17",
+      "summary": "美國大量興建 AI 資料中心，但能安裝光纖、電力和冷卻設備的技術人員不足，有些工程因此延後。科技公司與培訓機構推出免費或帶薪的短期實作課程，幫助轉職者更快上工，部分職缺加上加班費後年收入可達六位數美元。"
+    }
+  },
+  {
+    "id": "news-20261113-3",
+    "title": "Before We Hit Send",
+    "scenes": [
+      {
+        "kind": "email",
+        "word": "realistic",
+        "from": "Raj",
+        "setup": "Raj 轉寄 Anthropic 的文章，請你先替 AI 回信工具設計幾個測試案例。",
+        "text": "I'm forwarding an article from Anthropic about testing AI before rollout. Let's make our test ____ by using the kinds of order changes we handled last week.",
+        "options": [
+          "brief",
+          "realistic",
+          "private"
+        ],
+        "answer": "realistic",
+        "rescue": {
+          "reaction": "Think about the emails we actually get, like a customer asking for a new delivery date.",
+          "options": [
+            "realistic",
+            "brief"
+          ],
+          "answer": "realistic"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "measure",
+        "from": "Ben",
+        "setup": "工具已經寫好測試回信，Ben 打來討論怎麼評分。",
+        "text": "To measure how often the tool gives the right delivery date, can you check each draft against the order sheet? I'd like a count of the dates it got right.",
+        "question": "Ben 希望你統計什麼？",
+        "options": [
+          "需要改送貨地址的訂單數",
+          "還沒收到回覆的訂單數",
+          "交貨日期寫對的草稿數"
+        ],
+        "answer": "交貨日期寫對的草稿數",
+        "rescue": {
+          "reaction": "Compare the date in each draft with the one on the order sheet and mark every match.",
+          "options": [
+            "需要改送貨地址的訂單數",
+            "交貨日期寫對的草稿數"
+          ],
+          "answer": "交貨日期寫對的草稿數"
+        }
+      },
+      {
+        "kind": "email",
+        "word": "feedback",
+        "from": "Raj",
+        "setup": "Raj 看過分數後，想知道草稿是否還有其他問題。",
+        "text": "Please send me your ____ on the drafts. I'd like to know which ones promise a date the warehouse hasn't confirmed.",
+        "options": [
+          "feedback",
+          "signature",
+          "estimate"
+        ],
+        "answer": "feedback",
+        "rescue": {
+          "reaction": "Tell me where the replies could confuse a customer, even if the date itself is right.",
+          "options": [
+            "estimate",
+            "feedback"
+          ],
+          "answer": "feedback"
+        }
+      },
+      {
+        "kind": "call",
+        "word": "approve",
+        "from": "Ms. Chen",
+        "setup": "陳主管看過測試結果，打電話和你確認試用安排。",
+        "text": "I can approve a small trial for Friday's orders. Could you ask Ben to check every reply before it goes to a customer?",
+        "question": "陳主管希望 Ben 負責什麼？",
+        "options": [
+          "通知客戶週五會試用新工具",
+          "在回信寄出前逐封檢查",
+          "整理週五訂單的配送順序"
+        ],
+        "answer": "在回信寄出前逐封檢查",
+        "rescue": {
+          "reaction": "Someone needs to read each draft before anyone presses Send. Is Ben free to do that?",
+          "options": [
+            "在回信寄出前逐封檢查",
+            "整理週五訂單的配送順序"
+          ],
+          "answer": "在回信寄出前逐封檢查"
+        }
+      }
+    ],
+    "ending": "週五試用時，Ben 在寄出前抓到一封把預計交貨日寫成已確認日期的回信，你們修正後才寄給客戶。",
+    "news": {
+      "id": "news-20261113-3",
+      "source": "Anthropic",
+      "url": "https://www.anthropic.com/research/building-strong-safety-evaluations",
+      "headline": "Building strong safety evaluations",
+      "date": "2026-11-13",
+      "summary": "Anthropic 建議先釐清 AI 上線後可能造成哪些問題，再用貼近實際的情境測試，訂出明確的評分規則並請人抽查評分結果。公司可以先拿常見的交貨變更來試寫回信，逐封核對日期和承諾，再決定是否開放試用。"
     }
   }
 ]

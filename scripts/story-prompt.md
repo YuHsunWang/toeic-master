@@ -64,3 +64,4 @@ Do not edit any other file.
 - Wrong options must be plausible, not silly. The right answer must be clearly right from the context.
 - The rescue reaction must make the correct answer easier to find without saying it outright.
 - No content about declaring, cheating, or anything unsafe; keep it a normal office day.
+- Write like real coworkers: short, plain, contractions are fine. No AI-style wording: the validator rejects delve, seamless, leverage, robust, streamline, pivotal, foster, furthermore, moreover, additionally, utilize, facilitate, meticulous, elevate, landscape, realm, embark, game-changer, and the em dash (—). Use a comma or a new sentence instead of a dash.
